@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeferson Alexandre | Portfólio</title>
+    <meta name="description" content="Portfólio de Jeferson Alexandre - Desenvolvedor Full Stack, estudante de ADS e apaixonado por tecnologia.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- ================================
+         NAVBAR/HEADER
+         ================================ -->
+    <header class="navbar">
+      <div class="navbar__inner">
+        <!-- Brand/Logo -->
+        <a href="#home" class="navbar__brand">
+          <div class="navbar__logo">J</div>
+          <span class="navbar__title">jeferson</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="navbar__nav">
+          <a href="#home" class="navbar__link">Início</a>
+          <a href="#about" class="navbar__link">Sobre</a>
+          <a href="#skills" class="navbar__link">Habilidades</a>
+          <a href="#projects" class="navbar__link">Projetos</a>
+          <a href="#contact" class="navbar__link">Contato</a>
+          <button id="top-wpp" class="btn btn--primary navbar__cta">
+            Vamos conversar
+          </button>
+        </nav>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="btn-mobile" class="navbar__toggle">☰</button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav id="mobile-menu" class="mobile-menu">
+        <a href="#home" class="mobile-menu__link mobile-link">Início</a>
+        <a href="#about" class="mobile-menu__link mobile-link">Sobre</a>
+        <a href="#skills" class="mobile-menu__link mobile-link">Habilidades</a>
+        <a href="#projects" class="mobile-menu__link mobile-link">Projetos</a>
+        <a href="#contact" class="mobile-menu__link mobile-link">Contato</a>
+        <button id="mobile-wpp" class="btn btn--primary mobile-link">
+          Vamos conversar
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ================================
+           HERO SECTION
+           ================================ -->
+      <section id="home" class="section section--hero">
+        <div class="container">
+          <div class="grid-hero">
+            <!-- Hero Left: Content -->
+            <div class="flex-1" data-aos="fade-right">
+              <h1 class="heading-1 mb-lg">
+                Olá, eu sou Jeferson!<br>
+                Desenvolvedor Full Stack
+              </h1>
+              <p class="text-base text-muted mb-lg">
+                Estudante de Análise e Desenvolvimento de Sistemas apaixonado por tecnologia. Transformo ideias em soluções digitais através de código limpo e eficiente.
+              </p>
+
+              <!-- CTA Buttons -->
+              <div class="flex gap-md mb-lg">
+                <button id="cta-wpp" class="btn btn--whatsapp">
+                  📱 Vamos conversar
+                </button>
+                <a href="#projects" class="btn btn--secondary">
+                  Ver meus projetos
+                </a>
+              </div>
+
+              <!-- Skills Highlight List -->
+              <ul class="grid-2 text-xs text-muted">
+                <li>✅ Desenvolvimento Web (HTML, CSS, JS)</li>
+                <li>✅ Frameworks Modernos (React, Node.js)</li>
+                <li>✅ Versionamento (Git, GitHub)</li>
+                <li>✅ figma, design responsivo</li>
+              </ul>
+            </div>
+
+            <!-- Hero Right: Image -->
+            <div class="hero-right" data-aos="fade-left">
+              <div class="hero-image-card">
+                <img
+                  src="img/fotoPerfilJeferson.jpg"
+                  alt="Jeferson Alexandre - Desenvolvedor"
+                  class="hero-image"
+                />
+                <p class="hero-image-caption text-sm text-muted text-center mt-md">
+                  Jeferson desenvolvendo soluções — apaixonado por tecnologia e inovação.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================
+           ABOUT SECTION
+           ================================ -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="card" data-aos="fade-up">
+            <div class="grid-2 gap-lg">
+              <!-- About Image -->
+              <div class="flex-center">
+                <img 
+                  src="img/fotoPerfilJeferson.jpg" 
+                  alt="jeferson foto" 
+                  class="w-full rounded-lg object-cover shadow-lg"
+                />
+              </div>
+
+              <!-- About Content -->
+              <div>
+                <h2 class="heading-2 mb-md">Sobre mim</h2>
+                <p class="text-base text-muted mb-md">
+                  Olá! Sou <strong>Jeferson Alexandre</strong>, estudante de Análise e Desenvolvimento de Sistemas com 22 anos. Minha jornada com tecnologia começou aos 14 anos, quando descobri minha paixão por computadores. Hoje, além de estudar desenvolvimento, trabalho com suporte técnico e já desenvolvi diversos projetos web.
+                </p>
+                <p class="text-base text-muted mb-lg">
+                  Busco constantemente aprender novas tecnologias e aplicar meus conhecimentos em projetos reais. Acredito que a tecnologia deve ser acessível e que o código limpo é fundamental para qualquer projeto de sucesso.
+                </p>
+
+                <!-- About CTA -->
+                <div class="flex gap-md">
+                  <a href="#contact" class="btn btn--primary">
+                    Entre em contato
+                  </a>
+                  <a href="#projects" class="btn btn--secondary">
+                    Ver projetos
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================
+           SKILLS SECTION
+           ================================ -->
+      <section id="skills" class="section">
+        <div class="container">
+          <!-- Section Header -->
+          <div class="section-header" data-aos="fade-up">
+            <h3 class="section-header__title">Habilidades & Tecnologias</h3>
+            <p class="section-header__subtitle">
+              Tecnologias que domino e estou sempre aprendendo mais.
+            </p>
+          </div>
+
+          <!-- Skills Grid -->
+          <div class="grid-responsive">
+            <!-- Skill 1: Frontend -->
+            <article class="card--service" data-aos="zoom-in">
+              <div class="card__icon">🎨</div>
+              <h4 class="card__title">Frontend</h4>
+              <p class="card__description">
+                HTML5, CSS3, JavaScript, React, TypeScript.
+              </p>
+              <div class="card__action">
+                <div class="skill-level">
+                  <div class="skill-level__bar" style="width: 85%"></div>
+                  <span class="skill-level__text">70% - Intermediário</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Skill 2: Backend -->
+            <article class="card--service" data-aos="zoom-in" data-aos-delay="100">
+              <div class="card__icon">⚙️</div>
+              <h4 class="card__title">Backend</h4>
+              <p class="card__description">
+                Node.js, Express.js, Python.
+              </p>
+              <div class="card__action">
+                <div class="skill-level">
+                  <div class="skill-level__bar" style="width: 75%"></div>
+                  <span class="skill-level__text">70% - Intermediário</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Skill 3: Banco de Dados -->
+            <article class="card--service" data-aos="zoom-in" data-aos-delay="200">
+              <div class="card__icon">🗄️</div>
+              <h4 class="card__title">Banco de Dados</h4>
+              <p class="card__description">
+                MySQL,SQL,NoSQL.
+              </p>
+              <div class="card__action">
+                <div class="skill-level">
+                  <div class="skill-level__bar" style="width: 70%"></div>
+                  <span class="skill-level__text">70% - Intermediário</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Skill 4: Ferramentas -->
+            <article class="card--service" data-aos="zoom-in" data-aos-delay="300">
+              <div class="card__icon">🛠️</div>
+              <h4 class="card__title">Ferramentas & DevOps</h4>
+              <p class="card__description">
+                Git, GitHub, VS Code, Netlify.
+              </p>
+              <div class="card__action">
+                <div class="skill-level">
+                  <div class="skill-level__bar" style="width: 80%"></div>
+                  <span class="skill-level__text">70% - Intermediário</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================
+           PROJECTS SECTION
+           ================================ -->
+      <section id="projects" class="section">
+        <div class="container">
+          <!-- Section Header -->
+          <div class="section-header" data-aos="fade-up">
+            <h3 class="section-header__title">Meus Projetos</h3>
+            <p class="section-header__subtitle">
+              Alguns dos projetos que desenvolvi recentemente. Cada um representa um desafio superado e aprendizado adquirido.
+            </p>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="grid-responsive">
+            <!-- Project 1 -->
+            <article class="card--project" data-aos="zoom-in">
+              <div class="card__image">
+                <img
+                  src="img/projetos/projeto-1.jpg"
+                  alt="Projeto 1"
+                  class="w-full h-48 object-cover rounded-t-lg"
+                />
+              </div>
+              <div class="card__content">
+                <h4 class="card__title">Sistema de Gestão Empresarial</h4>
+                <p class="card__description">
+                  Sistema completo para gestão de vendas, estoque e clientes. Desenvolvido com React, Node.js e MySQL.
+                </p>
+                <div class="card__tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MySQL</span>
+                </div>
+                <div class="card__action">
+                  <a href="#" class="btn btn--primary w-full" target="_blank">
+                    Ver projeto
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="card--project" data-aos="zoom-in" data-aos-delay="100">
+              <div class="card__image">
+                <img
+                  src="img/projetos/projeto-2.jpg"
+                  alt="Projeto 2"
+                  class="w-full h-48 object-cover rounded-t-lg"
+                />
+              </div>
+              <div class="card__content">
+                <h4 class="card__title">E-commerce Moderno</h4>
+                <p class="card__description">
+                  Loja virtual responsiva com carrinho de compras, sistema de pagamento e painel administrativo.
+                </p>
+                <div class="card__tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="card__action">
+                  <a href="#" class="btn btn--primary w-full" target="_blank">
+                    Ver projeto
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="card--project" data-aos="zoom-in" data-aos-delay="200">
+              <div class="card__image">
+                <img
+                  src="img/projetos/projeto-3.jpg"
+                  alt="Projeto 3"
+                  class="w-full h-48 object-cover rounded-t-lg"
+                />
+              </div>
+              <div class="card__content">
+                <h4 class="card__title">API REST para Blog</h4>
+                <p class="card__description">
+                  API completa para sistema de blog com autenticação JWT, CRUD de posts e comentários.
+                </p>
+                <div class="card__tech">
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+                <div class="card__action">
+                  <a href="#" class="btn btn--primary w-full" target="_blank">
+                    Ver projeto
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="card--project" data-aos="zoom-in" data-aos-delay="300">
+              <div class="card__image">
+                <img
+                  src="img/projetos/projeto-4.jpg"
+                  alt="Projeto 4"
+                  class="w-full h-48 object-cover rounded-t-lg"
+                />
+              </div>
+              <div class="card__content">
+                <h4 class="card__title">Landing Page Institucional</h4>
+                <p class="card__description">
+                  Página moderna e responsiva para empresa, com animações e formulário de contato funcional.
+                </p>
+                <div class="card__tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="card__action">
+                  <a href="#" class="btn btn--primary w-full" target="_blank">
+                    Ver projeto
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- GitHub Link -->
+          <div class="text-center mt-xl" data-aos="fade-up">
+            <p class="text-muted mb-md">Quer ver mais projetos?</p>
+            <a href="https://github.com/seu-usuario" target="_blank" class="btn btn--secondary">
+              🌟 Visite meu GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================
+           EXPERIENCE SECTION
+           ================================ -->
+      <section id="experience" class="section">
+        <div class="container">
+          <h3 class="heading-3 text-center mb-lg" data-aos="fade-up">Experiência & Formação</h3>
+          <div class="grid-2">
+            <!-- Experience -->
+            <div data-aos="fade-up">
+              <h4 class="heading-4 mb-md">💼 Experiência Profissional</h4>
+              <div class="card mb-md">
+                <h5 class="text-lg font-semibold mb-sm">Desenvolvedor Full Stack</h5>
+                <p class="text-accent mb-xs">Freelancer | 2023 - Presente</p>
+                <p class="text-muted text-sm">
+                  Desenvolvimento de websites e sistemas web para clientes diversos. Especializado em soluções personalizadas com foco em performance e experiência do usuário.
+                </p>
+              </div>
+
+              <div class="card mb-md">
+                <h5 class="text-lg font-semibold mb-sm">Suporte Técnico</h5>
+                <p class="text-accent mb-xs">Autônomo | 2022 - Presente</p>
+                <p class="text-muted text-sm">
+                  Atendimento presencial e remoto para manutenção de computadores, instalação de softwares e solução de problemas técnicos.
+                </p>
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div data-aos="fade-up">
+              <h4 class="heading-4 mb-md">🎓 Formação Acadêmica</h4>
+              <div class="card mb-md">
+                <h5 class="text-lg font-semibold mb-sm">Análise e Desenvolvimento de Sistemas</h5>
+                <p class="text-accent mb-xs">Faculdade | 2023 - 2026</p>
+                <p class="text-muted text-sm">
+                  Cursando o 3º período. Foco em desenvolvimento de software, banco de dados, arquitetura de sistemas e metodologias ágeis.
+                </p>
+              </div>
+
+              <div class="card">
+                <h5 class="text-lg font-semibold mb-sm">Cursos Complementares</h5>
+                <ul class="text-muted text-sm space-y-xs">
+                  <li>• JavaScript Moderno (Rocketseat)</li>
+                  <li>• React.js Completo (Udemy)</li>
+                  <li>• Node.js do Zero (Rocketseat)</li>
+                  <li>• Git e GitHub (Alura)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================
+           CONTACT SECTION
+           ================================ -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="card" data-aos="fade-up">
+            <div class="grid-2 gap-lg">
+              <!-- Contact Info -->
+              <div>
+                <h3 class="heading-2 mb-md">Vamos trabalhar juntos!</h3>
+                <p class="text-muted mb-lg">
+                  Estou sempre interessado em novos projetos e oportunidades. Se você tem uma ideia ou precisa de ajuda com desenvolvimento, entre em contato!
+                </p>
+
+                <!-- Contact Methods -->
+                <div class="space-y-md">
+                  <div class="flex items-center gap-md">
+                    <div class="flex-center w-12 h-12 rounded-full bg-accent text-bg">📧</div>
+                    <div>
+                      <strong>Email</strong>
+                      <div class="text-muted">jeferson.alexandre@email.com</div>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center gap-md">
+                    <div class="flex-center w-12 h-12 rounded-full bg-accent text-bg">📱</div>
+                    <div>
+                      <strong>WhatsApp</strong>
+                      <div class="text-muted">(81) 99319-2454</div>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center gap-md">
+                    <div class="flex-center w-12 h-12 rounded-full bg-accent text-bg">💼</div>
+                    <div>
+                      <strong>LinkedIn</strong>
+                      <div class="text-muted">linkedin.com/in/jeferson-alexandre</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="flex gap-md mt-lg">
+                  <a href="https://github.com/seu-usuario" target="_blank" class="btn btn--secondary">
+                    GitHub
+                  </a>
+                  <a href="https://linkedin.com/in/jeferson-alexandre" target="_blank" class="btn btn--secondary">
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
+
+              <!-- Contact Form -->
+              <div>
+                <h4 class="heading-3 mb-md">Envie uma mensagem</h4>
+
+                <!-- Form -->
+                <form class="contact-form">
+                  <!-- Nome -->
+                  <div class="form-group">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input
+                      id="nome"
+                      type="text"
+                      class="form-input"
+                      placeholder="Seu nome completo"
+                    />
+                  </div>
+
+                  <!-- Email -->
+                  <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      id="email"
+                      type="email"
+                      class="form-input"
+                      placeholder="seu@email.com"
+                    />
+                  </div>
+
+                  <!-- Mensagem -->
+                  <div class="form-group">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea
+                      id="mensagem"
+                      class="form-textarea"
+                      placeholder="Conte sobre seu projeto ou ideia..."
+                    ></textarea>
+                  </div>
+
+                  <!-- Form Actions -->
+                  <div class="form-row">
+                    <button id="send-whatsapp" type="button" class="btn btn--primary">
+                      Enviar mensagem
+                    </button>
+                    <button id="clear-form" type="button" class="btn btn--secondary">
+                      Limpar
+                    </button>
+                  </div>
+
+                  <p class="text-xs text-muted mt-md">
+                    📱 Sua mensagem será enviada diretamente pelo WhatsApp.
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Floating WhatsApp Button -->
+      <a id="floating-wpp" href="#" class="btn btn--whatsapp" style="position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 1000; padding: 0.75rem;">
+        📲
+      </a>
+    </main>
+
+    <!-- ================================
+         FOOTER
+         ================================ -->
+    <footer class="footer">
+      <div class="footer__inner container">
+        <!-- Company Info -->
+        <div class="footer__info">
+          <div class="footer__brand">Jeferson Alexandre</div>
+          <div class="footer__role">Desenvolvedor Full Stack</div>
+          <p class="footer__description">
+            Transformando ideias em soluções digitais através de código limpo e eficiente.
+          </p>
+        </div>
+
+        <!-- Links and Social -->
+        <div class="footer__content">
+          <div class="footer__links">
+            <a href="#home" class="footer__link">Início</a>
+            <a href="#about" class="footer__link">Sobre</a>
+            <a href="#skills" class="footer__link">Habilidades</a>
+            <a href="#projects" class="footer__link">Projetos</a>
+            <a href="#contact" class="footer__link">Contato</a>
+          </div>
+
+          <!-- Social Media -->
+          <div class="social-links">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5581993192454" target="_blank" title="WhatsApp" class="social-links__item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#25D366" viewBox="0 0 24 24" class="social-links__svg">
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.102 1.516 5.832L0 24l6.31-1.502A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm5.84 17.28c-.265.743-1.556 1.414-2.167 1.505-.579.089-1.395.127-3.152-.612-2.322-.99-3.805-3.372-3.93-3.53-.127-.159-1.016-1.57-1.016-2.994s.634-2.109.857-2.396c.224-.285.491-.357.66-.357.17 0 .337 0 .484.002.15.003.353-.056.554.417.198.471.674 1.625.735 1.748.064.127.106.274.021.444-.086.17-.127.274-.25.427-.127.157-.267.352-.38.476-.127.127-.26.28-.11.551.15.27.666 1.093 1.43 1.774.988.876 1.807 1.153 2.07 1.286.265.127.42.106.575-.063.154-.17.666-.776.844-.987.177-.212.352-.178.59-.106.236.074 1.494.706 1.753.834.26.127.433.19.497.297.064.106.064.612-.2 1.356z"/>
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/jefersonalexandre15/" target="_blank" title="Instagram" class="social-links__item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#E1306C" viewBox="0 0 24 24" class="social-links__svg">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.967.24 2.423.413a4.92 4.92 0 011.675 1.093 4.92 4.92 0 011.093 1.675c.173.456.36 1.253.414 2.423.059 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.967-.413 2.423a4.922 4.922 0 01-1.093 1.675 4.922 4.922 0 01-1.675 1.093c-.456.173-1.253.36-2.423.414-1.266.059-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.967-.24-2.423-.413a4.922 4.922 0 01-1.675-1.093 4.922 4.922 0 01-1.093-1.675c-.173-.456-.36-1.253-.414-2.423C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.054-1.17.24-1.967.413-2.423a4.922 4.922 0 011.093-1.675 4.922 4.922 0 011.675-1.093c.456-.173 1.253-.36 2.423-.414C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.736 0 8.332.014 7.052.072 5.78.13 4.735.312 3.9.642a6.867 6.867 0 00-2.493 1.64A6.867 6.867 0 00.642 4.775c-.33.835-.512 1.88-.57 3.152C0 8.332 0 8.736 0 12s.014 3.668.072 4.948c.058 1.272.24 2.317.57 3.152a6.867 6.867 0 001.64 2.493 6.867 6.867 0 002.493 1.64c.835.33 1.88.512 3.152.57C8.332 24 8.736 24 12 24s3.668-.014 4.948-.072c1.272-.058 2.317-.24 3.152-.57a6.867 6.867 0 002.493-1.64 6.867 6.867 0 001.64-2.493c.33-.835.512-1.88.57-3.152C24 15.668 24 15.264 24 12s-.014-3.668-.072-4.948c-.058-1.272-.24-2.317-.57-3.152a6.867 6.867 0 00-1.64-2.493 6.867 6.867 0 00-2.493-1.64c-.835-.33-1.88-.512-3.152-.57C15.668 0 15.264 0 12 0z"/>
+                <path d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zM18.406 4.594a1.44 1.44 0 11-2.881 0 1.44 1.44 0 012.881 0z"/>
+              </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/jeferson.alexandre.9066/" target="_blank" title="Facebook" class="social-links__item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#1877F2" viewBox="0 0 24 24" class="social-links__svg">
+                <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.495v-9.294H9.691V11.02h3.129V8.414c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.31h3.587l-.467 3.686h-3.12V24h6.116c.73 0 1.324-.593 1.324-1.324V1.325C24 .593 23.407 0 22.675 0z"/>
+              </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/jeferson-alexandre" target="_blank" title="LinkedIn" class="social-links__item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#0077B5" viewBox="0 0 24 24" class="social-links__svg">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer__copyright">
+        <div class="container">
+          <p class="text-center text-muted text-sm">
+            © 2024 Jeferson Alexandre. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ================================
+         SCRIPTS
+         ================================ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
