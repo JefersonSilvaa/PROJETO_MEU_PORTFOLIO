@@ -101,6 +101,12 @@ body {
   overflow-x: hidden;
 }
 
+@media (max-width: 767px) {
+  body {
+    padding-top: 4.5rem;
+  }
+}
+
 /* ===============================
    3. TIPOGRAFIA
    =============================== */
@@ -169,6 +175,12 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 767px) {
+  .section--hero {
+    padding-top: var(--spacing-2xl);
+  }
+}
+
 .section--full-width {
   padding-left: 0;
   padding-right: 0;
@@ -177,6 +189,12 @@ body {
 /* Flexbox utilities */
 .flex {
   display: flex;
+}
+
+@media (max-width: 640px) {
+  .flex.gap-md {
+    flex-direction: column;
+  }
 }
 
 .flex-between {
@@ -456,6 +474,30 @@ body {
 .btn--whatsapp:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(18, 179, 74, 0.3);
+}
+
+/* Botão GitHub */
+.btn--github {
+  background-color: #000000;
+  color: var(--color-text);
+  border: 1px solid #333333;
+}
+
+.btn--github:hover {
+  background-color: #1a1a1a;
+  transform: translateY(-2px);
+}
+
+/* Botão LinkedIn */
+.btn--linkedin {
+  background-color: #0077B5;
+  color: var(--color-text);
+  border: 1px solid #005885;
+}
+
+.btn--linkedin:hover {
+  background-color: #006399;
+  transform: translateY(-2px);
 }
 
 /* ===============================
@@ -1066,6 +1108,54 @@ body {
   
   .grid-2 {
     grid-template-columns: 1fr;
+  }
+
+  /* Contact Section Mobile */
+  #contact .grid-2 > div:last-child {
+    width: 100%;
+  }
+
+  .space-y-md {
+    display: none;
+  }
+
+  .form-group {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .form-label {
+    font-size: var(--font-size-xs);
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: var(--font-size-sm);
+    padding: var(--spacing-sm) var(--spacing-sm);
+  }
+
+  .form-textarea {
+    min-height: 4rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .form-row .btn {
+    padding: 0.5rem 1rem;
+    font-size: var(--font-size-sm);
+  }
+
+  #contact .flex.gap-md.mt-lg {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  #contact .flex.gap-md.mt-lg .btn {
+    flex: 1 !important;
+    width: 100%;
   }
 }
 
