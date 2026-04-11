@@ -217,6 +217,13 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-lg);
+  align-items: start;
+}
+
+.grid-2 > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
 }
 
 .grid-4 {
@@ -321,6 +328,14 @@ body {
 
 .mt-lg {
   margin-top: var(--spacing-lg);
+}
+
+.mt-xl {
+  margin-top: var(--spacing-xl);
+}
+
+.mt-2xl {
+  margin-top: var(--spacing-2xl);
 }
 
 .mb-md {
@@ -453,6 +468,13 @@ body {
   border-radius: var(--radius-2xl);
   padding: var(--spacing-lg);
   transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.grid-2 > div > .card {
+  flex: 1;
 }
 
 .card:hover {
