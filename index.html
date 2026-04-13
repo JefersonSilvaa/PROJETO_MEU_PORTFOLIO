@@ -27,7 +27,6 @@
          ================================ -->
     <header class="navbar">
       <div class="navbar__inner">
-        <!-- Brand/Logo -->
         <a href="#home" class="navbar__brand">
           <div class="navbar__logo">J</div>
           <span class="navbar__title">jeferson</span>
@@ -70,17 +69,18 @@
         <div class="container">
           <div class="grid-hero">
             <!-- Hero Left: Content -->
-            <div class="flex-1" data-aos="fade-right">
-              <h1 class="heading-1 mb-lg">
-                Olá, eu sou Jeferson!<br>
-                Desenvolvedor Full Stack
-              </h1>
-              <p class="text-base text-muted mb-lg">
+            <div class="hero-copy" data-aos="fade-right">
+              <div class="hero-header">
+                <div class="hero-label">Desenvolvedor Full Stack</div>
+                <h1 class="hero-title">Olá, eu sou Jeferson!</h1>
+                <p class="hero-role">Desenvolvedor Full Stack</p>
+              </div>
+
+              <p class="text-base text-muted hero-description mb-lg">
                 Estudante de Análise e Desenvolvimento de Sistemas apaixonado por tecnologia. Transformo ideias em soluções digitais através de código limpo e eficiente.
               </p>
 
-              <!-- CTA Buttons -->
-              <div class="flex gap-md mb-lg">
+              <div class="hero-cta-group mb-lg">
                 <button id="cta-wpp" class="btn btn--whatsapp">
                   📱 Vamos conversar
                 </button>
@@ -88,28 +88,65 @@
                   Ver meus projetos
                 </a>
               </div>
-
-              <!-- Skills Highlight List -->
-              <ul class="grid-2 text-xs text-muted">
-                <li>✅ Desenvolvimento Web (HTML, CSS, JS)</li>
-                <li>✅ Frameworks Modernos (React, Node.js)</li>
-                <li>✅ Versionamento (Git, GitHub)</li>
-                <li>✅ figma, design responsivo</li>
-              </ul>
             </div>
 
             <!-- Hero Right: Image -->
             <div class="hero-right" data-aos="fade-left">
-              <div class="hero-image-card">
+              <div class="hero-avatar-card">
                 <img
                   src="img/fotoPerfilJeferson.jpg"
                   alt="Jeferson Alexandre - Desenvolvedor"
-                  class="hero-image"
+                  class="hero-avatar"
                 />
-                <p class="hero-image-caption text-sm text-muted text-center mt-md">
-                  Jeferson desenvolvendo soluções — apaixonado por tecnologia e inovação.
-                </p>
               </div>
+
+              <div class="hero-bubbles" aria-hidden="true">
+                <div class="hero-bubble hero-bubble-html">
+                  <span class="hero-bubble-label">HTML5</span>
+                  <img src="img/Imagens_projetos/icones_balões/HTML5_icon.png" alt="HTML5" class="hero-bubble-icon" />
+                </div>
+                <div class="hero-bubble hero-bubble-css">
+                  <span class="hero-bubble-label">CSS3</span>
+                  <img src="img/Imagens_projetos/icones_balões/css_icon.png" alt="CSS3" class="hero-bubble-icon" />
+                </div>
+                <div class="hero-bubble hero-bubble-js">
+                  <span class="hero-bubble-label">JavaScript</span>
+                  <img src="img/Imagens_projetos/icones_balões/javascript_icon.png" alt="JavaScript" class="hero-bubble-icon" />
+                </div>
+                <div class="hero-bubble hero-bubble-react">
+                  <span class="hero-bubble-label">React</span>
+                  <img src="img/Imagens_projetos/icones_balões/React_icon.png" alt="React" class="hero-bubble-icon" />
+                </div>
+                <div class="hero-bubble hero-bubble-node">
+                  <span class="hero-bubble-label">Node</span>
+                  <img src="img/Imagens_projetos/icones_balões/node-js-icon.png" alt="Node.js" class="hero-bubble-icon" />
+                </div>
+                <div class="hero-bubble hero-bubble-figma">
+                  <span class="hero-bubble-label">Figma</span>
+                  <img src="img/Imagens_projetos/icones_balões/figma_icon.png" alt="Figma" class="hero-bubble-icon" />
+                </div>
+                <div class="hero-bubble hero-bubble-git">
+                  <span class="hero-bubble-label">Git</span>
+                  <img src="img/Imagens_projetos/icones_balões/Git_icon.png" alt="Git" class="hero-bubble-icon" />
+                </div>
+                <div class="hero-bubble hero-bubble-github">
+                  <span class="hero-bubble-label">GitHub</span>
+                  <img src="img/Imagens_projetos/icones_balões/github_icon.png" alt="GitHub" class="hero-bubble-icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-marquee">
+            <div class="hero-marquee-track" aria-hidden="true">
+              <span class="hero-marquee-item">Desenvolvimento Web (HTML, CSS, JS)</span>
+              <span class="hero-marquee-item">Versionamento (Git, GitHub)</span>
+              <span class="hero-marquee-item">Frameworks Modernos (React, Node.js)</span>
+              <span class="hero-marquee-item">Figma, design responsivo</span>
+              <span class="hero-marquee-item">Desenvolvimento Web (HTML, CSS, JS)</span>
+              <span class="hero-marquee-item">Versionamento (Git, GitHub)</span>
+              <span class="hero-marquee-item">Frameworks Modernos (React, Node.js)</span>
+              <span class="hero-marquee-item">Figma, design responsivo</span>
             </div>
           </div>
         </div>
@@ -181,7 +218,7 @@
               <div class="card__action">
                 <div class="skill-level">
                   <div class="skill-level__bar" style="width: 85%"></div>
-                  <span class="skill-level__text">70% - Intermediário</span>
+                  <span class="skill-level__text">65% - Intermediário</span>
                 </div>
               </div>
             </article>
@@ -196,7 +233,7 @@
               <div class="card__action">
                 <div class="skill-level">
                   <div class="skill-level__bar" style="width: 75%"></div>
-                  <span class="skill-level__text">70% - Intermediário</span>
+                  <span class="skill-level__text">40% - iniciante/Intermediário</span>
                 </div>
               </div>
             </article>
@@ -211,7 +248,7 @@
               <div class="card__action">
                 <div class="skill-level">
                   <div class="skill-level__bar" style="width: 70%"></div>
-                  <span class="skill-level__text">70% - Intermediário</span>
+                  <span class="skill-level__text">50% - Intermediário</span>
                 </div>
               </div>
             </article>
