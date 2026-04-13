@@ -31,6 +31,16 @@ export default function LoginPage() {
       saveToken(response.data.token);
       navigate('/');
     } catch (err) {
+      const isNetworkError = !err.response;
+      const isDemoCredentials = email === demoAccess.email && password === demoAccess.password;
+
+      if (isNetworkError && isDemoCredentials) {
+        // Permite testar interface online mesmo sem backend publicado.
+        saveToken('demo-offline-token');
+        navigate('/');
+        return;
+      }
+
       setError(err.response?.data?.message || 'Falha no login.');
     } finally {
       setLoading(false);
