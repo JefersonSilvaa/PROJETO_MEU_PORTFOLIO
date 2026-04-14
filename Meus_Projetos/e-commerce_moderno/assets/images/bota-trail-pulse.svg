@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title>Bota Trail Pulse</title>
+  <desc>Mockup local do produto Bota Trail Pulse</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2b2019"/>
+      <stop offset="100%" stop-color="#8f6541"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" rx="48" fill="url(#bg)"/>
+  <path d="M169 504h280c39 0 76 15 103 41l69 66c10 10 13 25 8 38-5 14-18 23-33 23H203c-41 0-71-39-54-78l20-46z" fill="#f2dfc8"/>
+  <path d="M267 338h185v171H267z" fill="#6c4629"/>
+  <path d="M267 338h185l45 96H312z" fill="#8f6541"/>
+  <path d="M294 390h132M294 426h144M294 462h115" stroke="#e7cfb4" stroke-width="10" stroke-linecap="round"/>
+  <text x="64" y="688" fill="#ffffff" font-family="Arial, sans-serif" font-size="52" font-weight="700">Bota Trail Pulse</text>
+  <text x="64" y="738" fill="#f3dfd0" font-family="Arial, sans-serif" font-size="28">UrbanStyle Store</text>
+</svg>

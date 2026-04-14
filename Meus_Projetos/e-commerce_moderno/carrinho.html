@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UrbanStyle Store | Carrinho</title>
+  <link rel="stylesheet" href="css/style.css?v=20260414-1835" />
+</head>
+<body id="cart-page">
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu">Menu</button>
+      <a href="index.html" class="logo">UrbanStyle <span>Store</span></a>
+
+      <nav id="navLinks" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="carrinho.html" class="active">Carrinho</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="carrinho.html" class="cart-icon" aria-label="Ir para carrinho">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="20" r="1"></circle>
+              <circle cx="18" cy="20" r="1"></circle>
+              <path d="M2 3h3l2.6 11.2a2 2 0 0 0 2 1.5h8.7a2 2 0 0 0 1.9-1.4L22 7H6"></path>
+            </svg>
+          </span>
+          <span id="cartCountBadge" class="badge">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container cart-layout">
+    <section class="cart-items-panel">
+      <h1>Seu carrinho</h1>
+      <div id="cartItemsContainer" class="cart-items"></div>
+      <p id="cartEmptyState" class="empty-state hidden">Seu carrinho esta vazio.</p>
+    </section>
+
+    <aside class="checkout-panel">
+      <h2>Resumo</h2>
+      <div class="summary-line">
+        <span>Subtotal</span>
+        <strong id="subtotalValue">R$ 0,00</strong>
+      </div>
+      <div class="summary-line">
+        <span>Frete</span>
+        <strong id="shippingValue">R$ 19,90</strong>
+      </div>
+      <div class="summary-line total">
+        <span>Total</span>
+        <strong id="totalValue">R$ 0,00</strong>
+      </div>
+
+      <form id="checkoutForm" class="checkout-form">
+        <label>
+          Nome completo
+          <input type="text" name="nome" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Endereco
+          <input type="text" name="endereco" required />
+        </label>
+        <label>
+          Cartao (simulacao)
+          <input type="text" name="cartao" minlength="12" required />
+        </label>
+        <button type="submit" class="btn btn-primary full">Finalizar compra</button>
+      </form>
+    </aside>
+  </main>
+
+  <div id="paymentModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="paymentTitle">
+    <div class="modal-content">
+      <h3 id="paymentTitle">Pagamento aprovado</h3>
+      <p>Compra simulada com sucesso. Obrigado por comprar com a UrbanStyle Store.</p>
+      <button id="closeModalBtn" class="btn btn-primary">Fechar</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>(c) <span id="year"></span> UrbanStyle Store. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="carrinho.html">Carrinho</a>
+        <a href="admin.html">Admin</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toastContainer" class="toast-container"></div>
+
+  <script src="js/products.js?v=20260414-1835"></script>
+  <script src="js/cart.js?v=20260414-1835"></script>
+  <script src="js/main.js?v=20260414-1835"></script>
+</body>
+</html>
