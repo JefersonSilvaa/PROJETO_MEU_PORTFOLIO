@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="landing-body">
+    <main class="landing-wrap">
+        <section class="landing-card">
+            <div class="logo-section">
+                <div class="logo-icon">TM</div>
+                <h1>Task Manager</h1>
+                <p>Painel moderno para organizar tarefas da equipe.</p>
+            </div>
+
+            <div class="landing-actions">
+                <a class="btn btn-primary" href="dashboard.html">Entrar no Painel</a>
+                <button class="btn btn-outline" id="clearStorageBtn" type="button">Limpar Dados Salvos</button>
+            </div>
+
+            <p class="landing-note">Visual compacto com bordas arredondadas.</p>
+        </section>
+    </main>
+
+    <script>
+        localStorage.setItem('fixedUserName', 'Admin');
+
+        document.getElementById('clearStorageBtn').addEventListener('click', () => {
+            localStorage.removeItem('desk_users');
+            localStorage.removeItem('desk_tasks');
+            localStorage.removeItem('desk_notifications');
+            window.location.href = 'dashboard.html';
+        });
+    </script>
+</body>
+</html>
