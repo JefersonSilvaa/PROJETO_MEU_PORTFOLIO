@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestao de TI - Desk Manager</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="layout-shell" id="layoutShell">
+        <aside class="sidebar" id="sidebar">
+            <div class="brand-row">
+                <div class="logo-box">DM</div>
+                <div>
+                    <h1>Desk Manager</h1>
+                </div>
+            </div>
+
+            <button class="menu-button" type="button">Painel de Controle</button>
+
+            <div class="sectors-block">
+                <button class="sector-toggle" id="sectorToggle" type="button">
+                    <span>setores</span>
+                    <span id="sectorArrow">v</span>
+                </button>
+                <div class="sector-list" id="sectorList">
+                    <button class="sector-item" data-sector="marketing" type="button">Marketing</button>
+                    <button class="sector-item" data-sector="administrativo" type="button">Administrativo</button>
+                    <button class="sector-item active" data-sector="ti" type="button">Setor de TI</button>
+                </div>
+            </div>
+
+            <div class="left-people" id="leftPeopleList"></div>
+
+            <section class="add-person-card">
+                <h3>Adicionar Pessoa</h3>
+                <div class="add-person-grid">
+                    <input id="personName" class="field" type="text" placeholder="Nome da pessoa">
+                    <select id="personSector" class="field">
+                        <option value="ti">Setor de TI</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="administrativo">Administrativo</option>
+                    </select>
+                    <select id="personActivity" class="field">
+                        <option value="Online hoje">Online hoje</option>
+                        <option value="Ativo">Ativo</option>
+                    </select>
+                    <button id="addPersonBtn" class="btn btn-primary" type="button">Adicionar Pessoa</button>
+                    <small class="field-help">Informe o setor para aparecer no grupo correto.</small>
+                </div>
+            </section>
+
+            <button class="btn btn-ghost" id="logoutBtn" type="button">Reiniciar Dados</button>
+        </aside>
+
+        <main class="center-panel">
+            <header class="center-header">
+                <button class="mobile-sidebar-btn" id="mobileSidebarBtn" type="button">Menu</button>
+                <div>
+                    <h2>Sistema de Gestao de TI</h2>
+                    <p>Organize e distribua atividades</p>
+                </div>
+                <div class="quick-message-wrap">
+                    <input id="quickMessageInput" class="quick-message-input" type="text" placeholder="Enviar mensagem...">
+                    <button id="quickMessageBtn" class="quick-message-btn" type="button" aria-label="Enviar mensagem rápida">
+                        <i class="bi bi-send-fill" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </header>
+
+            <section class="card">
+                <h3>Nova Atividade</h3>
+                <div class="composer-grid">
+                    <div class="composer-field">
+                        <label for="taskInput">Atividade</label>
+                        <input id="taskInput" class="field" type="text" placeholder="Descricao da atividade">
+                        <small class="field-help">Informe um titulo curto e objetivo.</small>
+                    </div>
+
+                    <div class="composer-field">
+                        <label for="taskUser">Responsavel</label>
+                        <select id="taskUser" class="field"></select>
+                        <small class="field-help">Pessoa que vai executar a tarefa.</small>
+                    </div>
+
+                    <div class="composer-field">
+                        <label for="taskStartDate">Data Inicial</label>
+                        <input id="taskStartDate" class="field" type="date">
+                        <small class="field-help">Dia que a atividade comeca.</small>
+                    </div>
+
+                    <div class="composer-field">
+                        <label for="taskEndDate">Data Final</label>
+                        <input id="taskEndDate" class="field" type="date">
+                        <small class="field-help">Prazo final para entrega.</small>
+                    </div>
+
+                    <div class="composer-field">
+                        <label for="taskTime">Hora</label>
+                        <input id="taskTime" class="field" type="time">
+                        <small class="field-help">Horario previsto da atividade.</small>
+                    </div>
+
+                    <div class="composer-field composer-action">
+                        <label>&nbsp;</label>
+                        <button id="addTaskBtn" class="btn btn-primary" type="button">+ Adicionar</button>
+                        <small class="field-help">Salva e adiciona na lista abaixo.</small>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="filter-tabs">
+                    <button class="tab-btn active" data-filter="all" type="button">Todos</button>
+                    <button class="tab-btn" data-filter="pending" type="button">Pendentes</button>
+                    <button class="tab-btn" data-filter="completed" type="button">Concluidas</button>
+                </div>
+
+                <div class="tasks-container">
+                    <div id="tasksList" class="tasks-list"></div>
+                </div>
+
+                <div class="task-stats">
+                    <span id="statsText">0 pendentes | 0 concluidas</span>
+                </div>
+            </section>
+        </main>
+
+        <aside class="right-panel">
+            <section class="card">
+                <h3>Painel Profissional</h3>
+                <div id="proPeopleList" class="professional-list"></div>
+            </section>
+
+            <section class="card">
+                <div class="notify-header">
+                    <h3>Atividades</h3>
+                    <button id="markAllReadBtn" class="link-btn" type="button">Marcar tudo como lido</button>
+                </div>
+                <div id="notificationList" class="notification-list"></div>
+                <div class="notify-actions">
+                    <button id="markReadFooterBtn" class="btn btn-ghost" type="button">Marcar Tudo Como Lido</button>
+                    <button id="seeAllBtn" class="btn btn-outline" type="button">Ver Tudo</button>
+                </div>
+            </section>
+        </aside>
+    </div>
+
+    <div id="editModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Editar Atividade</h2>
+                <button class="close-btn" id="closeEdit">&times;</button>
+            </div>
+
+            <form id="editForm" class="auth-form">
+                <div class="form-group">
+                    <label for="editTaskTitle">Descricao</label>
+                    <input type="text" id="editTaskTitle" placeholder="Digite a descricao" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="editTaskStartDate">Data inicio</label>
+                    <input type="date" id="editTaskStartDate">
+                </div>
+
+                <div class="form-group">
+                    <label for="editTaskEndDate">Data fim</label>
+                    <input type="date" id="editTaskEndDate">
+                </div>
+
+                <div class="form-group">
+                    <label for="editTaskTime">Hora</label>
+                    <input type="time" id="editTaskTime">
+                </div>
+
+                <div class="form-group">
+                    <label for="editTaskUser">Responsavel</label>
+                    <select id="editTaskUser" class="field"></select>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    <button type="button" class="btn btn-secondary" id="cancelEdit">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
