@@ -163,3 +163,38 @@ if (allProjectsToggleBtn && allProjectsSection) {
     allProjectsToggleBtn.innerHTML = '<i class="bi bi-grid-1x2-fill btn__icon" aria-hidden="true"></i>Mostrar todos os projetos';
   });
 }
+
+// ===============================
+// CARROSSEL DE PROJETOS - SETAS
+// ===============================
+
+(function () {
+  const carousel = document.getElementById('projects-carousel');
+  const btnPrev = document.getElementById('proj-prev');
+  const btnNext = document.getElementById('proj-next');
+
+  if (!carousel || !btnPrev || !btnNext) return;
+
+  const slideWidth = () => carousel.clientWidth * 0.9;
+
+  function updateArrows() {
+    const atStart = carousel.scrollLeft <= 8;
+    const atEnd = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 8;
+    btnPrev.classList.toggle('is-hidden', atStart);
+    btnNext.classList.toggle('is-hidden', atEnd);
+  }
+
+  btnPrev.addEventListener('click', () => {
+    carousel.scrollBy({ left: -slideWidth(), behavior: 'smooth' });
+  });
+
+  btnNext.addEventListener('click', () => {
+    carousel.scrollBy({ left: slideWidth(), behavior: 'smooth' });
+  });
+
+  carousel.addEventListener('scroll', updateArrows, { passive: true });
+  window.addEventListener('resize', updateArrows);
+
+  // Estado inicial
+  updateArrows();
+})();

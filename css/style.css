@@ -2238,3 +2238,76 @@ body {
   }
 }
 
+/* ===============================
+   25. MOBILE CARROSSEL - PROJETOS
+   =============================== */
+
+.carousel-wrapper {
+  position: relative;
+}
+
+/* Setas: ocultas no desktop */
+.carousel-arrow {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #projects .projects-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: var(--spacing-md);
+    padding: 0 0.5rem 0.75rem;
+  }
+
+  #projects .projects-carousel > .card--project {
+    flex: 0 0 88%;
+    min-width: 17rem;
+    scroll-snap-align: start;
+  }
+
+  #projects .projects-carousel::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  #projects .projects-carousel::-webkit-scrollbar-thumb {
+    background: rgba(116, 255, 176, 0.45);
+    border-radius: 999px;
+  }
+
+  .carousel-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 42%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    border: 1px solid rgba(116, 255, 176, 0.35);
+    background: rgba(10, 16, 30, 0.75);
+    color: #74ffb0;
+    cursor: pointer;
+    font-size: 1.1rem;
+    backdrop-filter: blur(6px);
+    transition: background 0.2s, opacity 0.2s;
+  }
+
+  .carousel-arrow:hover,
+  .carousel-arrow:focus-visible {
+    background: rgba(116, 255, 176, 0.2);
+    outline: none;
+  }
+
+  .carousel-arrow--prev { left: -0.6rem; }
+  .carousel-arrow--next { right: -0.6rem; }
+
+  .carousel-arrow.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
