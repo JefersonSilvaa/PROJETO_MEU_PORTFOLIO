@@ -1,6 +1,8 @@
 const display = document.getElementById("display");
 const operationDisplay = document.getElementById("operation");
 const keys = document.querySelector(".keys");
+const projectsBtn = document.getElementById("cta-projects");
+const backBtn = document.getElementById("cta-back");
 
 let current = "0";
 let previous = "";
@@ -185,3 +187,20 @@ window.addEventListener("keydown", (event) => {
 });
 
 refreshUI();
+
+if (projectsBtn) {
+  projectsBtn.addEventListener("click", () => {
+    window.location.href = "../../index.html#projects";
+  });
+}
+
+if (backBtn) {
+  backBtn.addEventListener("click", () => {
+    if (window.history.length > 1) {
+      window.history.back();
+      return;
+    }
+
+    window.location.href = "../../index.html#projects";
+  });
+}

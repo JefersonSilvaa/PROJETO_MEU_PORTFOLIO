@@ -73,6 +73,23 @@ body {
   color: #fff;
 }
 
+.cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.cta--ghost {
+  border-color: #b8bbc7;
+  color: #4f5464;
+}
+
+.cta--ghost:hover {
+  background-color: #4f5464;
+  color: #fff;
+  border-color: #4f5464;
+}
+
 .calculator {
   background: linear-gradient(180deg, #1b1e42 0%, #161735 100%);
   border-radius: 18px;
