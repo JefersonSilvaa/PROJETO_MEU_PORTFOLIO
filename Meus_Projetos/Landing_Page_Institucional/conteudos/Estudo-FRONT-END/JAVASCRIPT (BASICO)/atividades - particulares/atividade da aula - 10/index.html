@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calculos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Atividade - JavaScript</h1>
+        <h2 id="usuarioNome">seja bem-vindo,nome</h2>
+    </header>
+
+    <main>
+        <div class="container-blocos">
+            <h1>Parte aritmeticar - JS</h1>
+
+            <div class="bloco somar">
+                <input type="number" name="somarName" class="caixain" id="somarId01"> +
+                <input type="number" name="somarName" class="caixain" id="somarId02">
+                <input type="button" class="caixain" value="SOMAR!" onclick="somar()">
+                <div class="respostar-caixa" id="reS">respostar aqui!</div>
+            </div>
+
+            <div class="bloco subtração">
+                <input type="number" name="somarName" class="caixain" id="subtracaoId01"> -
+                <input type="number" name="somarName" class="caixain" id="subtracaoId02">
+                <input type="button" class="caixain" value="SUBTRAÇÃO!" onclick="subtracao()">
+                <div class="respostar-caixa" id="reST">respostar aqui!</div>
+            </div>
+
+            <div class="bloco divisão">
+                <input type="number" name="somarName" class="caixain" id="divisaoId01"> /
+                <input type="number" name="somarName" class="caixain" id="divisaoId02">
+                <input type="button" class="caixain" value="DIVISÃO!" onclick="divisao()">
+                <div class="respostar-caixa" id="resD" >respostar aqui!</div>
+            </div>
+
+            <div class="bloco multiplicação">
+                <input type="number" name="somarName" class="caixain" id="multiplicacaoId01"> *
+                <input type="number" name="somarName" class="caixain" id="multiplicacaoId02">
+                <input type="button" class="caixain" value="MULTIPLICAÇÃO!" onclick="multiplicacao()">
+                <div class="respostar-caixa" id="resM">respostar aqui!</div>
+            </div>
+
+            <div class="bloco resto">
+                <input type="number" name="somarName" class="caixain" id="restoId01"> %
+                <input type="number" name="somarName" class="caixain" id="restoId02">
+                <input type="button" class="caixain" value="RESTO!" onclick="resto()">
+                <div class="respostar-caixa" id="resR">respostar aqui!</div>
+            </div>
+
+            <div class="bloco aoquadrado">
+                <input type="number" name="somarName" class="caixain" id="quadradoId01"> **
+                <input type="number" name="somarName" class="caixain" id="quadradoId02">
+                <input type="button" class="caixain" value="AOQUADRADO!" onclick="aoquadrado()">
+                <div class="respostar-caixa" id="resAQ">respostar aqui!</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/calculos.js"></script>
+</body>
+</html>

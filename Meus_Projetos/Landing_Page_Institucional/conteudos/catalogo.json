@@ -1,0 +1,751 @@
+﻿{
+    "modules":  {
+                    "Estudo-FRONT-END/JAVASCRIPT (BASICO)":  [
+                                                                 {
+                                                                     "name":  "atividades - Exercícios JavaScrpt",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO)/atividades - Exercícios JavaScrpt",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "atividades - particulares",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO)/atividades - particulares",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "AULA 01 - o que javascript pode fazer",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO)/AULA 01 - o que javascript pode fazer",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "AULA 02 - como chegamos até aqui",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO)/AULA 02 - como chegamos até aqui",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "AULA 03 - dando os primeiros passos",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO)/AULA 03 - dando os primeiros passos",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "AULA 04 - criando o seu primeiro script",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO)/AULA 04 - criando o seu primeiro script",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "AULA 05 - comandos básicos do javaScript",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO)/AULA 05 - comandos básicos do javaScript",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "AULA 06 - tratamentos de dados",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO)/AULA 06 - tratamentos de dados",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "AULA 07 - operadores (parte1)",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO)/AULA 07 - operadores (parte1)",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "AULA 08 - operadores (parte2)",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO)/AULA 08 - operadores (parte2)",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "AULA 09 - introdução ao DOM",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO)/AULA 09 - introdução ao DOM",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "AULA 10 - EVENTOS DOM",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO)/AULA 10 - EVENTOS DOM",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "AULA 11 - Condições (parte1)",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO)/AULA 11 - Condições (parte1)",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "AULA 12 - Condições (parte2)",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO)/AULA 12 - Condições (parte2)",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "AULA 13 - Repetições (parte1)",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO)/AULA 13 - Repetições (parte1)",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "AULA 14 - Repetições (parte2)",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO)/AULA 14 - Repetições (parte2)",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "AULA 15 - Variáveis Compostas",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO)/AULA 15 - Variáveis Compostas",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "AULA 16 - Funções",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO)/AULA 16 - Funções",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 }
+                                                             ],
+                    "Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)":  [
+                                                                               {
+                                                                                   "name":  "AULA(01) - Primeiro programar",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(01) - Primeiro programar",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(02) - como inserir código Javascript em uma página web",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(02) - como inserir código Javascript em uma página web",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(03) - Particularidades da linguagem JavaScript",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(03) - Particularidades da linguagem JavaScript",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(04) - Declarando variáveis",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(04) - Declarando variáveis",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(05) - Tipos de dados - number",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(05) - Tipos de dados - number",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(06) - Tipos de dados - String",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(06) - Tipos de dados - String",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(07) - Tipos de dados - boolean",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(07) - Tipos de dados - boolean",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(08) - Tipos de dados - null e undefined",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(08) - Tipos de dados - null e undefined",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(09) - Tipos de dados - objetos",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(09) - Tipos de dados - objetos",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(10) - Tipos de dados - Arrays",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(10) - Tipos de dados - Arrays",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(11) - operadores condicionais (if)",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(11) - operadores condicionais (if)",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(12) - Operadores de comparacão (and)",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(12) - Operadores de comparacão (and)",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(13) - Condicional (else - esle if)",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(13) - Condicional (else - esle if)",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(14) - Comparação de tipo e valor (=== e !==)",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(14) - Comparação de tipo e valor (=== e !==)",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(15) - Operadores Lógicos and (\u0026\u0026)",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(15) - Operadores Lógicos and (\u0026\u0026)",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(16) - Operador lógicos (ou)",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(16) - Operador lógicos (ou)",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(17) - Operador lógico not (!)",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(17) - Operador lógico not (!)",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(18) - Estrutura de repetição (while)",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(18) - Estrutura de repetição (while)",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(19) - Operador de atribuição",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(19) - Operador de atribuição",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(20) - For (estrutura de repetição- loop)",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(20) - For (estrutura de repetição- loop)",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(21) - break e continue",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(21) - break e continue",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(22) - funtion(Função)",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(22) - funtion(Função)",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(23) - Alterando o DOM com um for",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(23) - Alterando o DOM com um for",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(24) - Escopo em JS",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(24) - Escopo em JS",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(25) - let e Const",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(25) - let e Const",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(26) - metodos numericos (parselnt , parseFloat)",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(26) - metodos numericos (parselnt , parseFloat)",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(27) - metodos String (toUpperCase,toLowerCase,length)",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(27) - metodos String (toUpperCase,toLowerCase,length)",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(28) - metodos String part 2 ( funções de string)",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(28) - metodos String part 2 ( funções de string)",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(29) - metodos array (fuções)",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(29) - metodos array (fuções)",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(30) - metodos array (fuções) part 2",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(30) - metodos array (fuções) part 2",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(31) - metodos objetos - criando",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(31) - metodos objetos - criando",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(32) - Utilizando o this",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(32) - Utilizando o this",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(33) - O que é DOM",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(33) - O que é DOM",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "AULA(34) - Acessando o DOM",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/AULA(34) - Acessando o DOM",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               },
+                                                                               {
+                                                                                   "name":  "DICAS JAVASCRIPTS",
+                                                                                   "path":  "conteudos/Estudo-FRONT-END/JAVASCRIPT (BASICO_INTERMEDIARIO)/DICAS JAVASCRIPTS",
+                                                                                   "isDirectory":  true,
+                                                                                   "isFile":  false
+                                                                               }
+                                                                           ],
+                    "Estudo-FRONT-END/LOGICA DE PROGRAMCÃO":  [
+                                                                  {
+                                                                      "name":  "algoritmos-cursoemvideo",
+                                                                      "path":  "conteudos/Estudo-FRONT-END/LOGICA DE PROGRAMCÃO/algoritmos-cursoemvideo",
+                                                                      "isDirectory":  true,
+                                                                      "isFile":  false
+                                                                  },
+                                                                  {
+                                                                      "name":  "programas do curso em video",
+                                                                      "path":  "conteudos/Estudo-FRONT-END/LOGICA DE PROGRAMCÃO/programas do curso em video",
+                                                                      "isDirectory":  true,
+                                                                      "isFile":  false
+                                                                  },
+                                                                  {
+                                                                      "name":  "visualg3.0.7",
+                                                                      "path":  "conteudos/Estudo-FRONT-END/LOGICA DE PROGRAMCÃO/visualg3.0.7",
+                                                                      "isDirectory":  true,
+                                                                      "isFile":  false
+                                                                  }
+                                                              ],
+                    "Estudo-FRONT-END/aplicativos (VSCODE,GIT,GITHUB)":  [
+                                                                             {
+                                                                                 "name":  "Git-2.39.2-64-bit.exe",
+                                                                                 "path":  "conteudos/Estudo-FRONT-END/aplicativos (VSCODE,GIT,GITHUB)/Git-2.39.2-64-bit.exe",
+                                                                                 "isDirectory":  false,
+                                                                                 "isFile":  true
+                                                                             },
+                                                                             {
+                                                                                 "name":  "GitHubDesktopSetup-x64.exe",
+                                                                                 "path":  "conteudos/Estudo-FRONT-END/aplicativos (VSCODE,GIT,GITHUB)/GitHubDesktopSetup-x64.exe",
+                                                                                 "isDirectory":  false,
+                                                                                 "isFile":  true
+                                                                             },
+                                                                             {
+                                                                                 "name":  "VSCodeUserSetup-x64-1.75.1.exe",
+                                                                                 "path":  "conteudos/Estudo-FRONT-END/aplicativos (VSCODE,GIT,GITHUB)/VSCodeUserSetup-x64-1.75.1.exe",
+                                                                                 "isDirectory":  false,
+                                                                                 "isFile":  true
+                                                                             }
+                                                                         ],
+                    "Estudo-FRONT-END/PROJETOS-PORTFOLIO":  [
+                                                                {
+                                                                    "name":  "Cordel-Moderno",
+                                                                    "path":  "conteudos/Estudo-FRONT-END/PROJETOS-PORTFOLIO/Cordel-Moderno",
+                                                                    "isDirectory":  true,
+                                                                    "isFile":  false
+                                                                },
+                                                                {
+                                                                    "name":  "iphone-01",
+                                                                    "path":  "conteudos/Estudo-FRONT-END/PROJETOS-PORTFOLIO/iphone-01",
+                                                                    "isDirectory":  true,
+                                                                    "isFile":  false
+                                                                },
+                                                                {
+                                                                    "name":  "projeto-counter",
+                                                                    "path":  "conteudos/Estudo-FRONT-END/PROJETOS-PORTFOLIO/projeto-counter",
+                                                                    "isDirectory":  true,
+                                                                    "isFile":  false
+                                                                },
+                                                                {
+                                                                    "name":  "projeto-PORTFOLIO.1.0V",
+                                                                    "path":  "conteudos/Estudo-FRONT-END/PROJETOS-PORTFOLIO/projeto-PORTFOLIO.1.0V",
+                                                                    "isDirectory":  true,
+                                                                    "isFile":  false
+                                                                },
+                                                                {
+                                                                    "name":  "projeto_Igreja",
+                                                                    "path":  "conteudos/Estudo-FRONT-END/PROJETOS-PORTFOLIO/projeto_Igreja",
+                                                                    "isDirectory":  true,
+                                                                    "isFile":  false
+                                                                },
+                                                                {
+                                                                    "name":  "projeto_login",
+                                                                    "path":  "conteudos/Estudo-FRONT-END/PROJETOS-PORTFOLIO/projeto_login",
+                                                                    "isDirectory":  true,
+                                                                    "isFile":  false
+                                                                }
+                                                            ],
+                    "Estudo-FRONT-END/HTML5+CSS3 (basico)":  [
+                                                                 {
+                                                                     "name":  "ex001",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex001",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex002",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex002",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex003",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex003",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex004",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex004",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex005",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex005",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex006",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex006",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex007",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex007",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex008",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex008",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex008b",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex008b",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex009",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex009",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex010",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex010",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex011",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex011",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex012",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex012",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex013css-estilo inline",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex013css-estilo inline",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex014css-estilo local_internos",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex014css-estilo local_internos",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex015css-estilos internos_externos",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex015css-estilos internos_externos",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex016css-cor_css",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex016css-cor_css",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex017css-font_css_importante+aliamento de texto",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex017css-font_css_importante+aliamento de texto",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex018css-familia_de_fontes_externas",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex018css-familia_de_fontes_externas",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex019css-seletor",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex019css-seletor",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex020css-pseudo-classes-links",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex020css-pseudo-classes-links",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex021css-box-level",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex021css-box-level",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex022css-imagns",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex022css-imagns",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex023tabela",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex023tabela",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex024-mod4-iframe",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex024-mod4-iframe",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex025-formulario",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex025-formulario",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 },
+                                                                 {
+                                                                     "name":  "ex026-midia queries",
+                                                                     "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (basico)/ex026-midia queries",
+                                                                     "isDirectory":  true,
+                                                                     "isFile":  false
+                                                                 }
+                                                             ],
+                    "Estudo-FRONT-END/HTML5+CSS3 (intermediario)":  [
+                                                                        {
+                                                                            "name":  "aula 01- object-fit",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula 01- object-fit",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula02- flex",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula02- flex",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula02- grid",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula02- grid",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula03 - background",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula03 - background",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula04 - svg",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula04 - svg",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula05 - máscara de texto",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula05 - máscara de texto",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula06 - links",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula06 - links",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula07 - background v2 (Não feito)",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula07 - background v2 (Não feito)",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula08 - gradiante-radial",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula08 - gradiante-radial",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula09 - transição da bordas",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula09 - transição da bordas",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula10 - modo de mesclagem",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula10 - modo de mesclagem",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula11- keyframes",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula11- keyframes",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula12- imagem quebrada",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula12- imagem quebrada",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula13- Pseudoclasses",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula13- Pseudoclasses",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula14- repetindo gradiente (Não feito)",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula14- repetindo gradiente (Não feito)",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula15- texto poligonos , Alfa zero",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula15- texto poligonos , Alfa zero",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula16- letra-capitular",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula16- letra-capitular",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula17- filtros so na imagem de fundo",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula17- filtros so na imagem de fundo",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula17-filtro so na imagem de uma DIV",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula17-filtro so na imagem de uma DIV",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula18- animação de transition",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula18- animação de transition",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula19- video responsivel no site",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula19- video responsivel no site",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula20- 4 valores comuns para display",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula20- 4 valores comuns para display",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula21ex- botão 3d efeito",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula21ex- botão 3d efeito",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula22- counter-reset ( linha do tempo)",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula22- counter-reset ( linha do tempo)",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula23- pseudo classes e pseudo elementos",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula23- pseudo classes e pseudo elementos",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula24- box-sizing",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula24- box-sizing",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula25- troca testo por imagem",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula25- troca testo por imagem",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "aula27- emoji+background (nao feito)",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/aula27- emoji+background (nao feito)",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "flexbox",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/flexbox",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        },
+                                                                        {
+                                                                            "name":  "grid css",
+                                                                            "path":  "conteudos/Estudo-FRONT-END/HTML5+CSS3 (intermediario)/grid css",
+                                                                            "isDirectory":  true,
+                                                                            "isFile":  false
+                                                                        }
+                                                                    ]
+                },
+    "generatedAt":  "2026-04-16T14:21:18"
+}

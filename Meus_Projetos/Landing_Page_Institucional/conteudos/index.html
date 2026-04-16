@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Guia detalhado da pasta de estudos Front-End com trilhas, organização e acesso rápido aos materiais." />
+  <title>Biblioteca de Conteúdos | Front-End Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a href="../index.html" class="topbar__logo"><span>&lt;/&gt;</span> Front-End Study</a>
+      <nav class="topbar__nav" aria-label="Navegação principal">
+        <a href="../index.html#inicio">Início</a>
+        <a href="../index.html#conteudos">Módulos</a>
+        <a href="../index.html#biblioteca">Biblioteca</a>
+        <a href="visualizador.html">Visualizador</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div>
+          <p class="hero__eyebrow">Organização dos estudos</p>
+          <h1>Guia da pasta de conteúdos</h1>
+          <p class="hero__subtitle">Esta página organiza o que existe em <strong>Estudo-FRONT-END</strong> para você visualizar rápido: o que estudar primeiro, onde estão os exercícios e quais pastas usar para prática de portfólio.</p>
+        </div>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="Estudo-FRONT-END/">Abrir pasta raiz</a>
+          <a class="btn btn--primary" href="visualizador.html">Abrir visualizador interativo</a>
+          <button type="button" class="btn btn--outline" id="expandAll">Expandir tudo</button>
+          <button type="button" class="btn btn--outline" id="collapseAll">Recolher tudo</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <h2>Trilhas de estudo recomendadas</h2>
+          <p>Sugestão de ordem para ter uma evolução consistente e sem pular fundamentos.</p>
+        </div>
+
+        <ol class="roadmap">
+          <li>
+            <h3>1. Fundamentos de estrutura (HTML + CSS básico)</h3>
+            <p>Aprenda marcação semântica e estilos essenciais para montar páginas limpas e organizadas.</p>
+          </li>
+          <li>
+            <h3>2. Lógica de programação</h3>
+            <p>Fortaleça pensamento algorítmico com exercícios antes de avançar no JavaScript mais profundo.</p>
+          </li>
+          <li>
+            <h3>3. JavaScript básico e DOM</h3>
+            <p>Entenda variáveis, funções, condicionais e manipulação de elementos da página.</p>
+          </li>
+          <li>
+            <h3>4. HTML/CSS intermediário</h3>
+            <p>Avance para flex, grid, animações e recursos visuais para interfaces mais profissionais.</p>
+          </li>
+          <li>
+            <h3>5. Projetos de portfólio</h3>
+            <p>Aplique tudo em projetos reais para consolidar habilidades e montar vitrine de trabalhos.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="acervo">
+      <div class="container">
+        <div class="section__header">
+          <h2>Acervo detalhado por pasta</h2>
+          <p>Clique em cada bloco para ver explicação, foco de estudo e acesso direto à pasta.</p>
+        </div>
+
+        <div class="accordion" id="accordion">
+          <details class="accordion__item" open>
+            <summary>HTML5 + CSS3 (Básico)</summary>
+            <div class="accordion__content">
+              <p>Contém exercícios de introdução (ex001 até ex026), incluindo semântica, links, tabelas, formulários e media queries.</p>
+              <ul>
+                <li>Objetivo: dominar estrutura e estilização inicial.</li>
+                <li>Quando estudar: início da jornada.</li>
+                <li>Pasta: <a href="visualizador.html?modulo=htmlcssbasico">Abrir no visualizador (HTML5+CSS3 básico)</a></li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="accordion__item">
+            <summary>HTML5 + CSS3 (Intermediário)</summary>
+            <div class="accordion__content">
+              <p>Trilha com aulas práticas sobre object-fit, flex, grid, background, SVG, gradientes, keyframes, pseudo-classes e responsividade.</p>
+              <ul>
+                <li>Objetivo: evoluir layout e acabamento visual.</li>
+                <li>Quando estudar: após base sólida de HTML/CSS.</li>
+                <li>Pasta: <a href="visualizador.html?modulo=html-css-intermediario">Abrir no visualizador (HTML5+CSS3 intermediário)</a></li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="accordion__item">
+            <summary>JavaScript (Básico)</summary>
+            <div class="accordion__content">
+              <p>Conteúdo de introdução até funções, com foco em eventos DOM, operadores, condicionais e repetições.</p>
+              <ul>
+                <li>Objetivo: aprender lógica e interação no navegador.</li>
+                <li>Quando estudar: junto da base HTML/CSS.</li>
+                <li>Pasta: <a href="visualizador.html?modulo=js-basico">Abrir no visualizador (JavaScript básico)</a></li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="accordion__item">
+            <summary>JavaScript (Básico + Intermediário)</summary>
+            <div class="accordion__content">
+              <p>Módulos avançando em tipos de dados, loops, objetos, arrays, escopo, this e manipulação detalhada do DOM.</p>
+              <ul>
+                <li>Objetivo: ampliar repertório para projetos mais robustos.</li>
+                <li>Quando estudar: após concluir a trilha básica.</li>
+                <li>Pasta: <a href="visualizador.html?modulo=js-intermediario">Abrir no visualizador (JavaScript básico + intermediário)</a></li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="accordion__item">
+            <summary>Lógica de Programação</summary>
+            <div class="accordion__content">
+              <p>Material com algoritmos e Visualg para desenvolver raciocínio lógico, estruturação e resolução de problemas.</p>
+              <ul>
+                <li>Objetivo: fortalecer base antes de desafios mais complexos.</li>
+                <li>Quando estudar: em paralelo ao JavaScript inicial.</li>
+                <li>Pasta: <a href="visualizador.html?modulo=logica">Abrir no visualizador (Lógica de programação)</a></li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="accordion__item">
+            <summary>Projetos para Portfólio</summary>
+            <div class="accordion__content">
+              <p>Conjunto de projetos para treino real, como login, contador, portfolio e layouts temáticos.</p>
+              <ul>
+                <li>Objetivo: aplicar conteúdo e criar evidências práticas.</li>
+                <li>Quando estudar: após fundamentos + JS básico.</li>
+                <li>Pasta: <a href="visualizador.html?modulo=projetos">Abrir no visualizador (Projetos de portfólio)</a></li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="accordion__item">
+            <summary>Aplicativos (VS Code, Git e GitHub)</summary>
+            <div class="accordion__content">
+              <p>Instaladores de ferramentas essenciais para desenvolvimento e versionamento.</p>
+              <ul>
+                <li>Objetivo: preparar ambiente de estudo e trabalho.</li>
+                <li>Quando estudar: antes de iniciar projetos versionados.</li>
+                <li>Pasta: <a href="visualizador.html?modulo=aplicativos">Abrir no visualizador (Aplicativos)</a></li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container help">
+        <h2>Como usar esta organização no dia a dia</h2>
+        <div class="help__grid">
+          <article>
+            <h3>Plano semanal simples</h3>
+            <p>Segunda a quarta: aulas teóricas e exercícios. Quinta: revisão e refatoração. Sexta: mini projeto aplicado.</p>
+          </article>
+          <article>
+            <h3>Regra de progressão</h3>
+            <p>Só avance para o próximo módulo quando conseguir reproduzir o anterior sem copiar código pronto.</p>
+          </article>
+          <article>
+            <h3>Portfólio contínuo</h3>
+            <p>A cada 2 módulos concluídos, publique um projeto novo para registrar evolução técnica e visual.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 Front-End Study</p>
+      <a href="../index.html">Voltar para Landing Page</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

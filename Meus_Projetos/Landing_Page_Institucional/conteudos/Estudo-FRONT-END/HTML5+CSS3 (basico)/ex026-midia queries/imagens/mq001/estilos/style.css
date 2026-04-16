@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* estilo para telas*/
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: brown;
+}
+
+ul{
+    background-color: rgb(138, 141, 141);
+}
+
+li{
+    display: inline-block;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 3px;
+    margin: 0.5em;
+}
+
+main{
+    text-align: center;                     
+    text-justify: auto;
+    margin: auto;
+
+}
+article{
+    width: 400px;
+    display: block;
+    margin: auto;
+}

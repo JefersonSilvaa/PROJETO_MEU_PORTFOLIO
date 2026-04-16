@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*tamplete-areas*/
+
+.container{
+    background-color: #333;
+    border: 3px solid red;
+    padding: 15px;
+    gap: 5px;
+    display: grid;
+    grid-template-areas: 
+        'header header header header'
+        'siderbar content content content'
+        'footer footer footer footer';
+}
+
+.container > div{
+    background-color: #ccc;
+    padding: 20px;
+    border: 3px solid blue;
+}
+
+#header{
+    grid-area: header;
+}
+#siderbar{
+    grid-area: siderbar;
+    height: 50vh;
+}
+#content{
+    grid-area: content;
+    height: 50vh;
+}
+#footer{
+    grid-area: footer;
+}

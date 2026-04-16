@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.container{
+    background-image: url(pexels-ünsal-demirbaş-23547.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 100px auto;
+    width: 600px;
+}
+
+.text{
+    color: white;
+    background-color: rgb(42, 42, 192);
+    font-size: 96px;
+    line-height: 200px;
+    font-weight: bolder;
+    text-align: center;
+    mix-blend-mode: multiply;
+}
+
+.text-mark{
+    font-size: 96px;
+    font-weight: bolder;
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    background-image: url(pexels-ünsal-demirbaş-23547.jpg);
+    background-position: center;
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}

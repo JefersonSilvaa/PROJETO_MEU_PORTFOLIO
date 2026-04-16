@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title>Hoodie Neon Street</title>
+  <desc>Mockup local do produto Hoodie Neon Street</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#181c44"/>
+      <stop offset="100%" stop-color="#577cff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" rx="48" fill="url(#bg)"/>
+  <circle cx="620" cy="170" r="120" fill="#a855f7" opacity="0.28"/>
+  <path d="M286 234c25-30 63-48 114-48 50 0 90 18 114 48l82 86-56 49-31-35v253H290V334l-31 35-56-49 83-86z" fill="#ffd54a"/>
+  <path d="M350 257c9 14 24 21 50 21 25 0 41-7 50-21" fill="none" stroke="#dfb100" stroke-width="14" stroke-linecap="round"/>
+  <path d="M342 318l-26 91M458 318l26 91" fill="none" stroke="#dfb100" stroke-width="12" stroke-linecap="round"/>
+  <text x="64" y="688" fill="#ffffff" font-family="Arial, sans-serif" font-size="52" font-weight="700">Hoodie Neon Street</text>
+  <text x="64" y="738" fill="#dbe4ff" font-family="Arial, sans-serif" font-size="28">UrbanStyle Store</text>
+</svg>

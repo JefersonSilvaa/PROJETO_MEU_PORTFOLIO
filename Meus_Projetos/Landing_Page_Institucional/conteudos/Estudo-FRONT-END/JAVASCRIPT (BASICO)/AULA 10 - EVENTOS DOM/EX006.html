@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EVENTOS DOM</title>
+    <style>
+        div#area{
+            font: normal 20pt arial;
+            background-color: #269226;
+            color: white;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        interaja...
+    </div>
+
+    <script>
+
+        var a = document.querySelector('div#area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            //ligação dos elementos
+            var a = document.querySelector('div#area')
+            a.innerHTML = 'Mouse clicou na div!';
+            a.style.backgroundColor = 'red'
+        }
+        function entrar(){
+            var a = document.querySelector('div#area')
+            a.innerHTML = 'Mouse entrou na div!'
+        }
+        function sair(){
+            var a = document.querySelector('div#area')
+            a.innerHTML = 'Mouse saiu da div!'
+            a.style.backgroundColor = '#269226'
+        }
+
+    </script>
+</body>
+</html>
