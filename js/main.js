@@ -165,36 +165,10 @@ if (allProjectsToggleBtn && allProjectsSection) {
 }
 
 // ===============================
-// CARROSSEL DE PROJETOS - SETAS
+// CARROSSEL DE PROJETOS
 // ===============================
 
 (function () {
   const carousel = document.getElementById('projects-carousel');
-  const btnPrev = document.getElementById('proj-prev');
-  const btnNext = document.getElementById('proj-next');
-
-  if (!carousel || !btnPrev || !btnNext) return;
-
-  const slideWidth = () => carousel.clientWidth * 0.9;
-
-  function updateArrows() {
-    const atStart = carousel.scrollLeft <= 8;
-    const atEnd = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 8;
-    btnPrev.classList.toggle('is-hidden', atStart);
-    btnNext.classList.toggle('is-hidden', atEnd);
-  }
-
-  btnPrev.addEventListener('click', () => {
-    carousel.scrollBy({ left: -slideWidth(), behavior: 'smooth' });
-  });
-
-  btnNext.addEventListener('click', () => {
-    carousel.scrollBy({ left: slideWidth(), behavior: 'smooth' });
-  });
-
-  carousel.addEventListener('scroll', updateArrows, { passive: true });
-  window.addEventListener('resize', updateArrows);
-
-  // Estado inicial
-  updateArrows();
+  if (!carousel) return;
 })();
