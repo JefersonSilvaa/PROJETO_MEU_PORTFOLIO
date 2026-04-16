@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+ *{
+    padding: 0%;
+    margin: 0%;
+ }
+
+img{
+   width: 100%;
+   height: 100vh;
+   object-fit: cover;
+   grid-area: img-topo;
+}
+
+.text{
+   text-align: center;
+   grid-area: text-topo;
+}
+
+header{
+   display: grid;
+   align-items: center;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: auto;
+   grid-template-areas: 
+      "img-topo text-topo";
+}
+
+
+

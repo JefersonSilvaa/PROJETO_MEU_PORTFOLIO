@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #eee;
+    border: 2px solid red;
+    padding: 15px;
+    max-width: 300px;
+    height: 300px;
+
+    display: flex;
+    
+     /*alinhamento horizontal*/
+     justify-content: space-around;
+     /*alinhamento vertical*/
+     align-items: center;
+     /*colocando sempre respeitando tamanho + fazendo quebra a linha*/
+     flex-wrap: wrap;
+}
+
+.itens{
+    background-color: #ccc;
+    border: 2px solid darkblue;
+    height: 50px;
+    width: 50px;
+}
+
+.box{
+    background-color: #ccc;
+    border: 2px solid darkblue;
+    height: 50px;
+    flex-basis: 10px;
+}
+
+/*shorthand do flex para item: 
+    flex: grow + shrick + BASIC tamanho
+*/
+
+/* muda ordem dos objetos dentro container
+    #item-1{
+    order: 0; 
+    order: 1; 
+    etc.....
+    }
+*/
+
+#item-1{
+    flex-grow: 2;
+}
+
+#item-2,
+#item-3{
+    flex-grow:2;
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Visualizador de aulas Front-End Study com navegação por módulos, conteúdo e código." />
+  <title>Visualizador de Aulas | Front-End Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="visualizador.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar__inner">
+      <a class="brand" href="../index.html"><span>&lt;/&gt;</span> Front-End Study</a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="../index.html#inicio">Landing</a>
+        <a href="index.html">Guia</a>
+        <a href="../index.html" class="btn btn--primary btn--nav">Voltar para site</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell page">
+    <section class="page-header">
+      <div>
+        <h1>Visualizador de aulas</h1>
+        <p>Escolha um módulo e clique para navegar entre as aulas e pré-visualizar o conteúdo.</p>
+      </div>
+      <div class="page-header__actions">
+        <button class="btn btn--primary" id="openSelected" type="button">Abrir aula em nova aba</button>
+        <a class="btn btn--ghost" href="index.html">Voltar ao conteúdo</a>
+      </div>
+    </section>
+
+    <section class="dashboard">
+      <aside class="card sidebar">
+        <h2 class="sidebar__title">Módulos</h2>
+        <select id="moduleSelect" class="module-select" aria-label="Selecionar módulo"></select>
+        <div id="moduleList" class="module-list" role="tablist" aria-label="Lista de módulos"></div>
+      </aside>
+
+      <section class="center-column">
+        <article class="card lessons-block">
+          <div class="block-head">
+            <h2 id="moduleTitle">Aulas</h2>
+            <input id="searchInput" type="search" placeholder="Buscar aula (ex: flex, DOM, formulário...)" />
+          </div>
+          <p id="moduleDescription" class="module-description"></p>
+          <div id="lessonList" class="lesson-list"></div>
+        </article>
+
+        <article class="card content-block">
+          <h2 id="lessonContentTitle">Selecione uma aula</h2>
+          <p id="lessonContentDesc">Escolha um item na lista para carregar descrição e pré-visualização.</p>
+          <ul id="lessonTopics" class="lesson-topics">
+            <li>Navegação por módulos e aulas.</li>
+            <li>Pré-visualização do conteúdo selecionado.</li>
+            <li>Leitura do código no painel lateral.</li>
+          </ul>
+        </article>
+
+        <article class="card preview-block">
+          <div class="block-head block-head--preview">
+            <h2>Preview</h2>
+            <a id="openDirect" class="btn btn--ghost btn--sm" href="#" target="_blank" rel="noopener noreferrer">Abrir direto</a>
+          </div>
+          <p id="selectedPath" class="selected-path">Selecione uma aula para visualizar.</p>
+          <iframe id="previewFrame" title="Preview da aula selecionada"></iframe>
+        </article>
+      </section>
+
+      <aside class="code-panel">
+        <div class="code-panel__head">
+          <h2>Código</h2>
+          <div class="code-panel__actions">
+            <button id="copyCode" class="btn-icon" type="button" aria-label="Copiar código">Copiar</button>
+            <button id="expandCode" class="btn-icon" type="button" aria-label="Expandir código">Expandir</button>
+          </div>
+        </div>
+
+        <div class="code-tabs" role="tablist" aria-label="Tipos de código">
+          <button type="button" class="code-tab active" data-code-tab="html">HTML</button>
+          <button type="button" class="code-tab" data-code-tab="css">CSS</button>
+          <button type="button" class="code-tab" data-code-tab="js">JS</button>
+        </div>
+
+        <p id="codePath" class="code-path">Selecione uma aula para visualizar o código.</p>
+        <pre id="codeBlock" class="code-block"><code>// O código aparecerá aqui.</code></pre>
+        <a id="openCodeDirect" class="btn btn--ghost btn--sm code-open-link" href="#" target="_blank" rel="noopener noreferrer">Abrir código</a>
+      </aside>
+    </section>
+  </main>
+
+  <script src="visualizador.js"></script>
+</body>
+</html>
