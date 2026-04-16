@@ -1,5 +1,7 @@
 'use strict';
 
+const CATALOG_PATH = 'conteudos/catalogo.json';
+
 const moduleDefinitions = [
   {
     id: 'html-css-basico',
@@ -93,7 +95,8 @@ const state = {
   query: '',
   activeTab: 'html',
   activePaths: { html: null, css: null, js: null },
-  lastCodeText: ''
+  lastCodeText: '',
+  catalog: null
 };
 
 function toUnixPath(value) {
@@ -212,6 +215,28 @@ async function fetchText(path) {
     throw new Error(`Falha ao carregar ${path}`);
   }
   return response.text();
+}
+
+async function fetchJson(path) {
+  const response = await fetch(toBrowserUrl(path), { cache: 'no-store' });
+  if (!response.ok) {
+    throw new Error(`Falha ao carregar ${path}`);
+  }
+  return response.json();
+}
+
+async function loadCatalog() {
+  try {
+    const data = await fetchJson(CATALOG_PATH);
+    if (data && data.modules && typeof data.modules === 'object') {
+      state.catalog = data;
+      return;
+    }
+  } catch (_error) {
+    // Sem catálogo estático: mantém fluxo legado por listagem de diretório.
+  }
+
+  state.catalog = null;
 }
 
 async function pathExists(path) {
@@ -637,6 +662,26 @@ function renderLessons() {
 }
 
 async function listLessonsFromModule(moduleDef) {
+  if (state.catalog?.modules) {
+    const candidates = moduleDef.pathCandidates || [moduleDef.path].filter(Boolean);
+
+    for (const candidate of candidates) {
+      const key = toContentPath(candidate).replace(/^conteudos\//i, '');
+      const catalogEntries = state.catalog.modules[key];
+
+      if (Array.isArray(catalogEntries) && catalogEntries.length) {
+        return catalogEntries
+          .filter((entry) => entry?.path)
+          .map((entry) => ({
+            name: entry.name,
+            path: toContentPath(entry.path),
+            isFile: Boolean(entry.isFile)
+          }))
+          .sort((a, b) => a.name.localeCompare(b.name, 'pt-BR', { numeric: true }));
+      }
+    }
+  }
+
   const candidates = moduleDef.pathCandidates || [moduleDef.path].filter(Boolean);
 
   for (const candidate of candidates) {
@@ -683,6 +728,8 @@ function moduleFromQuery() {
 
 async function init() {
   moduleList.innerHTML = '<p class="empty-state">Carregando modulos...</p>';
+
+  await loadCatalog();
 
   const loaded = [];
   for (const def of moduleDefinitions) {
