@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora JS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <section class="intro">
+      <h1>Calculadora JS</h1>
+      <p>
+        Projeto simples e funcional com JavaScript, manipulação de DOM,
+        teclado virtual e estilo moderno com CSS Grid.
+      </p>
+      <button class="cta" type="button">Ver Mais Projetos</button>
+    </section>
+
+    <section class="calculator" aria-label="Calculadora">
+      <div class="display-wrap">
+        <div class="operation" id="operation"></div>
+        <div class="display" id="display">0</div>
+      </div>
+
+      <div class="keys">
+        <button class="key key-muted" data-action="clear">C</button>
+        <button class="key key-muted" data-action="backspace">DEL</button>
+        <button class="key key-operator" data-value="/">÷</button>
+        <button class="key key-operator" data-value="*">×</button>
+
+        <button class="key" data-value="7">7</button>
+        <button class="key" data-value="8">8</button>
+        <button class="key" data-value="9">9</button>
+        <button class="key key-operator" data-value="-">-</button>
+
+        <button class="key" data-value="4">4</button>
+        <button class="key" data-value="5">5</button>
+        <button class="key" data-value="6">6</button>
+        <button class="key key-operator" data-value="+">+</button>
+
+        <button class="key" data-value="1">1</button>
+        <button class="key" data-value="2">2</button>
+        <button class="key" data-value="3">3</button>
+        <button class="key key-equals" data-action="equals">=</button>
+
+        <button class="key key-zero" data-value="0">0</button>
+        <button class="key" data-value=".">.</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
