@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/*documentação counter criar lista estilizada de foram certa!!!
+    counter-reset: my-counter; (colocar nome que deseja colocar no contador estilizado css)
+
+    counter-increment: my-counter; ( adicionar li > onde ficara estilo da lista)
+
+    content: "0" counter(my-counter); ( criar li::before > adicionar {nome contador}  função > counter dentro da content)
+*/
+
+/* forma certa de (escreve+criar) uma lista com linha do tempo usando ((panel)= panel-header ++ panel-body)*/
+
+body{
+    margin: 0;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+}
+
+.container{
+    width: 60%;
+    margin-top: 3rem;
+    justify-self: center;
+    background-color: white;
+    box-shadow: 0px 0.5rem 0rem lightgrey;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+ol{
+    list-style: none;
+    counter-reset: my-counter;
+    margin: 0rem;
+    padding: 0rem 0rem 0rem 1.5rem;
+}
+
+li{
+    counter-increment: my-counter;
+    border-left: solid 1px lightgrey;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns:auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "icon text"    
+    ;
+    align-items: start;
+}
+
+li::before{
+    content: "0" counter(my-counter);
+    font-weight: bold;
+    background-color: tomato;
+    border-radius: 50%;
+    padding: 1rem;
+    color: white;
+    margin-left: -1.5rem;
+    margin-right: 2rem;
+    grid-area: icon;
+}
+
+.panel{
+    border-radius: 0.5rem;
+    border: solid 1px tomato;
+    box-shadow: 0rem 0.2rem 0rem darksalmon;
+    grid-area: text;
+}
+
+.panel-header{
+    border-bottom: solid 1px tomato;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-color: lightsalmon;
+    padding: 1rem;
+}
+
+.panel-body{
+    padding: 1rem;
+}

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Front-End Study — Materiais de estudo de HTML, CSS e JavaScript do zero ao intermediário." />
+  <title>Front-End Study</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#inicio" class="navbar__logo">
+        <span class="navbar__logo-tag">&lt;/&gt;</span> Front-End Study
+      </a>
+
+      <nav class="navbar__menu" id="navMenu" aria-label="Menu principal">
+        <ul class="navbar__list">
+          <li><a href="#inicio" class="navbar__link">Início</a></li>
+          <li><a href="#sobre" class="navbar__link">Sobre</a></li>
+          <li><a href="#conteudos" class="navbar__link">Conteúdos</a></li>
+          <li><a href="#biblioteca" class="navbar__link">Biblioteca</a></li>
+          <li><a href="#contato" class="navbar__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a href="#conteudos" class="btn btn--primary navbar__cta">Começar aprendizado</a>
+
+      <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__text fade-in">
+          <h1 class="hero__title">Material de Estudo<br /><span class="hero__title--highlight">Front-End</span></h1>
+          <p class="hero__subtitle">Aprenda HTML, CSS e JavaScript e construa seus próprios projetos interativos.</p>
+          <a href="#conteudos" class="btn btn--primary hero__btn">Começar aprendizado</a>
+        </div>
+        <div class="hero__image fade-in fade-in--delay">
+          <!-- SVG ilustrativo inline -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" class="hero__svg" aria-hidden="true">
+            <!-- Monitor -->
+            <rect x="60" y="40" width="400" height="260" rx="16" ry="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+            <rect x="60" y="40" width="400" height="44" rx="16" ry="16" fill="#4CAF50"/>
+            <circle cx="90" cy="62" r="7" fill="#ffffff" opacity="0.7"/>
+            <circle cx="113" cy="62" r="7" fill="#ffffff" opacity="0.5"/>
+            <circle cx="136" cy="62" r="7" fill="#ffffff" opacity="0.3"/>
+            <!-- Linhas de código -->
+            <rect x="90" y="110" width="120" height="10" rx="5" fill="#4CAF50" opacity="0.7"/>
+            <rect x="90" y="132" width="240" height="10" rx="5" fill="#e0e0e0"/>
+            <rect x="90" y="154" width="200" height="10" rx="5" fill="#e0e0e0"/>
+            <rect x="110" y="176" width="160" height="10" rx="5" fill="#bbdefb"/>
+            <rect x="110" y="198" width="180" height="10" rx="5" fill="#bbdefb"/>
+            <rect x="90" y="220" width="240" height="10" rx="5" fill="#e0e0e0"/>
+            <rect x="90" y="242" width="100" height="10" rx="5" fill="#4CAF50" opacity="0.6"/>
+            <!-- Cursor piscante -->
+            <rect x="195" y="242" width="3" height="14" rx="1" fill="#4CAF50">
+              <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+            </rect>
+            <!-- Base monitor -->
+            <rect x="220" y="300" width="80" height="14" rx="4" fill="#e0e0e0"/>
+            <rect x="200" y="314" width="120" height="10" rx="4" fill="#e0e0e0"/>
+            <!-- Tablet flutuante -->
+            <rect x="350" y="180" width="100" height="130" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+            <rect x="355" y="190" width="90" height="80" rx="6" fill="#f5f5f5"/>
+            <rect x="362" y="198" width="55" height="7" rx="3" fill="#4CAF50" opacity="0.7"/>
+            <rect x="362" y="212" width="76" height="7" rx="3" fill="#e0e0e0"/>
+            <rect x="362" y="226" width="64" height="7" rx="3" fill="#e0e0e0"/>
+            <circle cx="400" cy="290" r="7" fill="#e0e0e0"/>
+            <!-- Smartphone flutuante -->
+            <rect x="40" y="200" width="60" height="100" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+            <rect x="46" y="210" width="48" height="68" rx="5" fill="#f5f5f5"/>
+            <rect x="52" y="218" width="30" height="6" rx="3" fill="#4CAF50" opacity="0.7"/>
+            <rect x="52" y="230" width="38" height="6" rx="3" fill="#e0e0e0"/>
+            <rect x="52" y="244" width="32" height="6" rx="3" fill="#e0e0e0"/>
+            <circle cx="70" cy="296" r="5" fill="#e0e0e0"/>
+            <!-- Decoração: livros -->
+            <rect x="430" y="340" width="18" height="40" rx="3" fill="#4CAF50" opacity="0.5"/>
+            <rect x="452" y="348" width="14" height="32" rx="3" fill="#1565c0" opacity="0.4"/>
+            <rect x="470" y="344" width="16" height="36" rx="3" fill="#f9a825" opacity="0.5"/>
+            <!-- Decoração: plant -->
+            <ellipse cx="52" cy="360" rx="18" ry="22" fill="#a5d6a7" opacity="0.5"/>
+            <rect x="49" y="356" width="6" height="24" rx="3" fill="#388e3c" opacity="0.6"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SOBRE ==================== -->
+    <section class="about section" id="sobre">
+      <div class="container about__inner">
+        <div class="about__text reveal">
+          <span class="section__badge">Sobre a plataforma</span>
+          <h2 class="section__title">Por que estudar<br />com a gente?</h2>
+          <p class="about__desc">A <strong>Front-End Study</strong> foi criada para quem deseja aprender desenvolvimento web do zero, com materiais organizados, exemplos práticos e projetos reais para praticar.</p>
+          <ul class="about__list">
+            <li>✔ Conteúdo atualizado e estruturado por nível</li>
+            <li>✔ Código-fonte comentado para fácil entendimento</li>
+            <li>✔ Projetos práticos para o seu portfólio</li>
+            <li>✔ Totalmente gratuito e acessível</li>
+          </ul>
+        </div>
+        <div class="about__stats reveal reveal--delay">
+          <div class="stat-card">
+            <span class="stat-card__number">30+</span>
+            <span class="stat-card__label">Aulas disponíveis</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number">3</span>
+            <span class="stat-card__label">Módulos completos</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number">100%</span>
+            <span class="stat-card__label">Gratuito</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number">2+</span>
+            <span class="stat-card__label">Projetos práticos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTEÚDOS ==================== -->
+    <section class="content-section section" id="conteudos">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Conteúdos de Estudo</h2>
+          <p class="section__desc">Explore nossos materiais de estudo em Front-End e aprenda<br class="hide-mobile" /> do zero aos níveis básicos e intermediários.</p>
+        </div>
+
+        <div class="cards-grid">
+
+          <!-- Card HTML -->
+          <article class="card reveal" data-module="html">
+            <div class="card__header card__header--html">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="card__icon" width="48" height="48" />
+              <div>
+                <h3 class="card__title">HTML5</h3>
+                <span class="card__subtitle">Básico</span>
+              </div>
+            </div>
+            <ul class="card__list">
+              <li><span class="card__bullet card__bullet--html"></span>10 Aulas</li>
+              <li><span class="card__bullet card__bullet--html"></span>Arquivos de estudo</li>
+              <li><span class="card__bullet card__bullet--html"></span>Mini projetos</li>
+            </ul>
+            <button class="btn btn--outline btn--full" data-modal="html">Acessar Material Completo</button>
+          </article>
+
+          <!-- Card CSS -->
+          <article class="card reveal reveal--delay" data-module="css">
+            <div class="card__header card__header--css">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="card__icon" width="48" height="48" />
+              <div>
+                <h3 class="card__title">CSS3</h3>
+                <span class="card__subtitle">(Intermediário)</span>
+              </div>
+            </div>
+            <ul class="card__list">
+              <li><span class="card__bullet card__bullet--css"></span>10 Aulas</li>
+              <li><span class="card__bullet card__bullet--css"></span>Arquivos de estudo</li>
+              <li><span class="card__bullet card__bullet--css"></span>Mini projetos</li>
+            </ul>
+            <button class="btn btn--outline btn--full" data-modal="css">Acessar Material Completo</button>
+          </article>
+
+          <!-- Card JS -->
+          <article class="card reveal reveal--delay-2" data-module="js">
+            <div class="card__header card__header--js">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="card__icon" width="48" height="48" />
+              <div>
+                <h3 class="card__title">JavaScript</h3>
+                <span class="card__subtitle">(Básico)</span>
+              </div>
+            </div>
+            <ul class="card__list">
+              <li><span class="card__bullet card__bullet--js"></span>10 Aulas</li>
+              <li><span class="card__bullet card__bullet--js"></span>Arquivos de estudo</li>
+              <li><span class="card__bullet card__bullet--js"></span>Mini projetos</li>
+            </ul>
+            <button class="btn btn--outline btn--full" data-modal="js">Acessar Material Completo</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJETOS ==================== -->
+    <section class="projects section" id="projetos">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Projetos em Destaque</h2>
+          <p class="section__desc">Pratique com projetos práticos de Front-End e aplique seus conhecimentos.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Projeto 1 -->
+          <article class="project-card reveal">
+            <div class="project-card__info">
+              <h3 class="project-card__title">Calculadora JS</h3>
+              <p class="project-card__desc">Desenvolva uma calculadora funcional aplicando lógica JavaScript, manipulação do DOM e estilização com CSS Grid.</p>
+              <button class="btn btn--outline" data-modal="calc">Ver Mais Projetos</button>
+            </div>
+            <div class="project-card__preview project-card__preview--calc" aria-hidden="true">
+              <!-- mini preview SVG calculadora -->
+              <svg viewBox="0 0 160 200" xmlns="http://www.w3.org/2000/svg" class="project-card__svg">
+                <rect width="160" height="200" rx="12" fill="#1a1a2e"/>
+                <rect x="12" y="14" width="136" height="44" rx="8" fill="#16213e"/>
+                <text x="138" y="48" font-family="monospace" font-size="22" fill="#4CAF50" text-anchor="end">1284×</text>
+                <rect x="12" y="68" width="30" height="30" rx="6" fill="#2d2d44"/>
+                <rect x="49" y="68" width="30" height="30" rx="6" fill="#2d2d44"/>
+                <rect x="86" y="68" width="30" height="30" rx="6" fill="#2d2d44"/>
+                <rect x="123" y="68" width="25" height="30" rx="6" fill="#4CAF50"/>
+                <rect x="12" y="106" width="30" height="30" rx="6" fill="#2d2d44"/>
+                <rect x="49" y="106" width="30" height="30" rx="6" fill="#2d2d44"/>
+                <rect x="86" y="106" width="30" height="30" rx="6" fill="#2d2d44"/>
+                <rect x="123" y="106" width="25" height="30" rx="6" fill="#4CAF50"/>
+                <rect x="12" y="144" width="30" height="30" rx="6" fill="#2d2d44"/>
+                <rect x="49" y="144" width="30" height="30" rx="6" fill="#2d2d44"/>
+                <rect x="86" y="144" width="30" height="30" rx="6" fill="#2d2d44"/>
+                <rect x="123" y="144" width="25" height="30" rx="6" fill="#4CAF50"/>
+                <rect x="12" y="182" width="67" height="10" rx="4" fill="#4CAF50"/>
+                <rect x="86" y="182" width="62" height="10" rx="4" fill="#2d2d44"/>
+                <text x="27" y="88" font-family="monospace" font-size="12" fill="#aaa" text-anchor="middle">7</text>
+                <text x="64" y="88" font-family="monospace" font-size="12" fill="#aaa" text-anchor="middle">8</text>
+                <text x="101" y="88" font-family="monospace" font-size="12" fill="#aaa" text-anchor="middle">9</text>
+                <text x="135" y="88" font-family="monospace" font-size="13" fill="#fff" text-anchor="middle">÷</text>
+                <text x="27" y="126" font-family="monospace" font-size="12" fill="#aaa" text-anchor="middle">4</text>
+                <text x="64" y="126" font-family="monospace" font-size="12" fill="#aaa" text-anchor="middle">5</text>
+                <text x="101" y="126" font-family="monospace" font-size="12" fill="#aaa" text-anchor="middle">6</text>
+                <text x="135" y="126" font-family="monospace" font-size="13" fill="#fff" text-anchor="middle">×</text>
+                <text x="27" y="164" font-family="monospace" font-size="12" fill="#aaa" text-anchor="middle">1</text>
+                <text x="64" y="164" font-family="monospace" font-size="12" fill="#aaa" text-anchor="middle">2</text>
+                <text x="101" y="164" font-family="monospace" font-size="12" fill="#aaa" text-anchor="middle">3</text>
+                <text x="135" y="164" font-family="monospace" font-size="13" fill="#fff" text-anchor="middle">-</text>
+              </svg>
+            </div>
+          </article>
+
+          <!-- Projeto 2 -->
+          <article class="project-card reveal reveal--delay">
+            <div class="project-card__info">
+              <h3 class="project-card__title">To-Do List</h3>
+              <p class="project-card__desc">Crie uma lista de tarefas interativa com adição, remoção e marcação de itens, praticando JavaScript e CSS intermediário.</p>
+              <button class="btn btn--outline" data-modal="todo">Ver Mais Projetos</button>
+            </div>
+            <div class="project-card__preview project-card__preview--todo" aria-hidden="true">
+              <!-- mini preview SVG ToDo -->
+              <svg viewBox="0 0 180 190" xmlns="http://www.w3.org/2000/svg" class="project-card__svg">
+                <rect width="180" height="190" rx="12" fill="#f8f9fa"/>
+                <rect x="12" y="14" width="156" height="28" rx="8" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+                <text x="90" y="33" font-family="Poppins,sans-serif" font-size="11" fill="#333" text-anchor="middle" font-weight="600">Padrões</text>
+                <rect x="140" y="20" width="22" height="16" rx="8" fill="#4CAF50"/>
+                <circle cx="155" cy="28" r="6" fill="#ffffff"/>
+                <!-- tasks -->
+                <rect x="12" y="52" width="156" height="32" rx="8" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+                <circle cx="30" cy="68" r="7" fill="#4CAF50"/>
+                <text x="30" y="72" font-family="monospace" font-size="9" fill="#fff" text-anchor="middle">✓</text>
+                <text x="48" y="72" font-family="Poppins,sans-serif" font-size="9" fill="#aaa" text-anchor="start" text-decoration="line-through">Criar estrutura HTML</text>
+
+                <rect x="12" y="92" width="156" height="32" rx="8" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+                <circle cx="30" cy="108" r="7" fill="#4CAF50"/>
+                <text x="30" y="112" font-family="monospace" font-size="9" fill="#fff" text-anchor="middle">✓</text>
+                <text x="48" y="112" font-family="Poppins,sans-serif" font-size="9" fill="#aaa" text-anchor="start" text-decoration="line-through">Estudar CSS intermediári...</text>
+
+                <rect x="12" y="132" width="156" height="32" rx="8" fill="#eafbea" stroke="#4CAF50" stroke-width="1"/>
+                <circle cx="30" cy="148" r="7" fill="#ffffff" stroke="#4CAF50" stroke-width="1.5"/>
+                <text x="48" y="152" font-family="Poppins,sans-serif" font-size="9" fill="#333" text-anchor="start">Praticar JavaScript básico</text>
+
+                <rect x="50" y="172" width="80" height="14" rx="6" fill="#4CAF50"/>
+                <text x="90" y="182" font-family="Poppins,sans-serif" font-size="8" fill="#fff" text-anchor="middle">Ver Mais Projetos</text>
+              </svg>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BIBLIOTECA ==================== -->
+    <section class="library section" id="biblioteca">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Biblioteca de Conteúdos</h2>
+          <p class="section__desc">Visualize a organização real da pasta de estudos, entenda o objetivo de cada trilha e acesse o guia detalhado.</p>
+        </div>
+
+        <div class="library__grid">
+          <article class="library-card reveal">
+            <h3 class="library-card__title">HTML5 + CSS3 (Básico)</h3>
+            <p class="library-card__desc">Base completa com exercícios introdutórios, semântica, formulários, tabelas e fundamentos de estilo.</p>
+            <ul class="library-card__meta">
+              <li>27+ exercícios e aulas</li>
+              <li>Foco: estrutura e estilização inicial</li>
+            </ul>
+          </article>
+
+          <article class="library-card reveal reveal--delay">
+            <h3 class="library-card__title">HTML5 + CSS3 (Intermediário)</h3>
+            <p class="library-card__desc">Módulos avançando em flex, grid, animações, máscaras, transições, efeitos visuais e layout responsivo.</p>
+            <ul class="library-card__meta">
+              <li>30+ aulas práticas</li>
+              <li>Foco: composição visual moderna</li>
+            </ul>
+          </article>
+
+          <article class="library-card reveal reveal--delay-2">
+            <h3 class="library-card__title">JavaScript (Básico + Intermediário)</h3>
+            <p class="library-card__desc">Trilhas com DOM, eventos, condicionais, loops, funções, arrays, objetos e prática progressiva.</p>
+            <ul class="library-card__meta">
+              <li>16 aulas iniciais + 34 módulos extras</li>
+              <li>Foco: lógica aplicada no navegador</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="library__grid library__grid--secondary">
+          <article class="library-card reveal">
+            <h3 class="library-card__title">Lógica de Programação</h3>
+            <p class="library-card__desc">Material de algoritmo com Visualg e exercícios para fortalecer raciocínio antes de projetos maiores.</p>
+          </article>
+
+          <article class="library-card reveal reveal--delay">
+            <h3 class="library-card__title">Projetos Portfólio</h3>
+            <p class="library-card__desc">Projetos temáticos como login, iPhone, contador e portfólio para praticar construção de interface real.</p>
+          </article>
+
+          <article class="library-card reveal reveal--delay-2">
+            <h3 class="library-card__title">Aplicativos Essenciais</h3>
+            <p class="library-card__desc">Instaladores de VS Code, Git e GitHub Desktop para preparar o ambiente de desenvolvimento.</p>
+          </article>
+        </div>
+
+        <div class="library__cta reveal">
+          <a href="conteudos/index.html" class="btn btn--primary">Abrir Guia Detalhado da Pasta de Conteúdos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTATO ==================== -->
+    <section class="contact section" id="contato">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Entre em Contato</h2>
+        </div>
+        <form class="contact__form reveal" id="contactForm" novalidate>
+          <div class="form__group">
+            <label for="nome" class="form__label">Seu Nome</label>
+            <input type="text" id="nome" name="nome" class="form__input" placeholder="Seu Nome" autocomplete="name" required />
+            <span class="form__error" id="nomeError" aria-live="polite"></span>
+          </div>
+          <div class="form__group">
+            <label for="email" class="form__label">Seu Email</label>
+            <input type="email" id="email" name="email" class="form__input" placeholder="Seu Email" autocomplete="email" required />
+            <span class="form__error" id="emailError" aria-live="polite"></span>
+          </div>
+          <div class="form__group">
+            <label for="mensagem" class="form__label">Sua Mensagem</label>
+            <textarea id="mensagem" name="mensagem" class="form__textarea" placeholder="Sua Mensagem" rows="5" required></textarea>
+            <span class="form__error" id="mensagemError" aria-live="polite"></span>
+          </div>
+          <button type="submit" class="btn btn--dark btn--full">Enviar Mensagem</button>
+          <p class="form__success" id="formSuccess" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 Front-End Study. Todos os direitos reservados.</p>
+      <nav class="footer__nav" aria-label="Links do rodapé">
+        <a href="#inicio" class="footer__link">Início</a>
+        <a href="#conteudos" class="footer__link">Conteúdos</a>
+        <a href="#biblioteca" class="footer__link">Biblioteca</a>
+        <a href="#contato" class="footer__link">Contato</a>
+      </nav>
+      <div class="footer__social">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/5500000000000" class="footer__social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODAIS ==================== -->
+
+  <!-- Modal HTML -->
+  <div class="modal" id="modal-html" role="dialog" aria-modal="true" aria-labelledby="modal-html-title">
+    <div class="modal__overlay"></div>
+    <div class="modal__box">
+      <button class="modal__close" aria-label="Fechar modal">&times;</button>
+      <div class="modal__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="40" height="40"/></div>
+      <h2 class="modal__title" id="modal-html-title">HTML5 — Básico</h2>
+      <h3 class="modal__subtitle">📌 Aulas do módulo</h3>
+      <ol class="modal__list">
+        <li>Introdução ao HTML5 — Estrutura básica</li>
+        <li>Tags semânticas: header, main, footer</li>
+        <li>Títulos, parágrafos e listas</li>
+        <li>Links e âncoras</li>
+        <li>Imagens e atributos alt</li>
+        <li>Formulários básicos</li>
+        <li>Tabelas em HTML</li>
+        <li>Atributos globais e data-*</li>
+        <li>Organização de pastas e arquivos</li>
+        <li>Projeto: Página de perfil pessoal</li>
+      </ol>
+      <h3 class="modal__subtitle">📁 Arquivos de apoio</h3>
+      <ul class="modal__files">
+        <li><a href="conteudos/Estudo-FRONT-END/HTML5+CSS3%20(basico)/" class="modal__file-link" target="_blank" rel="noopener noreferrer">📂 Abrir trilha HTML5+CSS3 (Básico)</a></li>
+        <li><a href="conteudos/index.html#acervo" class="modal__file-link">🗂 Ver explicação detalhada no guia</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal CSS -->
+  <div class="modal" id="modal-css" role="dialog" aria-modal="true" aria-labelledby="modal-css-title">
+    <div class="modal__overlay"></div>
+    <div class="modal__box">
+      <button class="modal__close" aria-label="Fechar modal">&times;</button>
+      <div class="modal__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="40" height="40"/></div>
+      <h2 class="modal__title" id="modal-css-title">CSS3 — Intermediário</h2>
+      <h3 class="modal__subtitle">📌 Aulas do módulo</h3>
+      <ol class="modal__list">
+        <li>Seletores e especificidade</li>
+        <li>Box model detalhado</li>
+        <li>Flexbox — conceitos e prática</li>
+        <li>CSS Grid — layout moderno</li>
+        <li>Variáveis CSS (custom properties)</li>
+        <li>Responsividade com Media Queries</li>
+        <li>Animações e transições</li>
+        <li>Pseudo-classes e pseudo-elementos</li>
+        <li>Boas práticas de nomenclatura (BEM)</li>
+        <li>Projeto: Landing page responsiva</li>
+      </ol>
+      <h3 class="modal__subtitle">📁 Arquivos de apoio</h3>
+      <ul class="modal__files">
+        <li><a href="conteudos/Estudo-FRONT-END/HTML5+CSS3%20(intermediario)/" class="modal__file-link" target="_blank" rel="noopener noreferrer">📂 Abrir trilha HTML5+CSS3 (Intermediário)</a></li>
+        <li><a href="conteudos/index.html#acervo" class="modal__file-link">🗂 Ver explicação detalhada no guia</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal JS -->
+  <div class="modal" id="modal-js" role="dialog" aria-modal="true" aria-labelledby="modal-js-title">
+    <div class="modal__overlay"></div>
+    <div class="modal__box">
+      <button class="modal__close" aria-label="Fechar modal">&times;</button>
+      <div class="modal__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/></div>
+      <h2 class="modal__title" id="modal-js-title">JavaScript — Básico</h2>
+      <h3 class="modal__subtitle">📌 Aulas do módulo</h3>
+      <ol class="modal__list">
+        <li>Variáveis: var, let e const</li>
+        <li>Tipos de dados e operadores</li>
+        <li>Condicionais: if, else, switch</li>
+        <li>Laços de repetição: for, while</li>
+        <li>Funções declaradas e arrow functions</li>
+        <li>Manipulação do DOM</li>
+        <li>Eventos: click, input, submit</li>
+        <li>Arrays e métodos essenciais</li>
+        <li>Objetos e JSON</li>
+        <li>Projeto: Calculadora funcional</li>
+      </ol>
+      <h3 class="modal__subtitle">📁 Arquivos de apoio</h3>
+      <ul class="modal__files">
+        <li><a href="conteudos/Estudo-FRONT-END/JAVASCRIPT%20(BASICO)/" class="modal__file-link" target="_blank" rel="noopener noreferrer">📂 Abrir trilha JavaScript (Básico)</a></li>
+        <li><a href="conteudos/Estudo-FRONT-END/JAVASCRIPT%20(BASICO_INTERMEDIARIO)/" class="modal__file-link" target="_blank" rel="noopener noreferrer">📂 Abrir trilha JavaScript (Básico + Intermediário)</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal Calculadora -->
+  <div class="modal" id="modal-calc" role="dialog" aria-modal="true" aria-labelledby="modal-calc-title">
+    <div class="modal__overlay"></div>
+    <div class="modal__box">
+      <button class="modal__close" aria-label="Fechar modal">&times;</button>
+      <h2 class="modal__title" id="modal-calc-title">🧮 Calculadora JS</h2>
+      <p class="modal__desc">Projeto prático de JavaScript para reforçar manipulação do DOM e lógica de programação.</p>
+      <h3 class="modal__subtitle">✅ O que você vai praticar</h3>
+      <ul class="modal__list">
+        <li>Manipulação do DOM com querySelector</li>
+        <li>Eventos de clique (addEventListener)</li>
+        <li>Lógica de operações matemáticas</li>
+        <li>Atualização dinâmica de conteúdo</li>
+        <li>Estilização com CSS Grid</li>
+      </ul>
+      <a href="conteudos/Estudo-FRONT-END/JAVASCRIPT%20(BASICO)/atividades%20-%20Exerc%C3%ADcios%20JavaScrpt/" class="btn btn--primary modal__btn" target="_blank" rel="noopener noreferrer">Acessar Projeto</a>
+    </div>
+  </div>
+
+  <!-- Modal To-Do -->
+  <div class="modal" id="modal-todo" role="dialog" aria-modal="true" aria-labelledby="modal-todo-title">
+    <div class="modal__overlay"></div>
+    <div class="modal__box">
+      <button class="modal__close" aria-label="Fechar modal">&times;</button>
+      <h2 class="modal__title" id="modal-todo-title">✅ To-Do List</h2>
+      <p class="modal__desc">Crie uma lista de tarefas interativa aplicando JavaScript, eventos e manipulação de classes CSS.</p>
+      <h3 class="modal__subtitle">✅ O que você vai praticar</h3>
+      <ul class="modal__list">
+        <li>Criar e remover elementos do DOM</li>
+        <li>localStorage para persistência de dados</li>
+        <li>Toggle de classes CSS</li>
+        <li>Eventos de teclado e mouse</li>
+        <li>Flexbox para o layout</li>
+      </ul>
+      <a href="conteudos/Estudo-FRONT-END/PROJETOS-PORTFOLIO/" class="btn btn--primary modal__btn" target="_blank" rel="noopener noreferrer">Acessar Projeto</a>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

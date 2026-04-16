@@ -1,0 +1,42 @@
+@charset "UTF_8";
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.item01{
+    grid-area: top-left;
+    align-self: stretch;
+    background-color: grey;
+}
+.item02{
+    grid-area: top-right;
+    align-self: stretch;
+    background-color: grey;
+}
+.item03{
+    grid-area: bottom-left;
+    align-self: stretch;
+    background-color: grey;
+}
+.item04{
+    grid-area: bottom-right;
+    align-self: stretch;
+    background-color: grey;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    grid-template-areas: 
+        " top-left  top-right"
+        " bottom-left bottom-right";
+    width: 100%;
+    height: 100vh;
+}

@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.btn{
+    display: block;
+    width: 20rem;
+    border-radius: 0.5rem;
+    background-color: tomato;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 2rem 0rem;
+    transition: all 0.5s ease 0s;
+}
+
+.btn:hover{
+    background-color: darkred;
+    box-shadow: inset 0px 0px 0px 0.5rem tomato;
+}
+
+.btn span{
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+
+.btn span::after {
+    content: "\00bb";
+    position: absolute;
+    top: 0rem;
+    right: -1.5rem;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.btn:hover span{
+    padding-right: 1.5rem;
+}
+
+.btn:hover span::after{
+    right: 0rem;
+    opacity: 1;
+}

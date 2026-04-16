@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>atividade JavaScrpit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Título</h1>
+    </header>
+
+    <section>
+        <div class="conteudo">
+            <p>
+                Ano de Nascimento : <input type="number" name="anoNascimento" id="anoN">
+            </p>
+
+            <p class="conteudo-genero">
+                Sexo :
+                <label for="SexoMas"><input type="radio" name="radSex" id="SexoMas"> Masculino</label>
+                <label for="SexoFem"><input type="radio" name="radSex" id="SexoFem"> Feminino</label>
+            </p>
+
+            <button id="btnVerificar" onclick="verificadorIdade()">verificar</button>
+        </div>
+
+        <div id="img">
+            <p id="res"></p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>@curso de JavaScrpit</p>
+    </footer>
+
+    <script src="js/sistemaWeb.js"></script>
+</body>
+</html

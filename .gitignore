@@ -30,3 +30,10 @@ Thumbs.db
 # Python cache (if any)
 __pycache__/
 *.pyc
+
+# Landing Page Institucional: evitar arquivos pesados e repos aninhados
+Meus_Projetos/Landing_Page_Institucional/**/.git/
+Meus_Projetos/Landing_Page_Institucional/**/*.exe
+Meus_Projetos/Landing_Page_Institucional/**/*.mp4
+Meus_Projetos/Landing_Page_Institucional/**/*.zip
+Meus_Projetos/Landing_Page_Institucional/**/*.chm

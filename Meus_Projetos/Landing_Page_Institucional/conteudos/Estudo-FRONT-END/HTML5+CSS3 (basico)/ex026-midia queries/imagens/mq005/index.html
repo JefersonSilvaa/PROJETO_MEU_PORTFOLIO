@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>meu site </h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()" >menu</i>
+        <menu id="itens" >
+            <ul>
+                <li> <a href="#">Opçao 1</a></li>
+                <li> <a href="#">Opçao 2</a></li>
+                <li> <a href="#">Opçao 3</a></li>
+                <li> <a href="#">Opçao 4</a></li>
+                <li> <a href="#">Opçao 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>testando media queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, cupiditate cum ducimus facere molestiae similique veritatis inventore. Magni harum doloribus repellat necessitatibus illo nobis distinctio, optio fugit. Necessitatibus, provident corrupti.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sequi officia beatae cum sunt harum facere? Non quidem nemo hic soluta deleniti totam illo odit, explicabo eos obcaecati placeat molestiae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ducimus nam eveniet minima minus neque. Modi quae cumque, nam itaque ea fugiat necessitatibus veritatis quibusdam, harum, pariatur quam perspiciatis earum.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo nihil omnis, iure sit enim autem ipsum, illo officiis quisquam modi numquam dolores corporis in dolore provident sapiente pariatur aut. Aliquam!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam necessitatibus repudiandae itaque quasi, molestiae optio. Vero cupiditate sapiente nisi facilis porro nostrum corporis quos tempore placeat! Quas, odit temporibus?</p>
+        </article>
+    </main>
+    <script>
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

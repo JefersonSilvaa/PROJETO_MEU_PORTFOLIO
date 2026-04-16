@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/*exemplo 01 inicio*/
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    background-color: lightgrey;
+    padding: .75rem 1rem;
+    border: solid 1px grey;
+    margin-bottom: -1px;
+}
+
+li:first-child { /*primerio (first) filho*/
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+li:last-child { /*ultimo (last) filho*/
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+li:nth-child(odd) { /*escolher um determinado item colocando número ou odd + even fica alternado*/
+    background-color: white;
+}
+li:nth-child(even) {  /*escolher um determinado item colocando número ou odd + even fica alternado*/
+    background-color: rgb(255, 255, 255);
+    color: rgb(231, 5, 5);
+    font-weight: bold;
+}
+
+/*exemplo 01 final*/
+
+/*exemplo 02 inicio*/
+
+p:nth-child(3n+0) { /* aplica mesma coisa menos linha css , Só que usando calculo*/
+    background-color: yellow;
+}
+
+/*exemplo 02 final*/
+
+.col{
+    align-items: stretch;
+    background-color: white;
+    margin: 5rem;
+    padding: 5rem;
+    border-radius: 1rem;
+    border-bottom: .25rem solid lightgrey; 
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 100;
+    background-color: gray;
+}
