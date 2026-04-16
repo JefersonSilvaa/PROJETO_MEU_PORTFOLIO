@@ -407,19 +407,15 @@
           <div class="text-center mt-2xl" data-aos="fade-up">
             <p class="text-muted mb-md">Quer ver mais projetos?</p>
             <div class="flex flex-center gap-md">
-              <a href="https://github.com/JefersonSilvaa?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">
-                <i class="bi bi-github btn__icon" aria-hidden="true"></i>
-                Ver no GitHub
-              </a>
-              <a href="#all-projects" class="btn btn--primary">
+              <button id="all-projects-toggle" class="btn btn--primary" type="button" aria-expanded="false" aria-controls="all-projects">
                 <i class="bi bi-grid-1x2-fill btn__icon" aria-hidden="true"></i>
                 Mostrar todos os projetos
-              </a>
+              </button>
             </div>
           </div>
 
           <!-- All Projects List -->
-          <div id="all-projects" class="mt-2xl" data-aos="fade-up">
+          <div id="all-projects" class="mt-2xl" data-aos="fade-up" hidden>
             <div class="section-header">
               <h3 class="section-header__title">Todos os Projetos</h3>
               <p class="section-header__subtitle">
@@ -441,25 +437,6 @@
                   </div>
                   <div class="card__action">
                     <a href="Meus_Projetos/calculadora_JS/" class="btn btn--primary w-full" target="_blank" rel="noopener noreferrer">
-                      Ver projeto
-                    </a>
-                  </div>
-                </div>
-              </article>
-
-              <article class="card--project" data-aos="zoom-in" data-aos-delay="100">
-                <div class="card__content">
-                  <h4 class="card__title">Projeto Gestão Empresarial (Frontend)</h4>
-                  <p class="card__description">
-                    Versão frontend em React/Vite do sistema de gestão, com interface moderna e componentes reutilizáveis.
-                  </p>
-                  <div class="card__tech">
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">Vite</span>
-                    <span class="tech-tag">JavaScript</span>
-                  </div>
-                  <div class="card__action">
-                    <a href="Meus_Projetos/Projeto_gestão_empresarial/frontend/" class="btn btn--primary w-full" target="_blank" rel="noopener noreferrer">
                       Ver projeto
                     </a>
                   </div>

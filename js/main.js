@@ -138,3 +138,28 @@ if (btnMobileMenu && mobileMenuWrapper) {
     });
   });
 }
+
+// ===============================
+// EVENT LISTENERS - TODOS OS PROJETOS
+// ===============================
+
+const allProjectsToggleBtn = document.getElementById('all-projects-toggle');
+const allProjectsSection = document.getElementById('all-projects');
+
+if (allProjectsToggleBtn && allProjectsSection) {
+  allProjectsToggleBtn.addEventListener('click', () => {
+    const isHidden = allProjectsSection.hasAttribute('hidden');
+
+    if (isHidden) {
+      allProjectsSection.removeAttribute('hidden');
+      allProjectsToggleBtn.setAttribute('aria-expanded', 'true');
+      allProjectsToggleBtn.innerHTML = '<i class="bi bi-grid-1x2-fill btn__icon" aria-hidden="true"></i>Ocultar projetos';
+      allProjectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      return;
+    }
+
+    allProjectsSection.setAttribute('hidden', '');
+    allProjectsToggleBtn.setAttribute('aria-expanded', 'false');
+    allProjectsToggleBtn.innerHTML = '<i class="bi bi-grid-1x2-fill btn__icon" aria-hidden="true"></i>Mostrar todos os projetos';
+  });
+}
