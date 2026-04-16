@@ -200,7 +200,7 @@ contactForm.addEventListener('submit', e => {
     contactForm.reset();
     submitBtn.textContent = 'Enviar Mensagem';
     submitBtn.disabled = false;
-    formSuccess.textContent = '✅ Mensagem enviada com sucesso! Entraremos em contato em breve.';
+    formSuccess.textContent = 'Mensagem enviada com sucesso! Entraremos em contato em breve.';
     setTimeout(() => { formSuccess.textContent = ''; }, 5000);
   }, 1200);
 });
