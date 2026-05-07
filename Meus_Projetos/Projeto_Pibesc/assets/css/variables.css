@@ -1,0 +1,30 @@
+/* =============================================================
+   PIBESC — Design Tokens
+   Altere apenas aqui para refletir em todo o projeto.
+   ============================================================= */
+:root {
+    /* Cores institucionais */
+    --color-bg:         #F8F7F4;
+    --color-navy:       #16394C;
+    --color-gold:       #D6B25E;
+    --color-gold-dark:  #C89B3C;
+    --color-wine:       #8B1E2D;
+    --color-text:       #374151;
+    --color-text-dark:  #0F172A;
+
+    /* Tipografia */
+    --font-serif:   'Cormorant Garamond', 'Cinzel', Georgia, serif;
+    --font-display: 'Playfair Display', serif;
+    --font-sans:    'Montserrat', sans-serif;
+
+    /* Espaçamentos base */
+    --navbar-top:       28px;
+    --navbar-height:    92px;
+    --navbar-radius:    28px;
+    --navbar-width:     88%;
+    --navbar-max-width: 1450px;
+
+    /* Transições */
+    --transition-fast:   0.3s ease;
+    --transition-normal: 0.35s ease;
+}

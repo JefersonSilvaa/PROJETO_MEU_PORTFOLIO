@@ -1,0 +1,99 @@
+{
+  "dayNames": ["Domingo", "Segunda", "Terca", "Quarta", "Quinta", "Sexta", "Sabado"],
+  "days": {
+    "0": [
+      { "time": "08:00", "name": "EBD", "message": "Hoje temos Escola Biblica Dominical." },
+      { "time": "09:15", "name": "Culto de Adoracao", "message": "Participe conosco do culto da manha." },
+      { "time": "19:00", "name": "Culto de Adoracao", "message": "A noite, estaremos juntos em adoracao." }
+    ],
+    "2": [
+      { "time": "18:00", "name": "Organizacoes Missionarias", "message": "Hoje temos organizacoes missionarias." }
+    ],
+    "3": [
+      { "time": "19:00", "name": "Culto de Oracao", "message": "Tempo de oracao, intercessao e comunhao." }
+    ],
+    "4": [
+      { "time": "19:00", "name": "PGM", "message": "Pequeno Grupo Multiplicador nos lares." }
+    ],
+    "5": [
+      { "time": "19:00", "name": "Encontro da UBAESC", "message": "Uniao de Adolescentes Batistas em Escada." }
+    ],
+    "6": [
+      { "time": "19:30", "name": "Uniao Jovem", "message": "Encontro da juventude para louvor e Palavra." }
+    ]
+  },
+  "periods": {
+    "vacation-jan-2026": {
+      "label": "Férias de Janeiro",
+      "startDate": "2026-01-15",
+      "endDate": "2026-01-31",
+      "schedule": {
+        "0": [
+          { "time": "08:00", "name": "EBD", "message": "Escola Biblica durante as férias." },
+          { "time": "09:15", "name": "Culto Especial", "message": "Culto de louvor em família durante férias." }
+        ],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [
+          { "time": "19:30", "name": "Culto da Familia", "message": "Momento especial com toda a família." }
+        ]
+      }
+    },
+    "campaign-fev-2026": {
+      "label": "Semana de Campanha - Fevereiro",
+      "startDate": "2026-02-01",
+      "endDate": "2026-02-08",
+      "schedule": {
+        "0": [
+          { "time": "08:00", "name": "EBD Campanha", "message": "Tema especial: Crescimento espiritual." },
+          { "time": "09:15", "name": "Culto de Adoracao", "message": "Participem conosco em momento de avivamento." },
+          { "time": "19:00", "name": "Culto de Avivamento", "message": "Culto especial noturno da campanha." }
+        ],
+        "2": [
+          { "time": "19:00", "name": "Culto da Campanha", "message": "Culto especial durante semana de campanha." }
+        ],
+        "3": [
+          { "time": "19:00", "name": "Culto da Campanha", "message": "Culto especial durante semana de campanha." }
+        ],
+        "4": [
+          { "time": "19:00", "name": "Culto da Campanha", "message": "Culto especial durante semana de campanha." }
+        ],
+        "5": [
+          { "time": "19:00", "name": "Culto da Campanha", "message": "Culto especial durante semana de campanha." }
+        ],
+        "6": [
+          { "time": "19:30", "name": "Culto da Campanha", "message": "Encerramento da campanha ao louvor e adoracao." }
+        ]
+      }
+    },
+    "easter-season-2026": {
+      "label": "Temporada de Páscoa",
+      "startDate": "2026-04-01",
+      "endDate": "2026-04-30",
+      "schedule": {
+        "0": [
+          { "time": "08:00", "name": "EBD Pascoa", "message": "Tema: Ressurreicao de Cristo." },
+          { "time": "09:15", "name": "Culto de Adoracao", "message": "Culto de celebracao da Páscoa." },
+          { "time": "19:00", "name": "Culto Noturno", "message": "Noite de reflexao sobre a vitoria de Cristo." }
+        ],
+        "2": [
+          { "time": "18:00", "name": "Organizacoes Missionarias", "message": "Reuniao especial de Páscoa." }
+        ],
+        "3": [
+          { "time": "19:00", "name": "Culto de Oracao", "message": "Tempo de oracao pela salvacao das almas." }
+        ],
+        "4": [
+          { "time": "19:00", "name": "PGM", "message": "Pequeno Grupo Multiplicador nos lares." }
+        ],
+        "5": [
+          { "time": "19:00", "name": "Encontro da UBAESC", "message": "Uniao de Adolescentes Batistas em Escada." }
+        ],
+        "6": [
+          { "time": "19:30", "name": "Uniao Jovem", "message": "Encontro especial de Páscoa." }
+        ]
+      }
+    }
+  }
+}

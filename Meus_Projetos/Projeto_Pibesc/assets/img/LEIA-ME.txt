@@ -1,0 +1,12 @@
+Pasta reservada para imagens do site.
+
+Substitua os placeholders SVG no index.html pelas imagens reais:
+
+  - igreja-antiga.png   → foto histórica da fachada da PIBESC (P&B recomendado)
+  - adoracao.png        → foto de pessoas em adoração/culto
+  - logo.png            → logotipo oficial da PIBESC (versão PNG com fundo transparente)
+  - og-image.jpg        → imagem para redes sociais (Open Graph) 1200×630 px
+
+Uso no HTML:
+  <img src="assets/img/igreja-antiga.png" alt="">
+  <img src="assets/img/adoracao.png"      alt="">

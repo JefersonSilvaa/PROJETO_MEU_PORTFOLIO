@@ -1,0 +1,1577 @@
+/* =============================================================
+   PIBESC — Seções de Conteúdo
+   ============================================================= */
+
+/* ── Utilitários compartilhados ── */
+.section-label {
+    font-family: var(--font-sans);
+    font-size: 0.70rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-gold-dark);
+    display: block;
+    margin-bottom: 16px;
+}
+
+.section-divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto 28px;
+    width: fit-content;
+}
+
+.section-divider .div-line {
+    width: 48px;
+    height: 1px;
+    background: var(--color-gold);
+    opacity: 0.55;
+}
+
+.section-divider .div-diamond {
+    width: 7px;
+    height: 7px;
+    background: var(--color-gold);
+    transform: rotate(45deg);
+    border-radius: 1px;
+}
+
+
+/* ================================================================
+   SEÇÃO QUEM SOMOS
+   ================================================================ */
+.sobre-section {
+    background: var(--color-bg);
+    padding: 108px 24px 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Detalhe decorativo de fundo */
+.sobre-section::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -120px;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(214,178,94,0.07) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.sobre-section::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    left: -100px;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(22, 57, 76, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.sobre-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* ── Coluna de texto ── */
+.sobre-text {
+    position: relative;
+    z-index: 1;
+}
+
+.sobre-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.4rem, 4vw, 3.4rem);
+    font-weight: 700;
+    line-height: 1.12;
+    color: var(--color-navy);
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+}
+
+.sobre-title em {
+    font-style: italic;
+    color: var(--color-gold-dark);
+}
+
+.sobre-desc {
+    font-family: var(--font-sans);
+    font-size: clamp(0.9rem, 1.4vw, 1.0rem);
+    font-weight: 400;
+    line-height: 1.82;
+    color: var(--color-text);
+    margin: 0 0 36px;
+    max-width: 480px;
+}
+
+.sobre-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--color-navy);
+    border: 2px solid var(--color-navy);
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+}
+
+.sobre-cta:hover {
+    background: transparent;
+    color: var(--color-navy);
+    transform: translateY(-2px);
+}
+
+.sobre-cta .cta-icon {
+    font-size: 0.95rem;
+    line-height: 1;
+    flex-shrink: 0;
+    transition: transform var(--transition-fast);
+}
+
+.sobre-cta:hover .cta-icon {
+    transform: translateX(3px);
+}
+
+/* ── Coluna visual ── */
+.sobre-visual {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 52px 44px;
+    box-shadow:
+        0 2px 8px rgba(22, 57, 76, 0.06),
+        0 16px 48px rgba(22, 57, 76, 0.1);
+    border: 1px solid rgba(214, 178, 94, 0.18);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.sobre-card-number {
+    font-family: var(--font-serif);
+    font-size: clamp(4.5rem, 8vw, 7rem);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-navy);
+    letter-spacing: -0.03em;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.sobre-card-number span {
+    color: var(--color-gold);
+}
+
+.sobre-card-label {
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-text);
+    opacity: 0.7;
+    display: block;
+    margin-bottom: 32px;
+}
+
+.sobre-card-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 1px solid rgba(214, 178, 94, 0.2);
+    padding-top: 28px;
+}
+
+.sobre-card-items li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.sobre-card-items li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-gold);
+    flex-shrink: 0;
+}
+
+
+/* ── Indicadores de carrossel modernos ── */
+.carousel-wrap {
+    position: relative;
+}
+
+/* fade direita – hint de mais conteúdo */
+.carousel-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 20px;
+    width: 52px;
+    pointer-events: none;
+    background: linear-gradient(to right, transparent, rgba(7, 18, 28, 0.72));
+    border-radius: 0 18px 18px 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.carousel-wrap.is-end::after {
+    opacity: 0;
+}
+
+/* pill dots */
+.carousel-dots {
+    display: none;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 12px;
+    padding: 0 4px;
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 99px;
+    background: rgba(22, 57, 76, 0.25);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: width 0.28s ease, background 0.28s ease, opacity 0.28s ease;
+    flex-shrink: 0;
+}
+
+.carousel-dot.is-active {
+    width: 24px;
+    background: var(--color-gold-dark);
+    opacity: 1;
+}
+
+/* agenda-board tem fundo claro, dots mais escuros */
+.agenda-board .carousel-dots .carousel-dot {
+    background: rgba(22, 57, 76, 0.2);
+}
+
+.agenda-board .carousel-dots .carousel-dot.is-active {
+    background: var(--color-navy);
+}
+
+@media (max-width: 900px) {
+    .carousel-dots {
+        display: flex;
+    }
+
+    .carousel-wrap::after {
+        background: linear-gradient(to right, transparent, rgba(7, 18, 28, 0.68));
+    }
+
+    /* fade da agenda (fundo claro) */
+    .agenda-board .carousel-wrap::after {
+        background: linear-gradient(to right, transparent, rgba(247, 247, 246, 0.88));
+        border-radius: 0 12px 12px 0;
+    }
+}
+
+
+/* ================================================================
+   SEÇÃO CULTOS, AGENDA E PEQUENOS GRUPOS
+   ================================================================ */
+.ministerios-section {
+    position: relative;
+    padding: 100px 24px;
+    background:
+        radial-gradient(1200px 500px at 0% 10%, rgba(214, 178, 94, 0.12), transparent 60%),
+        radial-gradient(1100px 520px at 100% 100%, rgba(22, 57, 76, 0.22), transparent 62%),
+        linear-gradient(160deg, #071927 0%, #0c2638 55%, #0c1f2d 100%);
+}
+
+.ministerios-shell {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+/* cabeçalho da seção ministérios */
+.ministerios-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ministerios-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.ministerios-header .section-label {
+    color: var(--color-gold);
+    opacity: 1;
+}
+
+.ministerios-header .div-line {
+    background: rgba(214, 178, 94, 0.45);
+}
+
+.ministerios-header .div-diamond {
+    background: var(--color-gold);
+}
+
+.ministerios-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 26px;
+}
+
+/* ── Feature card: imagem no topo, conteúdo embaixo ── */
+.feature-card {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(214, 178, 94, 0.46);
+    background-color: #0c2333;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 36px rgba(6, 17, 25, 0.52);
+    border-color: rgba(214, 178, 94, 0.85);
+}
+
+/* thumbnail: só a parte superior com a imagem */
+.feature-card-thumb {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.feature-card-thumb::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(7,18,28,0.15) 40%, rgba(12,35,51,0.92) 100%);
+}
+
+.feature-card-cultos .feature-card-thumb {
+    background-image: url('../img/adoracao_culto.png');
+}
+
+.feature-card-agenda .feature-card-thumb {
+    background-image: url('../img/igreja-antiga.png');
+}
+
+.feature-card-grupos .feature-card-thumb {
+    background-image: url('../img/pequenos-grupos.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* corpo do card: ícone + texto */
+.feature-card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 22px 22px;
+    background: transparent;
+}
+
+.feature-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1.25rem;
+    color: #fff;
+    background: linear-gradient(160deg, var(--color-gold), var(--color-gold-dark));
+    box-shadow: 0 8px 20px rgba(201, 155, 60, 0.4);
+    margin-top: -27px; /* sobrepõe a divisória imagem/corpo */
+    margin-bottom: 14px;
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.feature-icon i {
+    font-size: 1.35rem;
+    line-height: 1;
+}
+
+.feature-card h3 {
+    margin: 0 0 8px;
+    font-family: var(--font-sans);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.feature-card p {
+    margin: 0 0 14px;
+    font-family: var(--font-sans);
+    font-size: 0.93rem;
+    line-height: 1.6;
+    color: rgba(248, 247, 244, 0.88);
+}
+
+.feature-list {
+    margin: 0 0 14px;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 7px;
+}
+
+.feature-list li {
+    font-family: var(--font-sans);
+    font-size: 0.84rem;
+    color: rgba(248, 247, 244, 0.88);
+    line-height: 1.4;
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.feature-list li i {
+    color: var(--color-gold);
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.feature-list strong {
+    color: #fff;
+}
+
+.feature-link {
+    margin-top: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-family: var(--font-sans);
+    font-size: 0.77rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    width: fit-content;
+    border-bottom: 1px solid transparent;
+    transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.feature-link:hover {
+    border-color: var(--color-gold);
+    transform: translateX(2px);
+}
+
+.agenda-board {
+    background: #f7f7f6;
+    border-radius: 18px;
+    border: 1px solid rgba(214, 178, 94, 0.3);
+    padding: 24px;
+}
+
+.agenda-board h3 {
+    margin: 0 0 4px;
+    font-family: var(--font-sans);
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--color-navy);
+}
+
+.agenda-board > p {
+    margin: 0 0 18px;
+    font-family: var(--font-sans);
+    color: var(--color-text);
+}
+
+.agenda-timeline {
+    --agenda-progress: 0%;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 0;
+    margin-bottom: 16px;
+    position: relative;
+    padding-top: 4px;
+}
+
+.agenda-timeline::before {
+    content: '';
+    position: absolute;
+    left: 7.2%;
+    right: 7.2%;
+    top: 20px;
+    height: 2px;
+    background: rgba(201, 155, 60, 0.35);
+}
+
+.agenda-timeline::after {
+    content: '';
+    position: absolute;
+    left: 7.2%;
+    top: 20px;
+    height: 2px;
+    width: var(--agenda-progress);
+    background: var(--color-gold-dark);
+    transition: width var(--transition-fast);
+}
+
+.agenda-timeline-item {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+    min-height: 58px;
+    font-family: var(--font-sans);
+    cursor: pointer;
+}
+
+.agenda-timeline-item::before {
+    display: none;
+}
+
+.agenda-timeline-item:first-child::before {
+    display: none;
+}
+
+.agenda-timeline-badge {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--color-navy);
+    border: 2px solid var(--color-gold);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-family: var(--font-sans);
+    font-size: 0.63rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+
+.agenda-timeline-label {
+    font-family: var(--font-sans);
+    font-size: 0.71rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-navy);
+    letter-spacing: 0.03em;
+}
+
+.agenda-timeline-item.is-active .agenda-timeline-badge {
+    background: var(--color-gold-dark);
+    border-color: var(--color-navy);
+    transform: scale(1.08);
+}
+
+.agenda-timeline-item.is-active .agenda-timeline-label {
+    color: var(--color-gold-dark);
+}
+
+.agenda-day.is-active {
+    border-color: rgba(201, 155, 60, 0.7);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.09);
+}
+
+.agenda-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.agenda-day {
+    background: #fff;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 12px;
+    padding: 13px 11px;
+    min-height: 174px;
+    display: flex;
+    flex-direction: column;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    cursor: pointer;
+}
+
+.agenda-day h4 {
+    margin: 0 0 6px;
+    font-family: var(--font-sans);
+    font-size: 0.86rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-navy);
+}
+
+.agenda-day h4 i {
+    color: var(--color-gold-dark);
+    margin-right: 4px;
+}
+
+/* nome principal da atividade */
+.agenda-activity {
+    margin: 0 0 2px;
+    font-family: var(--font-sans);
+    font-size: 0.84rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    line-height: 1.3;
+}
+
+/* nome completo / subtítulo da organização */
+.agenda-subtitle {
+    margin: 0 0 4px;
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    color: var(--color-text);
+    line-height: 1.3;
+    font-style: italic;
+}
+
+/* horário */
+.agenda-time {
+    margin: 0 0 5px;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--color-gold-dark);
+}
+
+.agenda-time-label {
+    font-weight: 700;
+    color: var(--color-gold-dark);
+}
+
+/* descrição textual */
+.agenda-desc {
+    margin: 0 0 4px;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    line-height: 1.36;
+    color: var(--color-text);
+}
+
+/* nota de rodapé (ex: Salas diferentes) */
+.agenda-note {
+    margin-top: auto;
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    color: var(--color-text);
+    font-style: italic;
+    opacity: 0.75;
+}
+
+/* badge de status (ex: SUSPENSO) */
+.agenda-badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 99px;
+    font-family: var(--font-sans);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.agenda-badge--suspended {
+    background: #FEF3C7;
+    color: #92400E;
+    border: 1px solid #FCD34D;
+}
+
+.agenda-day p {
+    margin: 0 0 4px;
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    line-height: 1.36;
+    color: var(--color-text-dark);
+}
+
+.agenda-day span {
+    display: block;
+    margin-bottom: 6px;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--color-gold-dark);
+}
+
+.agenda-day ul {
+    margin: 4px 0 0;
+    padding-left: 0;
+    display: grid;
+    gap: 4px;
+    list-style: none;
+}
+
+.agenda-day li {
+    font-family: var(--font-sans);
+    font-size: 0.76rem;
+    line-height: 1.34;
+    color: var(--color-text);
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.agenda-day li i {
+    color: var(--color-gold-dark);
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.agenda-day li em {
+    font-style: normal;
+    opacity: 0.78;
+}
+
+/* lista especial do domingo com horários coloridos */
+.agenda-cultos-list li .agenda-time-label {
+    font-weight: 700;
+    color: var(--color-gold-dark);
+    min-width: 38px;
+    display: inline-block;
+}
+
+.agenda-day:focus-visible {
+    outline: 2px solid var(--color-gold-dark);
+    outline-offset: 2px;
+}
+
+/* ================================================================
+   SEÇÃO PRÓXIMO CULTO DINÂMICO
+   ================================================================ */
+.culto-dinamico-section {
+    background:
+        radial-gradient(900px 320px at 0% 0%, rgba(214, 178, 94, 0.08), transparent 60%),
+        radial-gradient(1000px 380px at 100% 100%, rgba(22, 57, 76, 0.2), transparent 62%),
+        linear-gradient(160deg, #071a28 0%, #0b2538 58%, #0a2031 100%);
+    padding: 0 0 18px;
+}
+
+.culto-dinamico-shell {
+    max-width: 1240px;
+    margin: 0 auto;
+    border: 1px solid rgba(214, 178, 94, 0.28);
+    border-radius: 0;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(8, 31, 48, 0.9) 0%, rgba(5, 34, 52, 0.88) 50%, rgba(8, 33, 50, 0.9) 100%);
+}
+
+.culto-dinamico-top {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(340px, 1fr);
+    gap: 0;
+    border-bottom: 1px solid rgba(214, 178, 94, 0.24);
+}
+
+.culto-proximo-card {
+    padding: 22px 26px;
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr);
+    gap: 12px;
+    align-items: center;
+}
+
+.culto-proximo-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1.5px solid var(--color-gold);
+    color: var(--color-gold);
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+}
+
+.culto-proximo-label {
+    margin: 0 0 2px;
+    font-family: var(--font-sans);
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--color-gold);
+}
+
+.culto-proximo-content h3 {
+    margin: 0 0 2px;
+    font-family: var(--font-serif);
+    font-size: clamp(1.45rem, 2.5vw, 2.05rem);
+    line-height: 1.04;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+}
+
+.culto-proximo-name {
+    margin: 0;
+    font-family: var(--font-sans);
+    font-size: 0.98rem;
+    color: rgba(248, 247, 244, 0.95);
+}
+
+.culto-proximo-message {
+    margin: 0;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    color: rgba(248, 247, 244, 0.84);
+}
+
+.culto-social-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 22px 24px;
+    border-left: 0;
+}
+
+.culto-social-wrap::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 20px;
+    bottom: 20px;
+    width: 1px;
+    background: rgba(214, 178, 94, 0.34);
+}
+
+.culto-social-block p {
+    margin: 0 0 8px;
+    font-family: var(--font-sans);
+    font-size: 0.67rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-gold);
+    font-weight: 700;
+}
+
+.culto-social-links {
+    display: flex;
+    gap: 8px;
+}
+
+.culto-social-links a {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid rgba(214, 178, 94, 0.72);
+    display: grid;
+    place-items: center;
+    color: var(--color-gold);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: transform var(--transition-fast), background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.culto-social-links a:hover {
+    transform: translateY(-2px);
+    background: rgba(214, 178, 94, 0.14);
+    border-color: var(--color-gold);
+    color: #fff;
+}
+
+.culto-whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 160px;
+    padding: 11px 20px;
+    border-radius: 999px;
+    text-decoration: none;
+    background: linear-gradient(160deg, var(--color-gold), var(--color-gold-dark));
+    color: #fffdf8;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    white-space: nowrap;
+    transition: transform var(--transition-fast), filter var(--transition-fast);
+}
+
+.culto-whatsapp-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+}
+
+.culto-whatsapp-btn i {
+    font-size: 0.98rem;
+}
+
+.culto-dinamico-bottom {
+    padding: 12px 24px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 16px;
+}
+
+.culto-footer-logo {
+    width: 172px;
+    max-width: 100%;
+    opacity: 0.96;
+    filter: brightness(0) invert(1) grayscale(0.2);
+}
+
+.culto-footer-copy {
+    margin: 0;
+    text-align: center;
+    font-family: var(--font-sans);
+    font-size: 0.76rem;
+    color: rgba(248, 247, 244, 0.78);
+}
+
+.culto-footer-links {
+    display: flex;
+    gap: 14px;
+}
+
+.culto-footer-links a {
+    text-decoration: none;
+    font-family: var(--font-sans);
+    font-size: 0.69rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: rgba(248, 247, 244, 0.84);
+    display: inline-flex;
+    align-items: center;
+}
+
+.culto-footer-links a + a::before {
+    content: '|';
+    color: rgba(214, 178, 94, 0.7);
+    margin-right: 14px;
+}
+
+.culto-footer-links a:hover {
+    color: var(--color-gold);
+}
+
+/* continuação da agenda: informações importantes + versículo */
+.agenda-info-strip {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: minmax(0, 2.2fr) minmax(260px, 1fr);
+    gap: 12px;
+}
+
+.agenda-info-main {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 12px;
+    background: #f4f3f1;
+    border: 1px solid rgba(214, 178, 94, 0.35);
+    border-radius: 10px;
+    padding: 12px 14px;
+}
+
+.agenda-info-badge {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid rgba(201, 155, 60, 0.7);
+    color: var(--color-gold-dark);
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+    margin-top: 2px;
+}
+
+.agenda-info-title {
+    margin: 0 0 8px;
+    font-family: var(--font-sans);
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-gold-dark);
+}
+
+.agenda-info-items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.agenda-info-item {
+    display: grid;
+    grid-template-columns: 20px minmax(0, 1fr);
+    gap: 8px;
+    padding: 2px 8px;
+}
+
+.agenda-info-item + .agenda-info-item {
+    border-left: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+.agenda-info-item i {
+    color: var(--color-gold-dark);
+    font-size: 0.98rem;
+    margin-top: 1px;
+}
+
+.agenda-info-item h4 {
+    margin: 0 0 3px;
+    font-family: var(--font-sans);
+    font-size: 0.76rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+}
+
+.agenda-info-item p {
+    margin: 0;
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    line-height: 1.35;
+    color: var(--color-text);
+}
+
+.agenda-verse-card {
+    background: linear-gradient(160deg, #082339 0%, #0b2c46 55%, #0a2235 100%);
+    border: 1px solid rgba(214, 178, 94, 0.45);
+    border-radius: 10px;
+    padding: 12px 14px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.agenda-verse-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: rgba(214, 178, 94, 0.2);
+    color: var(--color-gold);
+    margin-bottom: 8px;
+}
+
+.agenda-verse-text {
+    margin: 0 0 8px;
+    font-family: var(--font-sans);
+    font-size: 0.76rem;
+    line-height: 1.45;
+    color: rgba(248, 247, 244, 0.92);
+}
+
+.agenda-verse-ref {
+    margin: 0;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-gold);
+}
+
+
+/* ================================================================
+   RESPONSIVO
+   ================================================================ */
+@media (max-width: 900px) {
+    .sobre-section {
+        padding: 80px 20px 72px;
+    }
+
+    .sobre-inner {
+        grid-template-columns: 1fr;
+        gap: 52px;
+    }
+
+    .sobre-text {
+        text-align: center;
+    }
+
+    .sobre-desc {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sobre-cta {
+        margin: 0 auto;
+    }
+
+    .ministerios-section {
+        padding: 64px 14px;
+    }
+
+    .ministerios-feature-grid {
+        display: grid;
+        grid-template-columns: none;
+        grid-auto-flow: column;
+        grid-auto-columns: min(460px, 92%);
+        gap: 10px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 4px;
+        margin-bottom: 14px;
+        scroll-snap-type: x mandatory;
+        scroll-padding-left: 2px;
+        overscroll-behavior-x: contain;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-x;
+    }
+
+    .ministerios-feature-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .feature-card {
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+
+    .feature-card-thumb {
+        height: 140px;
+    }
+
+    .feature-card-body {
+        padding: 0 16px 16px;
+    }
+
+    .feature-icon {
+        width: 46px;
+        height: 46px;
+        margin-top: -23px;
+        margin-bottom: 10px;
+    }
+
+    .feature-card h3 {
+        font-size: 1rem;
+        margin-bottom: 6px;
+    }
+
+    .feature-card p {
+        font-size: 0.88rem;
+        line-height: 1.45;
+        margin-bottom: 10px;
+    }
+
+    .feature-list {
+        gap: 6px;
+    }
+
+    .feature-list li {
+        font-size: 0.82rem;
+        line-height: 1.3;
+    }
+
+    .agenda-grid {
+        display: grid;
+        grid-template-columns: none;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(230px, 84%);
+        gap: 8px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 4px;
+        scroll-padding-left: 2px;
+        overscroll-behavior-x: contain;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-x;
+    }
+
+    .agenda-day {
+        min-height: 166px;
+        padding: 11px 10px;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+
+    .agenda-day h4 {
+        font-size: 0.82rem;
+        margin-bottom: 6px;
+    }
+
+    .agenda-day p,
+    .agenda-day li {
+        font-size: 0.76rem;
+        line-height: 1.3;
+    }
+
+    .agenda-day span {
+        font-size: 0.74rem;
+        margin-bottom: 4px;
+    }
+
+    .agenda-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .agenda-timeline {
+        display: grid;
+        grid-template-columns: none;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(230px, 84%);
+        overflow-x: auto;
+        overflow-y: hidden;
+        margin-bottom: 8px;
+        scroll-snap-type: x mandatory;
+        scroll-padding-left: 2px;
+        overscroll-behavior-x: contain;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-x;
+    }
+
+    /* ── Timeline mobile: sempre fixa, todos os 7 visíveis ── */
+    .agenda-timeline {
+        display: grid;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        grid-auto-flow: unset;
+        grid-auto-columns: unset;
+        overflow: visible;
+        scroll-snap-type: none;
+        touch-action: auto;
+        margin-bottom: 10px;
+    }
+
+    /* linha base e progresso voltam a cobrir toda a largura */
+    .agenda-timeline::before {
+        left: 7%;
+        right: 7%;
+        width: auto;
+    }
+
+    .agenda-timeline::after {
+        left: 7%;
+        width: var(--agenda-progress);
+    }
+
+    .agenda-timeline-item {
+        scroll-snap-align: unset;
+        scroll-snap-stop: unset;
+        align-items: center;
+        padding: 0;
+        min-height: 44px;
+        gap: 4px;
+    }
+
+    .agenda-timeline-badge {
+        width: 28px;
+        height: 28px;
+        font-size: 0.54rem;
+    }
+
+    .agenda-timeline-label {
+        display: none;
+    }
+
+    .culto-dinamico-section {
+        padding: 0 10px 14px;
+    }
+
+    .culto-dinamico-top {
+        grid-template-columns: 1fr;
+    }
+
+    .culto-proximo-card {
+        padding: 14px 12px;
+        grid-template-columns: 44px minmax(0, 1fr);
+        gap: 10px;
+    }
+
+    .culto-proximo-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .culto-proximo-content h3 {
+        font-size: clamp(1.2rem, 5vw, 1.55rem);
+    }
+
+    .culto-proximo-name {
+        font-size: 0.9rem;
+    }
+
+    .culto-proximo-message {
+        font-size: 0.8rem;
+    }
+
+    .culto-social-wrap {
+        border-left: 0;
+        border-top: 1px solid rgba(214, 178, 94, 0.28);
+        padding: 12px;
+    }
+
+    .culto-social-wrap::before {
+        display: none;
+    }
+
+    .culto-dinamico-bottom {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .culto-footer-logo {
+        margin: 0 auto;
+        width: 160px;
+    }
+
+    .culto-footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .culto-footer-links a + a::before {
+        margin-right: 8px;
+    }
+
+    .agenda-info-strip {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 12px;
+    }
+
+    .agenda-info-main {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .agenda-info-badge {
+        display: none;
+    }
+
+    .agenda-info-title {
+        margin-bottom: 6px;
+    }
+
+    .agenda-info-items {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 6px;
+    }
+
+    .agenda-info-item {
+        grid-template-columns: 16px minmax(0, 1fr);
+        gap: 6px;
+        padding: 0 4px;
+    }
+
+    .agenda-info-item + .agenda-info-item {
+        border-left: 1px solid rgba(15, 23, 42, 0.1);
+    }
+
+    .agenda-info-item h4 {
+        font-size: 0.69rem;
+    }
+
+    .agenda-info-item p {
+        font-size: 0.66rem;
+        line-height: 1.3;
+    }
+
+    .agenda-verse-card {
+        padding: 10px 12px;
+    }
+
+    .agenda-verse-text {
+        font-size: 0.72rem;
+    }
+
+    .agenda-verse-ref {
+        font-size: 0.88rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .sobre-section {
+        padding: 64px 18px 60px;
+    }
+
+    .sobre-card {
+        padding: 36px 28px;
+    }
+
+    .ministerios-section {
+        padding: 56px 12px;
+    }
+
+    .agenda-board {
+        padding: 14px 10px;
+    }
+
+    .agenda-board h3 {
+        font-size: 1.26rem;
+        margin-bottom: 2px;
+    }
+
+    .agenda-board > p {
+        font-size: 0.88rem;
+        margin-bottom: 10px;
+    }
+
+    .ministerios-feature-grid {
+        grid-auto-columns: 92%;
+    }
+
+    .agenda-grid {
+        grid-auto-columns: calc(50% - 6px);
+    }
+
+    /* timeline nunca muda de layout no mobile */
+    .agenda-timeline {
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+    }
+
+    .agenda-day {
+        min-height: 152px;
+    }
+
+    .culto-social-wrap {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .culto-whatsapp-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 10px 14px;
+    }
+
+    .agenda-info-items {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .agenda-info-item:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .agenda-info-item:last-child {
+        border-left: 0;
+        border-top: 1px solid rgba(15, 23, 42, 0.1);
+        padding-top: 6px;
+    }
+
+    .agenda-day ul {
+        padding-left: 10px;
+    }
+
+    .feature-card h3 {
+        font-size: 0.95rem;
+    }
+
+    .feature-card p {
+        font-size: 0.85rem;
+    }
+
+    .feature-list li {
+        font-size: 0.76rem;
+    }
+
+    .feature-link {
+        font-size: 0.72rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .ministerios-feature-grid {
+        grid-auto-columns: 92%;
+    }
+
+    .agenda-grid {
+        grid-auto-columns: calc(50% - 5px);
+    }
+
+    /* timeline sempre fixa em 7 colunas */
+    .agenda-timeline {
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+    }
+
+    .feature-card {
+        /* altura controlada pelo conteúdo */
+    }
+
+    .agenda-day {
+        min-height: 154px;
+    }
+
+    .culto-proximo-card {
+        padding: 14px 10px;
+    }
+
+    .culto-social-wrap,
+    .culto-dinamico-bottom {
+        padding: 10px 8px;
+    }
+
+    .culto-social-links {
+        justify-content: center;
+    }
+
+    .culto-social-block p {
+        text-align: center;
+    }
+
+    .agenda-info-items {
+        grid-template-columns: 1fr;
+    }
+
+    .agenda-info-item + .agenda-info-item {
+        border-left: 0;
+        border-top: 1px solid rgba(15, 23, 42, 0.1);
+        padding-top: 6px;
+    }
+}

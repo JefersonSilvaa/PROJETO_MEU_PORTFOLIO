@@ -1,0 +1,530 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Primeira Igreja Batista em Escada – Há mais de um século fazendo discípulos de Cristo.">
+
+    <title>PIBESC – Primeira Igreja Batista em Escada</title>
+
+    <!-- ── Fontes ── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Cinzel:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- ── Estilos ── -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/sections.css">
+</head>
+<body>
+
+    <!-- ================================================================
+         NAVBAR FLUTUANTE
+         ================================================================ -->
+    <nav class="navbar" role="navigation" aria-label="Navegacao principal">
+
+        <!-- Badge de aniversário – visível apenas em mobile, atualizado via JS -->
+        <div class="nav-anniversary" id="nav-anniversary" aria-label="Anos de fundação da igreja">
+            <span class="nav-anniversary-num" id="nav-anniversary-num">103</span>
+            <span class="nav-anniversary-label">anos</span>
+        </div>
+
+        <button class="mobile-menu-btn" type="button" aria-label="Abrir menu" aria-controls="mobile-drawer" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Links internos – esquerda -->
+        <div class="nav-left">
+            <a href="#inicio"  class="nav-link active">Início</a>
+            <a href="#sobre"   class="nav-link">Sobre Nós</a>
+            <a href="#cultos"  class="nav-link">Cultos</a>
+            <a href="#agenda"  class="nav-link">Agenda</a>
+        </div>
+
+        <!-- Logo central -->
+        <div class="nav-center">
+            <div class="nav-brand-badge">
+                <img
+                    class="nav-logo"
+                    src="assets/img/logo.png"
+                    alt="PIBESC - Primeira Igreja Batista em Escada"
+                >
+            </div>
+        </div>
+
+        <!-- Departamentos / externos – direita -->
+        <div class="nav-right">
+            <a href="#ubaesc"         class="nav-link">UBAESC</a>
+            <a href="#unijovem"      class="nav-link">UNIJOVEM</a>
+            <a href="#departamentos" class="nav-dept-btn">+ Departamentos</a>
+        </div>
+
+    </nav>
+
+    <div class="mobile-overlay" hidden></div>
+
+    <aside id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+        <div class="mobile-drawer-header">
+            <img class="mobile-drawer-logo" src="assets/img/logo.png" alt="PIBESC - Primeira Igreja Batista em Escada">
+            <button class="mobile-close-btn" type="button" aria-label="Fechar menu">×</button>
+        </div>
+
+        <div class="mobile-menu-group">
+            <h3>Navegação</h3>
+            <a href="#inicio" class="mobile-link active">Início</a>
+            <a href="#sobre" class="mobile-link">Sobre Nós</a>
+            <a href="#cultos" class="mobile-link">Cultos</a>
+            <a href="#agenda" class="mobile-link">Agenda</a>
+        </div>
+
+        <div class="mobile-menu-group">
+            <h3>Ministérios</h3>
+            <a href="#ubaesc" class="mobile-link">UBAESC</a>
+            <a href="#unijovem" class="mobile-link">UNIJOVEM</a>
+        </div>
+
+        <div class="mobile-menu-group">
+            <h3>Departamentos</h3>
+            <a href="#departamentos" class="mobile-link">+ Departamentos</a>
+        </div>
+    </aside>
+
+
+    <!-- ================================================================
+         HERO SECTION
+         ================================================================ -->
+    <section class="hero" id="inicio">
+
+        <!-- Textura grain -->
+        <div class="hero-grain" aria-hidden="true"></div>
+
+        <!-- Pincelada Topo Esquerdo - Azul Petroleo -->
+          <svg class="brushstroke-tl" viewBox="0 0 680 420" fill="none"
+             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M-8 34 C82 12, 160 12, 252 42 C332 68, 418 114, 488 186"
+                stroke="#16394C" stroke-width="122" stroke-linecap="round" opacity="0.94"/>
+            <path d="M-16 18 C108 -8, 204 2, 294 30 C390 60, 482 122, 578 226"
+                stroke="#16394C" stroke-width="62" stroke-linecap="round" opacity="0.68"/>
+            <path d="M32 26 C138 8, 230 14, 328 50"
+                stroke="rgba(255,255,255,0.2)" stroke-width="8" stroke-linecap="round" opacity="0.45"/>
+        </svg>
+
+        <!-- Pincelada Topo Direito - Dourado -->
+          <svg class="brushstroke-tr" viewBox="0 0 520 280" fill="none"
+             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M524 38 C452 14, 388 10, 300 38 C236 58, 176 90, 122 142"
+                stroke="#C89B3C" stroke-width="92" stroke-linecap="round" opacity="0.2"/>
+            <path d="M522 20 C442 -6, 360 -2, 264 34 C202 56, 142 92, 88 144"
+                stroke="#D6B25E" stroke-width="40" stroke-linecap="round" opacity="0.22"/>
+            <path d="M504 26 C410 8, 326 14, 236 48"
+                stroke="rgba(255,255,255,0.22)" stroke-width="5" stroke-linecap="round" opacity="0.42"/>
+        </svg>
+
+        <!-- Pincelada Canto Inferior Direito - Vinho -->
+          <svg class="brushstroke-br" viewBox="0 -50 220 420" fill="none"
+             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M634 340 C530 270, 436 218, 332 192 C232 166, 130 166, 28 204"
+                stroke="#8B1E2D" stroke-width="112" stroke-linecap="round" opacity="0.9"/>
+            <path d="M624 328 C510 252, 410 206, 292 182 C198 164, 102 164, 12 196"
+                stroke="#8B1E2D" stroke-width="52" stroke-linecap="round" opacity="0.48"/>
+            <path d="M610 322 C500 250, 402 212, 278 192"
+                stroke="rgba(255,255,255,0.2)" stroke-width="7" stroke-linecap="round" opacity="0.35"/>
+        </svg>
+
+        <!-- Numero historico marca dagua -->
+        <div class="hero-years" aria-hidden="true">103</div>
+
+        <!-- Foto antiga da Igreja - esquerda inferior -->
+        <div class="hero-img-left" aria-hidden="true">
+            <img src="assets/img/igreja-antiga.png" alt="" loading="lazy" decoding="async">
+        </div>
+
+        <!-- Foto pessoas adorando - direita inferior -->
+        <div class="hero-img-right" aria-hidden="true">
+            <img src="assets/img/adoracao.png" alt="" loading="lazy" decoding="async">
+        </div>
+
+        <!-- Conteudo central -->
+        <div class="hero-content">
+
+            <!-- Simbolo da Igreja - usando o logo real -->
+            <div class="church-symbol-wrap" role="img" aria-label="Símbolo da PIBESC">
+                <img class="church-symbol-logo" src="assets/img/logo.png" alt="">
+            </div>
+
+            <!-- Nome da Igreja -->
+            <h1 class="church-name">
+                <span class="cn-linha1">Primeira</span>
+                <span class="cn-linha2">Igreja Batista</span>
+                <span class="cn-linha3"><em>em</em> Escada</span>
+            </h1>
+
+            <!-- Divisoria decorativa -->
+            <div class="name-divider" aria-hidden="true">
+                <div class="divider-line"></div>
+                <div class="divider-diamond"></div>
+                <div class="divider-line r"></div>
+            </div>
+
+            <!-- Frase institucional -->
+            <p class="church-phrase">
+                Há mais de um século fazendo <span class="hl">discípulos de Cristo</span>
+            </p>
+
+            <!-- Botao CTA -->
+            <a href="#historia" class="hero-cta">
+                Conheça Nossa História
+                <i class="bi bi-arrow-right cta-icon" aria-hidden="true"></i>
+            </a>
+
+        </div>
+
+        <!-- Indicador de scroll -->
+        <div class="scroll-indicator" aria-hidden="true">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+            <span class="scroll-label">Rolar</span>
+        </div>
+
+    </section>
+
+
+    <!-- ================================================================
+         QUEM SOMOS
+         ================================================================ -->
+    <section class="sobre-section" id="sobre">
+        <div class="sobre-inner">
+
+            <!-- ── Coluna de texto ── -->
+            <div class="sobre-text">
+
+                <span class="section-label">Quem Somos</span>
+
+                <h2 class="sobre-title">
+                    Uma história de <em>Fé</em>,<br>
+                    amor e propósito
+                </h2>
+
+                <div class="section-divider" aria-hidden="true">
+                    <div class="div-line"></div>
+                    <div class="div-diamond"></div>
+                    <div class="div-line"></div>
+                </div>
+
+                <p class="sobre-desc">
+                    Desde 1924, somos uma igreja comprometida com a Palavra de Deus e com as pessoas.
+                    Ao longo de mais de um século, temos visto o agir de Deus transformar vidas,
+                    famílias e nossa cidade.
+                </p>
+
+                <a href="#historia" class="sobre-cta">
+                    Conheça Nossa História
+                    <i class="bi bi-arrow-right cta-icon" aria-hidden="true"></i>
+                </a>
+
+            </div>
+
+            <!-- ── Coluna visual – card com dados ── -->
+            <div class="sobre-visual">
+                <div class="sobre-card">
+                    <strong class="sobre-card-number">10<span>3</span></strong>
+                    <span class="sobre-card-label">Anos de História</span>
+                    <ul class="sobre-card-items">
+                        <li>Fundada em 1924, em Escada – PE</li>
+                        <li>Mais de um século de missão</li>
+                        <li>Discipulado, família e comunidade</li>
+                        <li>Comprometida com o Evangelho</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================================================================
+         CULTOS, AGENDA E PEQUENOS GRUPOS
+         ================================================================ -->
+    <section class="ministerios-section" id="cultos">
+        <div class="ministerios-shell">
+
+            <!-- Cabeçalho da seção -->
+            <div class="ministerios-header">
+                <span class="section-label">Nossa Igreja</span>
+                <h2 class="ministerios-title">Ministérios</h2>
+                <div class="section-divider"><span class="div-line"></span><span class="div-diamond"></span><span class="div-line"></span></div>
+            </div>
+
+            <div class="carousel-wrap" data-carousel-id="cards">
+            <div class="ministerios-feature-grid" id="carousel-cards">
+
+                <a href="#agenda" class="feature-card feature-card-cultos">
+                    <div class="feature-card-thumb"></div>
+                    <div class="feature-card-body">
+                        <div class="feature-icon" aria-hidden="true"><i class="bi bi-book"></i></div>
+                        <h3>Cultos de Adoração</h3>
+                        <p>Venha adorar a Deus conosco nos nossos cultos presenciais.</p>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-sun" aria-hidden="true"></i> <strong>Domingo Manhã</strong> — 08h00 | BD (EBD)</li>
+                            <li><i class="bi bi-sun" aria-hidden="true"></i> <strong>Domingo Manhã</strong> — 09h15 | Culto de Adoração (duração: 1h30)</li>
+                            <li><i class="bi bi-moon-stars" aria-hidden="true"></i> <strong>Domingo Noite</strong> — 19h00 | Culto de Adoração (duração: 2h)</li>
+                        </ul>
+                        <span class="feature-link">Saiba Mais <i class="bi bi-arrow-right cta-icon"></i></span>
+                    </div>
+                </a>
+
+                <a href="#agenda" class="feature-card feature-card-agenda">
+                    <div class="feature-card-thumb"></div>
+                    <div class="feature-card-body">
+                        <div class="feature-icon" aria-hidden="true"><i class="bi bi-calendar3"></i></div>
+                        <h3>Agenda Semanal</h3>
+                        <p>Confira nossa programação e eventos da semana.</p>
+                        <span class="feature-link">Ver Agenda <i class="bi bi-arrow-right cta-icon"></i></span>
+                    </div>
+                </a>
+
+                <a href="#agenda" class="feature-card feature-card-grupos">
+                    <div class="feature-card-thumb"></div>
+                    <div class="feature-card-body">
+                        <div class="feature-icon" aria-hidden="true"><i class="bi bi-heart"></i></div>
+                        <h3>Pequenos Grupos</h3>
+                        <p>Conexão, comunhão e crescimento em pequenos grupos.</p>
+                        <span class="feature-link">Conheça Mais <i class="bi bi-arrow-right cta-icon"></i></span>
+                    </div>
+                </a>
+
+            </div>
+            <div class="carousel-dots" id="dots-cards" aria-hidden="true"></div>
+            </div><!-- /.carousel-wrap -->
+
+            <div class="agenda-board" id="agenda">
+                <h3>Agenda Semanal</h3>
+                <p>Acompanhe os encontros e ministérios ao longo da semana.</p>
+
+                <div class="agenda-timeline" aria-label="Linha do tempo semanal">
+                    <button type="button" class="agenda-timeline-item is-active">
+                        <span class="agenda-timeline-badge">SEG</span>
+                        <span class="agenda-timeline-label">Segunda</span>
+                    </button>
+                    <button type="button" class="agenda-timeline-item">
+                        <span class="agenda-timeline-badge">TER</span>
+                        <span class="agenda-timeline-label">Terça</span>
+                    </button>
+                    <button type="button" class="agenda-timeline-item">
+                        <span class="agenda-timeline-badge">QUA</span>
+                        <span class="agenda-timeline-label">Quarta</span>
+                    </button>
+                    <button type="button" class="agenda-timeline-item">
+                        <span class="agenda-timeline-badge">QUI</span>
+                        <span class="agenda-timeline-label">Quinta</span>
+                    </button>
+                    <button type="button" class="agenda-timeline-item">
+                        <span class="agenda-timeline-badge">SEX</span>
+                        <span class="agenda-timeline-label">Sexta</span>
+                    </button>
+                    <button type="button" class="agenda-timeline-item">
+                        <span class="agenda-timeline-badge">SAB</span>
+                        <span class="agenda-timeline-label">Sábado</span>
+                    </button>
+                    <button type="button" class="agenda-timeline-item">
+                        <span class="agenda-timeline-badge">DOM</span>
+                        <span class="agenda-timeline-label">Domingo</span>
+                    </button>
+                </div>
+
+                <div class="carousel-wrap" data-carousel-id="agenda">
+                <div class="agenda-grid" id="carousel-agenda">
+
+                    <!-- SEGUNDA -->
+                    <article class="agenda-day" data-day-index="0" tabindex="0">
+                        <h4><i class="bi bi-music-note-beamed" aria-hidden="true"></i> Segunda</h4>
+                        <p class="agenda-activity">Aula de Música</p>
+                        <span class="agenda-badge agenda-badge--suspended">Suspenso</span>
+                        <p class="agenda-time"><span class="agenda-time-label">Horário:</span> 18h00</p>
+                    </article>
+
+                    <!-- TERÇA -->
+                    <article class="agenda-day" data-day-index="1" tabindex="0">
+                        <h4><i class="bi bi-people" aria-hidden="true"></i> Terça</h4>
+                        <p class="agenda-activity">Organizações Missionárias</p>
+                        <p class="agenda-time"><span class="agenda-time-label">Horário:</span> 18h00</p>
+                        <ul>
+                            <li><i class="bi bi-award" aria-hidden="true"></i> ER <em>(Embaixadores do Rei)</em></li>
+                            <li><i class="bi bi-flower1" aria-hidden="true"></i> MCM <em>(Mensageiras do Caminho de Matureira)</em></li>
+                            <li><i class="bi bi-person-hearts" aria-hidden="true"></i> MB <em>(Mulheres Batistas)</em></li>
+                            <li><i class="bi bi-shield" aria-hidden="true"></i> HB <em>(Homens Batistas)</em></li>
+                        </ul>
+                        <p class="agenda-note">Salas diferentes</p>
+                    </article>
+
+                    <!-- QUARTA -->
+                    <article class="agenda-day" data-day-index="2" tabindex="0">
+                        <h4><i class="bi bi-heart-pulse" aria-hidden="true"></i> Quarta</h4>
+                        <p class="agenda-activity">Culto de Oração</p>
+                        <p class="agenda-time"><span class="agenda-time-label">Horário:</span> 19h00</p>
+                        <p class="agenda-desc">Momento de oração, intercessão e comunhão.</p>
+                    </article>
+
+                    <!-- QUINTA -->
+                    <article class="agenda-day" data-day-index="3" tabindex="0">
+                        <h4><i class="bi bi-house-heart" aria-hidden="true"></i> Quinta</h4>
+                        <p class="agenda-activity">PGM</p>
+                        <p class="agenda-subtitle">Pequeno Grupo Multiplicador</p>
+                        <p class="agenda-time"><span class="agenda-time-label">Horário:</span> 19h00</p>
+                        <p class="agenda-desc">Encontros nos lares para crescimento e discipulado.</p>
+                    </article>
+
+                    <!-- SEXTA -->
+                    <article class="agenda-day" id="ubaesc" data-day-index="4" tabindex="0">
+                        <h4><i class="bi bi-stars" aria-hidden="true"></i> Sexta</h4>
+                        <p class="agenda-activity">Encontro da UBAESC</p>
+                        <p class="agenda-subtitle">União de Adolescentes Batistas em Escada</p>
+                        <p class="agenda-time"><span class="agenda-time-label">Horário:</span> 19h00</p>
+                        <p class="agenda-desc">Comunhão, Palavra e edificação.</p>
+                    </article>
+
+                    <!-- SÁBADO -->
+                    <article class="agenda-day" id="unijovem" data-day-index="5" tabindex="0">
+                        <h4><i class="bi bi-lightning-charge" aria-hidden="true"></i> Sábado</h4>
+                        <p class="agenda-activity">União Jovem</p>
+                        <p class="agenda-subtitle">União de Juventude Batista em Escada</p>
+                        <p class="agenda-time"><span class="agenda-time-label">Horário:</span> 19h30</p>
+                        <p class="agenda-desc">Louvor, Palavra e comunhão.</p>
+                    </article>
+
+                    <!-- DOMINGO -->
+                    <article class="agenda-day" data-day-index="6" tabindex="0">
+                        <h4><i class="bi bi-brightness-high" aria-hidden="true"></i> Domingo</h4>
+                        <p class="agenda-activity">Cultos de Adoração</p>
+                        <ul class="agenda-cultos-list">
+                            <li><i class="bi bi-sun" aria-hidden="true"></i> <span class="agenda-time-label">08h00</span> EBD</li>
+                            <li><i class="bi bi-sun" aria-hidden="true"></i> <span class="agenda-time-label">09h15</span> Culto de Adoração</li>
+                            <li><i class="bi bi-moon-stars" aria-hidden="true"></i> <span class="agenda-time-label">19h00</span> Culto de Adoração</li>
+                        </ul>
+                    </article>
+
+                </div>
+                <div class="carousel-dots" id="dots-agenda" aria-hidden="true"></div>
+                </div><!-- /.carousel-wrap agenda -->
+
+                <div class="agenda-info-strip" aria-label="Informações importantes">
+                    <article class="agenda-info-main">
+                        <div class="agenda-info-badge" aria-hidden="true">
+                            <i class="bi bi-info-circle"></i>
+                        </div>
+
+                        <div class="agenda-info-content">
+                            <p class="agenda-info-title">Informações Importantes</p>
+
+                            <div class="agenda-info-items">
+                                <div class="agenda-info-item">
+                                    <i class="bi bi-clock-history" aria-hidden="true"></i>
+                                    <div>
+                                        <h4>Chegue com antecedência</h4>
+                                        <p>Nossos cultos começam no horário marcado. Venha com seu coração preparado para adorar.</p>
+                                    </div>
+                                </div>
+
+                                <div class="agenda-info-item">
+                                    <i class="bi bi-people" aria-hidden="true"></i>
+                                    <div>
+                                        <h4>Traga sua família</h4>
+                                        <p>Temos um ambiente acolhedor para todas as idades: crianças, adolescentes, jovens e adultos.</p>
+                                    </div>
+                                </div>
+
+                                <div class="agenda-info-item">
+                                    <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                                    <div>
+                                        <h4>Endereço</h4>
+                                        <p>Rua da Igreja, 123 - Centro<br>Escada - Pernambuco</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <aside class="agenda-verse-card" aria-label="Versículo da semana">
+                        <div class="agenda-verse-icon" aria-hidden="true"><i class="bi bi-book"></i></div>
+                        <p class="agenda-verse-text">"Não deixemos de congregar-nos, como é costume de alguns, mas façamos admoestações; e tanto mais, quanto vedes que se aproxima aquele dia."</p>
+                        <p class="agenda-verse-ref">Hebreus 10:25</p>
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================================================================
+         PRÓXIMO CULTO + CONTATO
+         ================================================================ -->
+    <section class="culto-dinamico-section" id="contato">
+        <div class="culto-dinamico-shell">
+            <div class="culto-dinamico-top">
+
+                <article class="culto-proximo-card" aria-live="polite">
+                    <div class="culto-proximo-icon" aria-hidden="true">
+                        <i class="bi bi-calendar3"></i>
+                    </div>
+
+                    <div class="culto-proximo-content">
+                        <p class="culto-proximo-label">Próximo Culto</p>
+                        <h3>
+                            <span id="next-service-day">Domingo</span>
+                            ÀS
+                            <span id="next-service-time">19h00</span>
+                        </h3>
+                        <p class="culto-proximo-name" id="next-service-name">Culto de Adoração</p>
+                        <p class="culto-proximo-message" id="next-service-message">Esperamos você e sua família.</p>
+                    </div>
+                </article>
+
+                <div class="culto-social-wrap">
+                    <div class="culto-social-block">
+                        <p>Acompanhe nossas redes</p>
+                        <div class="culto-social-links">
+                            <a target="_blank" href="https://www.instagram.com/pibesc/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/Pibesc" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@pibesc" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <a class="culto-whatsapp-btn" href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+                        Fale Conosco
+                        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="culto-dinamico-bottom">
+                <img src="assets/img/logo.png" alt="Primeira Igreja Batista em Escada" class="culto-footer-logo">
+
+                <p class="culto-footer-copy">© 2026 Primeira Igreja Batista em Escada.<br>Todos os direitos reservados.</p>
+
+                <nav class="culto-footer-links" aria-label="Links institucionais">
+                    <a href="#">Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+            </div> b
+        </div>
+    </section>
+
+
+    <!-- Scripts -->
+    <script src="assets/js/core.js" defer></script>
+    <script src="assets/js/nav.js" defer></script>
+    <script src="assets/js/carousel.js" defer></script>
+    <script src="assets/js/agenda.js" defer></script>
+    <script src="assets/js/next-service.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
