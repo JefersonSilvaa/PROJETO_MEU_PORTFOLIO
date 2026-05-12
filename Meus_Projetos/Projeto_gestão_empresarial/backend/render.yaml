@@ -7,6 +7,10 @@ services:
     buildCommand: npm install
     startCommand: npm start
     envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
       - key: DB_DIALECT
         value: mysql
       - key: DB_HOST
@@ -21,5 +25,23 @@ services:
         sync: false
       - key: JWT_SECRET
         sync: false
+      - key: JWT_EXPIRES_IN
+        value: 8h
       - key: FRONTEND_URL
+        sync: false
+      - key: SEED_ADMIN
+        value: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        value: 587
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASS
+        sync: false
+      - key: SMTP_FROM
         sync: false

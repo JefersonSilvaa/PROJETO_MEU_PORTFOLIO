@@ -1,163 +1,177 @@
-# ARQUITETURA DO PROJETO - Analise Detalhada
+# ARQUITETURA DO PROJETO - PORTFOLIO
 
 ## Objetivo
-Reorganizar o projeto em estrutura **escalável, limpa e profissional** com separação completa de responsabilidades.
+Documentar a arquitetura atual do repositório, incluindo o site principal, organização de assets, integração com subprojetos e padrão de manutenção.
+
+## Data de referência
+12/05/2026
 
 ---
 
-## ANALISE ATUAL
+## Visão Geral
 
-### Problemas Identificados
-1. **Classes Inline no HTML**: 150+ classes Tailwind espalhadas nas tags
-2. **CSS Mínimo**: Apenas estilos básicos em `style.css`
-3. **Sem Componentes**: Cada elemento repetido com classes diferentes
-4. **Falta de Reutilização**: Múltiplas tags com mesma funcionalidade, estilos diferentes
+O repositório funciona como um hub de portfólio:
+- Site principal estático em HTML + CSS + JavaScript.
+- Lista de projetos reais com links para subpastas locais e links externos.
+- Cada projeto pode ter sua própria arquitetura interna (estático, full stack, Vite + React etc.).
 
-### Classes Tailwind Encontradas e suas Categorias
-
-#### **LAYOUT & POSITIONING**
-- Flexbox: `flex`, `flex-col`, `flex-1`, `items-center`, `justify-between`
-- Grid: `grid`, `grid-cols-2`, `md:grid-cols-4`, `gap-3`, `gap-6`
-- Spacing: `px-4`, `py-3`, `mt-4`, `mb-8`, `gap-3`
-- Display: `fixed`, `absolute`, `relative`, `hidden`, `md:flex`
-
-#### **TIPOGRAFIA**
-- Tamanho: `text-xl`, `text-3xl`, `text-2xl`, `text-sm`, `text-xs`
-- Peso: `font-semibold`, `font-bold`, `font-extrabold`
-- Cor: `text-white`, `text-[color:var(--muted)]`
-
-#### **CORES & FUNDO**
-- Background: `bg-white/5`, `bg-white/6`, `bg-[color:var(--card)]`
-- Cores: `text-[color:var(--accent)]`, `text-[color:var(--bg)]`
-
-#### **BORDAS & DECORAÇÃO**
-- Border: `border`, `border-white/5`, `border-white/10`, `rounded-md`, `rounded-xl`, `rounded-2xl`
-- Shadow: `shadow-md`, `shadow-lg`, `shadow-sm`
-
-#### **RESPONSIVIDADE**
-- `hidden`, `md:hidden`, `md:flex`, `md:grid-cols-3`, `md:p-10`, `md:col-span-2`
-- `sm:flex-row`, `sm:grid-cols-2`, `lg:grid-cols-4`
-
-#### **EFEITOS & TRANSIÇÕES**
-- Hover: `hover:underline`, `hover:opacity-80`
-- Transition: `transition`, `transition-colors`
+O fluxo principal é:
+1. Usuário acessa o site raiz.
+2. Visualiza seções institucionais e cards de projetos.
+3. Navega para projetos internos por link direto.
+4. Aciona contato por WhatsApp e redes sociais.
 
 ---
 
-## NOVA ESTRUTURA
+## Estrutura Atual do Repositório
 
-```
-PROJETO_MEU_WEB_SITE/
-├── index.html                 (HTML semântico - ZERO classes inline)
+```text
+PROJETO_MEU_PORTFOLIO/
+├── index.html
 ├── css/
-│   ├── style.css             (Estilos customizados e componentes)
-│   ├── variables.css         (Classes CSS customizadas)
-│   └── responsive.css        (Media queries e breakpoints)
+│   └── style.css
 ├── js/
-│   ├── main.js              (Lógica principal)
-│   └── config.js            (Configurações)
+│   └── main.js
 ├── img/
 │   ├── favicon/
-│   ├── servicos/
-│   └── (imagens)
-├── ARQUITETURA.md           (Este arquivo)
-└── README.md               (Documentação)
+│   └── Imagens_projetos/
+├── Meus_Projetos/
+│   ├── calculadora_JS/
+│   ├── e-commerce_moderno/
+│   ├── Landing_Page_Institucional/
+│   ├── Projeto_gestão_empresarial/
+│   │   ├── backend/
+│   │   └── frontend/
+│   ├── Projeto_Pibesc/
+│   └── Sistema_de_tarefa(Task Manager)/
+│       ├── backend/
+│       └── frontend/
+├── projeto-gestao/
+├── ARQUITETURA.md
+└── README.md
 ```
+
+Observação:
+- A pasta `projeto-gestao/` na raiz contém build de frontend publicado (artefato estático).
+- A pasta `Meus_Projetos/Projeto_gestão_empresarial/` contém código-fonte separado de backend e frontend.
 
 ---
 
-## METODOLOGIA: BEM + CSS Customizado
+## Arquitetura do Site Principal
 
-### **Nomenclatura de Classes**
+### 1) Camada de Estrutura (HTML)
+Arquivo: `index.html`
 
-```
-.component-name          /* Block */
-.component-name__element /* Element */
-.component-name--modifier /* Modifier */
-```
+Seções principais:
+- Header com navegação desktop/mobile.
+- Hero com apresentação pessoal e CTAs.
+- Sobre, Habilidades, Projetos, Experiência e Contato.
+- Footer com links e redes.
 
-### **Exemplos de Componentes**
+Dependências CDN:
+- Google Fonts (Poppins).
+- AOS (Animate On Scroll).
+- Bootstrap Icons.
 
-```css
-/* TIPOGRAFIA */
-.heading-primary { }
-.heading-secondary { }
-.text-muted { }
+### 2) Camada de Estilo (CSS)
+Arquivo: `css/style.css`
 
-/* BUTTONS */
-.btn { }
-.btn--primary { }
-.btn--secondary { }
-.btn--whatsapp { }
+Padrão adotado:
+- BEM para componentes (`.navbar__link`, `.card--project`).
+- Utilitárias customizadas (`.text-muted`, `.grid-2`, `.mb-lg`, `.w-full`).
+- Design tokens em `:root` (cores, tipografia, espaçamento, raio, sombra e transições).
 
-/* LAYOUT */
-.container { }
-.section { }
-.grid-2 { }
-.grid-4 { }
+Organização lógica do CSS:
+- Variáveis globais.
+- Reset/base.
+- Tipografia.
+- Layout/containers.
+- Componentes (navbar, botões, cards, formulários, footer etc.).
+- Responsividade por media queries.
 
-/* CARDS */
-.card { }
-.card--service { }
+### 3) Camada de Comportamento (JavaScript)
+Arquivo: `js/main.js`
 
-/* NAVBAR */
-.navbar { }
-.navbar__logo { }
-.navbar__nav { }
-.navbar__link { }
-```
-
----
-
-## MAPEAMENTO: Tailwind -> CSS Classes
-
-| Tailwind | Nova Classe | Descrição |
-|----------|-----------|-----------|
-| `flex items-center justify-between` | `.flex-between` | Layout flex com espaçamento |
-| `mt-4 mb-8` | `.spacing-default` | Espaçamento padrão |
-| `text-3xl font-extrabold` | `.heading-primary` | Título principal |
-| `px-4 py-3 rounded-lg bg-[...] text-white` | `.btn--primary` | Botão primário |
-| `text-sm text-[color:var(--muted)]` | `.text-muted` | Texto muted |
-| `rounded-2xl p-6 bg-[color:var(--card)]` | `.card` | Card padrão |
-| `bg-white/5 p-6 rounded-xl` | `.card--light` | Card com fundo claro |
-| `hidden md:flex` | `.hide-mobile` | Esconder mobile |
-| `grid grid-cols-2 md:grid-cols-4 gap-4` | `.grid-responsive` | Grid responsivo |
+Responsabilidades implementadas:
+- Inicialização do AOS.
+- Construção de links de WhatsApp com mensagem dinâmica.
+- Eventos dos botões de CTA (desktop, mobile e flutuante).
+- Envio do formulário de contato para WhatsApp.
+- Limpeza de formulário.
+- Toggle do menu mobile.
+- Toggle de exibição da seção "Todos os Projetos".
 
 ---
 
-## ESTRUTURA HTML NOVA
+## Integração com Projetos do Portfólio
 
-```html
-<!-- ATUAL -->
-<header class="fixed top-0 left-0 right-0 z-40">
-  <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-```
+Projetos em destaque no site:
+- Sistema de Gestão Empresarial.
+- E-commerce Moderno.
+- Sistema de Tarefas (Task Manager).
+- Landing Page Institucional.
 
-```html
-<!-- NOVO -->
-<header class="navbar">
-  <div class="navbar__inner">
-```
+Projetos adicionais:
+- Calculadora JS.
+- Projeto PIBESC.
 
----
-
-## CHECKLIST DE IMPLEMENTACAO
-
-- [ ] 1. Criar novo CSS com componentes completos
-- [ ] 2. Remover todas classes Tailwind do HTML
-- [ ] 3. HTML com apenas classes semânticas
-- [ ] 4. Testar responsividade
-- [ ] 5. Documentar componentes disponíveis
-- [ ] 6. Criar guia de uso para escalar
+Modelo de integração:
+- Card no site principal com resumo, stack e preview visual.
+- Link para pasta local do projeto ou link externo (GitHub).
 
 ---
 
-## BENEFICIOS DA NOVA ESTRUTURA
+## Convenções de Código
 
-- [OK] **Manutencao Facil**: Mudancas centralizadas no CSS
-- [OK] **Escalabilidade**: Novas paginas = reuso de componentes
-- [OK] **Performance**: Menos classes inline
-- [OK] **Compreensao**: HTML limpo e legivel
-- [OK] **Consistencia**: Padrao unico de nomenclatura
-- [OK] **Desenvolvimento**: Mais rapido com componentes prontos
+### HTML
+- Estrutura semântica por seção.
+- IDs para navegação em âncoras (`#home`, `#projects`, `#contact`).
+- Classes consistentes entre componentes e utilitários.
+
+### CSS
+- Tokenização no `:root` para padronizar identidade visual.
+- Reuso de utilitários para espaçamento e alinhamento.
+- Preferência por classes estáveis em vez de estilos inline.
+
+### JavaScript
+- Código orientado a eventos com validação de existência dos elementos.
+- Funções utilitárias para evitar repetição (`makeWhatsUrl`, `openInNewTab`).
+- Seletores baseados em IDs e classes já definidos no HTML.
+
+---
+
+## Status da Migração e Melhorias
+
+- [x] Remoção da base antiga dependente de classes utilitárias externas.
+- [x] Centralização dos estilos em `css/style.css`.
+- [x] Padronização principal para BEM + utilitárias próprias.
+- [x] Estruturação do JS para ações centrais de interação.
+- [x] Responsividade funcional no layout principal.
+- [ ] Remover estilos inline restantes em botões e links sociais.
+- [ ] Extrair constantes de contato (email, telefone, LinkedIn) para configuração única.
+- [ ] Separar `js/main.js` em módulos por domínio (navegação, contato, projetos).
+
+---
+
+## Riscos Técnicos Atuais
+
+1. Alguns estilos inline ainda existem no HTML, o que dificulta manutenção visual em escala.
+2. Dados de contato e mensagens estão hardcoded no JavaScript.
+3. Há coexistência de artefatos de build e código-fonte em pastas diferentes para o mesmo projeto de gestão, exigindo cuidado na publicação.
+
+---
+
+## Diretriz para Novas Atualizações
+
+Para adicionar novo projeto ao portfólio:
+1. Criar pasta do projeto em `Meus_Projetos/` ou publicar build estático em pasta dedicada.
+2. Adicionar card em `index.html` com nome, descrição, stack e link.
+3. Incluir imagem de preview em `img/Imagens_projetos/`.
+4. Garantir classes já existentes para manter consistência visual.
+5. Validar comportamento em mobile e desktop.
+
+Para manter qualidade arquitetural:
+1. Priorizar reaproveitamento de componentes CSS existentes.
+2. Evitar criação de estilos inline novos.
+3. Atualizar este documento a cada mudança estrutural relevante.
 

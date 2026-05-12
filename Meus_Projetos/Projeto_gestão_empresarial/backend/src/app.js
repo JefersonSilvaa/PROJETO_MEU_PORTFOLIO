@@ -62,10 +62,19 @@ async function bootstrap() {
     await sequelize.authenticate();
     await sequelize.sync();
 
-    const shouldSeedAdmin = process.env.SEED_ADMIN === 'true' || !isProduction;
+    const shouldSeedAdmin = process.env.SEED_ADMIN === 'true';
     if (shouldSeedAdmin) {
-      const adminEmail = process.env.ADMIN_EMAIL || 'admin@empresa.com';
-      const adminPassword = process.env.ADMIN_PASSWORD || '123456';
+      const adminEmail = process.env.ADMIN_EMAIL;
+      const adminPassword = process.env.ADMIN_PASSWORD;
+
+      if (!adminEmail || !adminPassword) {
+        throw new Error('SEED_ADMIN=true exige ADMIN_EMAIL e ADMIN_PASSWORD configurados.');
+      }
+
+      if (adminPassword.length < 12) {
+        throw new Error('ADMIN_PASSWORD precisa ter no minimo 12 caracteres.');
+      }
+
       const existingAdmin = await User.findOne({ where: { email: adminEmail } });
 
       if (!existingAdmin) {
