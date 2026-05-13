@@ -1,0 +1,385 @@
+/* =============================================================
+   NAVBAR UNIJOVENS — Estrutura Similar à Main com Cores Unijovens
+   ============================================================= */
+
+.navbar-unijovens {
+    position: fixed;
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88%;
+    max-width: 1450px;
+    height: 92px;
+    border-radius: 28px;
+    background: linear-gradient(135deg, rgba(25, 193, 216, 0.08) 0%, rgba(100, 55, 198, 0.06) 100%),
+                rgba(10, 13, 24, 0.76);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(165, 235, 245, 0.32);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* ── Logo PIBESC à esquerda (voltar) ── */
+.nav-back {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(165, 235, 245, 0.28);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-back img {
+    width: 36px;
+    height: auto;
+}
+
+.nav-back:hover {
+    background: rgba(255, 255, 255, 0.98);
+    border-color: rgba(165, 235, 245, 0.6);
+    box-shadow: 0 8px 20px rgba(25, 193, 216, 0.2);
+}
+
+/* ── Navegação esquerda e direita ── */
+.nav-left-uj,
+.nav-right-uj {
+    display: flex;
+    gap: 24px;
+    flex: 0;
+}
+
+.nav-left-uj {
+    margin-left: 28px;
+}
+
+.nav-right-uj {
+    margin-right: 28px;
+}
+
+/* ── Links de navegação ── */
+.nav-link-uj {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(245, 247, 252, 0.88);
+    text-decoration: none;
+    white-space: nowrap;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link-uj::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--yj-cyan), var(--yj-lime));
+    transition: width 0.3s ease;
+}
+
+.nav-link-uj:hover,
+.nav-link-uj.active {
+    color: var(--yj-cyan);
+}
+
+.nav-link-uj:hover::after,
+.nav-link-uj.active::after {
+    width: 100%;
+}
+
+/* ── Centro: UNIJOVENS ── */
+.nav-center-uj {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-brand-unijovens {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.28rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    background: linear-gradient(120deg, var(--yj-cyan), var(--yj-lime));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.nav-brand-unijovens:hover {
+    background: linear-gradient(120deg, var(--yj-lime), var(--yj-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ── Botão "Fale Conosco" ── */
+.nav-talk-uj {
+    background: linear-gradient(120deg, var(--yj-lime), #d6f767);
+    color: #1a2500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 800;
+    font-size: 0.76rem;
+    padding: 11px 20px;
+    border-radius: 999px;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-left: 8px;
+}
+
+.nav-talk-uj:hover {
+    box-shadow: 0 8px 20px rgba(183, 229, 31, 0.35);
+    transform: translateY(-2px);
+}
+
+/* ── Mobile Menu Button ── */
+.mobile-menu-btn {
+    display: none;
+}
+
+.mobile-menu-btn {
+    width: 48px;
+    height: 48px;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.mobile-menu-btn span {
+    width: 19px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--yj-cyan);
+    transition: all 0.3s ease;
+}
+
+/* ── Mobile Drawer ── */
+.mobile-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 18, 30, 0.28);
+    z-index: 40;
+}
+
+.mobile-drawer {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    width: min(86vw, 380px);
+    background: linear-gradient(180deg, rgba(10, 13, 24, 0.98) 0%, rgba(15, 20, 35, 0.98) 100%);
+    border-radius: 24px;
+    border: 1px solid rgba(165, 235, 245, 0.28);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
+    z-index: 41;
+    padding: 18px;
+    overflow-y: auto;
+    transform: translateX(108%);
+    transition: transform 0.35s ease;
+}
+
+.mobile-drawer[aria-hidden="false"] {
+    transform: translateX(0);
+}
+
+.mobile-drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(165, 235, 245, 0.15);
+}
+
+.mobile-close-btn {
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(165, 235, 245, 0.08);
+    color: var(--yj-cyan);
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mobile-close-btn:active {
+    background: rgba(165, 235, 245, 0.15);
+}
+
+.mobile-menu-group {
+    margin-bottom: 16px;
+}
+
+.mobile-menu-group h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--yj-cyan);
+    margin: 0 0 10px;
+}
+
+.mobile-link {
+    display: block;
+    padding: 12px 16px;
+    color: rgba(245, 247, 252, 0.88);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.mobile-link:hover,
+.mobile-link.active {
+    background: rgba(165, 235, 245, 0.12);
+    color: var(--yj-cyan);
+    border-color: rgba(165, 235, 245, 0.28);
+}
+
+.mobile-link.mobile-talk {
+    background: linear-gradient(120deg, var(--yj-lime), #d6f767);
+    color: #1a2500;
+    font-weight: 800;
+    border: 0;
+}
+
+.mobile-link.mobile-talk:hover {
+    background: linear-gradient(120deg, #d6f767, var(--yj-lime));
+}
+
+/* ── Media Queries ── */
+@media (max-width: 1100px) {
+    .navbar-unijovens {
+        padding: 0 12px;
+    }
+
+    .nav-left-uj,
+    .nav-right-uj {
+        gap: 16px;
+    }
+
+    .nav-link-uj {
+        font-size: 0.76rem;
+    }
+
+    .nav-talk-uj {
+        font-size: 0.7rem;
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 980px) {
+    .navbar-unijovens {
+        width: calc(100% - 20px);
+        padding: 0 10px;
+        height: 80px;
+    }
+
+    .nav-left-uj,
+    .nav-right-uj,
+    .nav-talk-uj {
+        display: none;
+    }
+
+    .nav-back {
+        width: 52px;
+        height: 52px;
+    }
+
+    .nav-back img {
+        width: 32px;
+    }
+
+    .nav-brand-unijovens {
+        font-size: 1.1rem;
+    }
+
+    .mobile-menu-btn {
+        display: inline-flex;
+        order: 1;
+        margin-left: auto;
+        margin-right: 4px;
+    }
+
+    body.mobile-menu-open {
+        overflow: hidden;
+    }
+
+    body.mobile-menu-open .mobile-overlay {
+        display: block;
+    }
+
+    body.mobile-menu-open .mobile-drawer {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 560px) {
+    .navbar-unijovens {
+        top: 10px;
+        height: 70px;
+        border-radius: 20px;
+    }
+
+    .nav-back {
+        width: 48px;
+        height: 48px;
+    }
+
+    .nav-back img {
+        width: 28px;
+    }
+
+    .nav-brand-unijovens {
+        font-size: 0.95rem;
+        letter-spacing: 0.1em;
+    }
+
+    .nav-center-uj {
+        margin: 0 8px;
+    }
+
+    .mobile-drawer {
+        width: min(90vw, 340px);
+        right: 5px;
+        top: 5px;
+        bottom: 5px;
+    }
+}

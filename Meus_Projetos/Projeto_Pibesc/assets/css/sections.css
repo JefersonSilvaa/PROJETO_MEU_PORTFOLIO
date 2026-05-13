@@ -1040,6 +1040,14 @@
 }
 
 .agenda-info-items {
+.agenda-day--unijovens {
+     cursor: pointer;
+}
+.agenda-day--unijovens:focus-visible,
+.agenda-day--unijovens:hover {
+     border-color: rgba(201, 155, 60, 0.9);
+     box-shadow: 0 16px 32px rgba(22, 57, 76, 0.18);
+}
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;

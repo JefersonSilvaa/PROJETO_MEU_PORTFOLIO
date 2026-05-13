@@ -1,0 +1,15 @@
+Pasta de fotos da pagina da Unijovens.
+
+Coloque aqui as imagens oficiais usadas na pagina:
+
+- hero-bg.jpg             -> fundo principal do topo (show/culto jovem)
+- evento-louvor.jpg       -> card Louvorzao Pre Acamp
+- evento-estudo.jpg       -> card UniJovem Estudo
+- evento-congresso.jpg    -> card Congresso Recomecar
+- sobre-top.jpg           -> foto superior da secao Sobre
+- sobre-bottom.jpg        -> foto inferior da secao Sobre
+
+Dica:
+- Use imagens otimizadas em JPG/WebP.
+- Largura recomendada para hero-bg.jpg: 1920px.
+- Cards podem ter 1200x800 (aprox.).

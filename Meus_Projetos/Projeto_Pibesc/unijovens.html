@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UniJovens - Juventude da PIBESC. Fe, amizade e proposito para viver Cristo com intensidade.">
+    <title>UniJovens | PIBESC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;700;800&family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/unijovens.css">
+    <link rel="stylesheet" href="assets/css/navbar-unijovens.css">
+    <script src="assets/js/core.js" defer></script>
+    <script src="assets/js/nav.js" defer></script>
+    <script src="assets/js/carousel.js" defer></script>
+    <script src="assets/js/unijovens.js" defer></script>
+</head>
+<body>
+    <header class="navbar-unijovens" role="navigation" aria-label="Navegacao Unijovens">
+        <button class="mobile-menu-btn" type="button" aria-label="Abrir menu" aria-controls="mobile-drawer" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Logo PIBESC à esquerda - voltar -->
+        <a class="nav-back" href="index.html" aria-label="Voltar para pagina principal da PIBESC" title="Voltar">
+            <img src="assets/img/logo.png" alt="PIBESC">
+        </a>
+
+        <!-- Links de navegação - esquerda -->
+        <div class="nav-left-uj">
+            <a href="#inicio" class="nav-link-uj active">Início</a>
+            <a href="#eventos" class="nav-link-uj">Eventos</a>
+        </div>
+
+        <!-- Nome UNIJOVENS no centro - scroll to top -->
+        <div class="nav-center-uj">
+            <button class="nav-brand-unijovens" type="button" aria-label="Voltar ao topo">
+                <span>UNIJOVENS</span>
+            </button>
+        </div>
+
+        <!-- Links de navegação - direita -->
+        <div class="nav-right-uj">
+            <a href="#sobre" class="nav-link-uj">Sobre</a>
+            <a href="#contato" class="nav-link-uj">Contato</a>
+        </div>
+
+        <!-- Botão fale conosco -->
+        <a class="nav-talk-uj" href="#contato">Fale Conosco</a>
+    </header>
+
+    <div class="mobile-overlay" hidden></div>
+
+    <aside id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+        <div class="mobile-drawer-header">
+            <button class="mobile-close-btn" type="button" aria-label="Fechar menu">×</button>
+        </div>
+
+        <div class="mobile-menu-group">
+            <h3>Navegação</h3>
+            <a href="#inicio" class="mobile-link active">Início</a>
+            <a href="#eventos" class="mobile-link">Eventos</a>
+            <a href="#sobre" class="mobile-link">Sobre</a>
+            <a href="#contato" class="mobile-link">Contato</a>
+        </div>
+
+        <div class="mobile-menu-group">
+            <h3>Ação</h3>
+            <a href="#contato" class="mobile-link mobile-talk">Fale Conosco</a>
+            <a href="index.html" class="mobile-link">Voltar à Home</a>
+        </div>
+    </aside>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-overlay"></div>
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <p class="hero-kicker">UNIJOVENS PIBESC</p>
+                    <h1>JOVENS <span>QUE TRANSFORMAM</span> O MUNDO</h1>
+                    <p class="hero-description">Um lugar para crescer na fe, fazer amigos e viver o proposito de Deus com autenticidade.</p>
+                    <div class="hero-cta-row">
+                        <a href="#eventos" class="btn-primary">Participe - saiba mais</a>
+                        <a href="#contato" class="btn-secondary">Fale Conosco
+                    </div>
+                </div>
+
+                <aside class="hero-stamp" aria-label="Valores da UniJovens">
+                    <i class="bi bi-stars"></i>
+                    <p>FE<br>AMIZADE<br><span>PROPOSITO</span></p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="events" id="eventos">
+            <div class="section-head">
+                <h2>Proximos Eventos</h2>
+                <a href="#">Ver Todos <i class="bi bi-chevron-right"></i></a>
+            </div>
+
+            <div class="carousel-wrap events-carousel-wrap" role="region" aria-label="Carrossel de eventos">
+                <div class="event-grid" id="carousel-eventos">
+                    <article class="event-card">
+                        <div class="event-image event-image--one"></div>
+                        <div class="event-body">
+                            <h3>Louvorzao Pre Acamp</h3>
+                            <p><i class="bi bi-calendar-event"></i> 01 de Julho - 19h30</p>
+                            <p><i class="bi bi-geo-alt"></i> PRIMEIRA IGREJA BATISTA EM ESCADA</p>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <div class="event-image event-image--two"></div>
+                        <div class="event-body">
+                            <h3>UniJovem Estudo</h3>
+                            <p><i class="bi bi-calendar-event"></i> 27 de Maio - 19h30</p>
+                            <p><i class="bi bi-geo-alt"></i> RUA PARQUE AQUILINO PORTO, 29</p>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <div class="event-image event-image--three"></div>
+                        <div class="event-body">
+                            <h3>Congressos</h3>
+                            <p><i class="bi bi-calendar-event"></i> 16 e 17 de Outubro</p>
+                            <p><i class="bi bi-geo-alt"></i> PRIMEIRA IGREJA BATISTA EM ESCADA</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="carousel-dots" id="dots-eventos" aria-hidden="true"></div>
+            </div>
+        </section>
+
+        <section class="about" id="sobre">
+            <div class="about-media">
+                <div class="photo photo-top"></div>
+                <div class="photo photo-bottom"></div>
+            </div>
+
+            <div class="about-copy">
+                <p class="about-kicker">Sobre Nos</p>
+                <h2>MAIS QUE UMA JUVENTUDE, UMA FAMILIA</h2>
+                <p>Somos uma juventude que ama a Deus, busca viver o extraordinario e impactar nossa geracao com o Evangelho. Aqui voce encontra apoio, identidade e direcao para viver seu chamado.</p>
+                <a href="#contato" class="btn-primary">Saiba Mais</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="yj-footer" id="contato">
+        <blockquote>
+            Ninguem despreze a tua mocidade; mas se exemplo dos fieis na palavra, no procedimento, no amor, na fe e na pureza.
+            <cite>1 Timoteo 4:12</cite>
+        </blockquote>
+
+        <div class="footer-col">
+            <h3>Siga-nos</h3>
+            <div class="social-row">
+                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>Fale Conosco</h3>
+            <p><i class="bi bi-whatsapp"></i> (81) 99999-9999</p>
+            <p><i class="bi bi-envelope"></i> unijovens@pibesc.org.br</p>
+            <p><i class="bi bi-geo-alt"></i> Rua Parque Aquilino Porto, 29 - Centro, Escada - PE</p>
+        </div>
+    </footer>
+</body>
+</html>

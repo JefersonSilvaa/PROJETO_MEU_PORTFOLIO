@@ -49,19 +49,20 @@
 
         <!-- Logo central -->
         <div class="nav-center">
-            <div class="nav-brand-badge">
+            <div class="nav-brand-badge" id="nav-brand-badge">
                 <img
                     class="nav-logo"
                     src="assets/img/logo.png"
                     alt="PIBESC - Primeira Igreja Batista em Escada"
                 >
+                <span class="nav-unijovens-mark" aria-hidden="true">UNIJOVENS</span>
             </div>
         </div>
 
         <!-- Departamentos / externos – direita -->
         <div class="nav-right">
             <a href="#ubaesc"         class="nav-link">UBAESC</a>
-            <a href="#unijovem"      class="nav-link">UNIJOVEM</a>
+            <a href="unijovens.html" class="nav-link unijovens-trigger" data-unijovens-trigger="true">UNIJOVENS</a>
             <a href="#departamentos" class="nav-dept-btn">+ Departamentos</a>
         </div>
 
@@ -86,7 +87,7 @@
         <div class="mobile-menu-group">
             <h3>Ministérios</h3>
             <a href="#ubaesc" class="mobile-link">UBAESC</a>
-            <a href="#unijovem" class="mobile-link">UNIJOVEM</a>
+            <a href="unijovens.html" class="mobile-link unijovens-trigger" data-unijovens-trigger="true">UNIJOVENS</a>
         </div>
 
         <div class="mobile-menu-group">
@@ -357,9 +358,8 @@
                         <p class="agenda-time"><span class="agenda-time-label">Horário:</span> 18h00</p>
                         <ul>
                             <li><i class="bi bi-award" aria-hidden="true"></i> ER <em>(Embaixadores do Rei)</em></li>
-                            <li><i class="bi bi-flower1" aria-hidden="true"></i> MCM <em>(Mensageiras do Caminho de Matureira)</em></li>
-                            <li><i class="bi bi-person-hearts" aria-hidden="true"></i> MB <em>(Mulheres Batistas)</em></li>
-                            <li><i class="bi bi-shield" aria-hidden="true"></i> HB <em>(Homens Batistas)</em></li>
+                            <li><i class="bi bi-flower1" aria-hidden="true"></i> MCM <em>(Mulheres Cristãs Missionárias)</em></li>
+                            <li><i class="bi bi-shield" aria-hidden="true"></i> SMHB <em>(Sociedade de Homens Batistas)</em></li>
                         </ul>
                         <p class="agenda-note">Salas diferentes</p>
                     </article>
@@ -391,9 +391,9 @@
                     </article>
 
                     <!-- SÁBADO -->
-                    <article class="agenda-day" id="unijovem" data-day-index="5" tabindex="0">
+                    <article class="agenda-day agenda-day--unijovens" id="unijovem" data-day-index="5" tabindex="0" role="link" aria-label="Abrir página da Unijovens" data-unijovens-card="true">
                         <h4><i class="bi bi-lightning-charge" aria-hidden="true"></i> Sábado</h4>
-                        <p class="agenda-activity">União Jovem</p>
+                        <p class="agenda-activity">UniJovens</p>
                         <p class="agenda-subtitle">União de Juventude Batista em Escada</p>
                         <p class="agenda-time"><span class="agenda-time-label">Horário:</span> 19h30</p>
                         <p class="agenda-desc">Louvor, Palavra e comunhão.</p>
@@ -444,7 +444,7 @@
                                     <i class="bi bi-geo-alt" aria-hidden="true"></i>
                                     <div>
                                         <h4>Endereço</h4>
-                                        <p>Rua da Igreja, 123 - Centro<br>Escada - Pernambuco</p>
+                                        <p>Rua Parque Aquilino Porto, 29 - Centro<br>Escada - PE, 55500-000</p>
                                     </div>
                                 </div>
                             </div>
@@ -521,6 +521,7 @@
     <!-- Scripts -->
     <script src="assets/js/core.js" defer></script>
     <script src="assets/js/nav.js" defer></script>
+    <script src="assets/js/unijovens-transition.js" defer></script>
     <script src="assets/js/carousel.js" defer></script>
     <script src="assets/js/agenda.js" defer></script>
     <script src="assets/js/next-service.js" defer></script>

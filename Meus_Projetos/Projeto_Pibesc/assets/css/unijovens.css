@@ -1,0 +1,477 @@
+:root {
+    --yj-cyan: #19c1d8;
+    --yj-cyan-soft: #a5ebf5;
+    --yj-lime: #b7e51f;
+    --yj-purple: #6437c6;
+    --yj-purple-deep: #35196f;
+    --yj-dark: #0a0d13;
+    --yj-dark-soft: #111726;
+    --yj-text: #f7f9ff;
+    --yj-muted: #c9d1e3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    color: var(--yj-text);
+    overflow-x: hidden;
+    background:
+        radial-gradient(1150px 560px at 0% 0%, rgba(25, 193, 216, 0.15), transparent 60%),
+        radial-gradient(900px 520px at 100% 10%, rgba(100, 55, 198, 0.42), transparent 64%),
+        linear-gradient(160deg, #0b0f19 0%, #0b1020 52%, #140f2d 100%);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    min-height: 92vh;
+    padding: 150px 24px 100px;
+    overflow: hidden;
+    background:
+        linear-gradient(120deg, rgba(6, 8, 16, 0.92) 0%, rgba(6, 8, 16, 0.42) 55%, rgba(13, 10, 28, 0.84) 100%),
+        url('../img/unijovens/hero-bg.jpg.png') center/cover no-repeat;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(420px 180px at 22% 15%, rgba(25, 193, 216, 0.32), transparent 72%),
+        radial-gradient(420px 220px at 86% 72%, rgba(183, 229, 31, 0.22), transparent 72%);
+}
+
+.hero-grid {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 22px;
+    align-items: center;
+}
+
+.hero-kicker {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--yj-cyan-soft);
+    font-weight: 700;
+}
+
+.hero-copy h1 {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3.2rem, 10vw, 6.8rem);
+    line-height: 0.88;
+    letter-spacing: 0.02em;
+    max-width: 650px;
+}
+
+.hero-copy h1 span {
+    color: var(--yj-lime);
+}
+
+.hero-description {
+    margin-top: 26px;
+    max-width: 520px;
+    color: var(--yj-muted);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.5;
+}
+
+.hero-cta-row {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.btn-primary,
+.btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 168px;
+    border-radius: 999px;
+    padding: 12px 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+.btn-primary {
+    background: linear-gradient(120deg, var(--yj-lime), #d6f767);
+    color: #1a2500;
+}
+
+.btn-ghost {
+    border: 1px solid rgba(25, 193, 216, 0.75);
+    color: var(--yj-text);
+    gap: 8px;
+}
+
+.hero-stamp {
+    justify-self: end;
+    text-align: right;
+    font-family: 'Caveat Brush', cursive;
+    font-size: clamp(2.6rem, 5vw, 4rem);
+    color: #f9fbff;
+    line-height: 0.88;
+    transform: rotate(-4deg);
+}
+
+.hero-stamp i {
+    color: var(--yj-lime);
+    font-size: 2.4rem;
+}
+
+.hero-stamp span {
+    color: var(--yj-cyan);
+}
+
+.events {
+    padding: 74px 24px;
+    background:
+    linear-gradient(170deg, #23134f 0%, #3b1f78 50%, #1e2b57 100%);
+}
+
+.carousel-wrap.events-carousel-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 0;
+    background: rgba(165, 235, 245, 0.32);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.carousel-dot.is-active {
+    background: var(--yj-cyan);
+    width: 24px;
+    border-radius: 999px;
+}
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.section-head h2 {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.2rem, 5vw, 3.1rem);
+    letter-spacing: 0.04em;
+}
+
+.section-head a {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    color: var(--yj-lime);
+    font-size: 0.82rem;
+}
+
+.event-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    padding: 8px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.event-card {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(165, 235, 245, 0.26);
+    background: linear-gradient(180deg, rgba(14, 18, 34, 0.96) 0%, rgba(11, 15, 27, 0.96) 100%);
+    box-shadow: 0 20px 36px rgba(0, 0, 0, 0.28);
+    flex: 0 0 calc(33.333% - 12px);
+    min-width: 320px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.event-image {
+    height: 184px;
+    background-size: cover;
+    background-position: center;
+}
+
+.event-image--one {
+    background-image: linear-gradient(180deg, rgba(9, 12, 20, 0.06) 40%, rgba(9, 12, 20, 0.94) 100%), url('../img/unijovens/evento-louvor.jpg.png');
+}
+
+.event-image--two {
+    background-image: linear-gradient(180deg, rgba(9, 12, 20, 0.06) 40%, rgba(9, 12, 20, 0.94) 100%), url('../img/unijovens/evento-estudo.jpg.png');
+}
+
+.event-image--three {
+    background-image: linear-gradient(180deg, rgba(9, 12, 20, 0.06) 40%, rgba(9, 12, 20, 0.94) 100%), url('../img/unijovens/evento-congresso.jpg.png');
+}
+
+.event-body {
+    padding: 18px;
+}
+
+.event-body h3 {
+    margin: 0 0 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    line-height: 0.92;
+}
+
+.event-body p {
+    margin: 7px 0;
+    font-size: 0.93rem;
+    color: var(--yj-muted);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.event-body i {
+    color: var(--yj-cyan);
+}
+
+.about {
+    padding: 64px 48px;
+    background:
+        radial-gradient(1000px 320px at 90% 0%, rgba(25, 193, 216, 0.1), transparent 68%),
+        #f7f8fc;
+    color: #131a2e;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 1150px;
+    margin: 54px auto;
+    border-radius: 32px;
+    box-shadow: 0 28px 52px rgba(9, 14, 25, 0.32), 0 12px 24px rgba(100, 55, 198, 0.18);
+}
+
+.about-media {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo {
+    border-radius: 24px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 16px 32px rgba(9, 14, 25, 0.28);
+}
+
+.photo-top {
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    width: 260px;
+    height: 200px;
+    background-image: url('../img/unijovens/sobre-top.jpg.png');
+}
+
+.photo-bottom {
+    position: absolute;
+    right: 24px;
+    bottom: 18px;
+    width: 280px;
+    height: 220px;
+    background-image: url('../img/unijovens/sobre-bottom.jpg.png');
+}
+
+.about-kicker {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #2caabf;
+    font-weight: 700;
+}
+
+.about-copy h2 {
+    margin: 10px 0 14px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    line-height: 0.9;
+}
+
+.about-copy p {
+    margin: 0 0 24px;
+    color: #3f4b61;
+    line-height: 1.6;
+}
+
+.about-copy .btn-primary {
+    border: 0;
+}
+
+.yj-footer {
+    margin-top: 44px;
+    padding: 40px 24px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 24px;
+    background:
+        radial-gradient(900px 360px at 10% -10%, rgba(25, 193, 216, 0.18), transparent 66%),
+        radial-gradient(800px 360px at 90% 20%, rgba(100, 55, 198, 0.35), transparent 70%),
+        #050911;
+}
+
+.yj-footer blockquote {
+    margin: 0;
+    font-size: 1.07rem;
+    line-height: 1.7;
+    color: #dde2ec;
+}
+
+.yj-footer cite {
+    display: block;
+    margin-top: 14px;
+    font-style: normal;
+    color: var(--yj-lime);
+    text-transform: uppercase;
+    font-size: 0.82rem;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
+
+.footer-col h3 {
+    margin: 0 0 12px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.04em;
+    font-size: 2rem;
+}
+
+.footer-col p {
+    margin: 8px 0;
+    color: var(--yj-muted);
+    line-height: 1.45;
+}
+
+.footer-col i {
+    color: var(--yj-cyan);
+    margin-right: 8px;
+}
+
+.social-row {
+    display: flex;
+    gap: 10px;
+}
+
+.social-row a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid rgba(25, 193, 216, 0.7);
+    display: grid;
+    place-items: center;
+}
+
+.social-row i {
+    margin-right: 0;
+}
+
+@media (max-width: 980px) {
+    .yj-nav {
+        display: none;
+    }
+
+    .hero-grid,
+    .about,
+    .yj-footer {
+        grid-template-columns: 1fr;
+    }
+
+    .event-card {
+        flex: 0 0 calc(50% - 9px);
+        min-width: 280px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: 140px;
+    }
+
+    .hero-stamp {
+        justify-self: start;
+        text-align: left;
+    }
+
+    .about-media {
+        min-height: 320px;
+    }
+
+    .photo-top {
+        width: 82%;
+    }
+
+    .photo-bottom {
+        width: 76%;
+    }
+}
+
+@media (max-width: 560px) {
+    .yj-header {
+        top: 10px;
+        width: calc(100% - 14px);
+        padding: 8px 10px;
+    }
+
+    .yj-brand-top {
+        font-size: 1.5rem;
+    }
+
+    .yj-talk {
+        padding: 10px 12px;
+        font-size: 0.7rem;
+    }
+
+    .hero-copy h1 {
+        font-size: clamp(2.7rem, 16vw, 4rem);
+    }
+
+    .event-body h3 {
+        font-size: 1.7rem;
+    }
+
+    .event-card {
+        flex: 0 0 calc(100% - 8px);
+        min-width: 280px;
+    }
+
+    .yj-footer {
+        padding: 30px 16px;
+    }
+}
