@@ -178,10 +178,6 @@ a {
     width: 24px;
     border-radius: 999px;
 }
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-}
 
 .section-head h2 {
     margin: 0;
